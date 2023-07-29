@@ -15,7 +15,7 @@
             right: 0;
             bottom: 0;
             z-index: 111;
-            overflow-y: auto;
+             overflow-y: auto; 
             border-radius: 5px;
 
         }

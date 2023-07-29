@@ -1,75 +1,448 @@
-<?php require_once"./componentes/header.php"; ?>
+<?php require_once "./componentes/header.php"; ?>
 
-<section class="w3l-service-breadcrum">
-  <div class="breadcrum-bg py-sm-5 py-4">
-    <div class="container py-lg-3">
-      <h2>Campus de Malabo</h2>
-      <p><a href="index.php">Inicio</a> &nbsp; / &nbsp; Campus de Malabo</p>
+
+
+
+
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background-image: url(assets/images/unge/2.JPG)">
+                <div class="carousel-container">
+                    <div class="container">
+                        <h2 class="animate__animated animate__fadeInDown">Bienvenido al <span>Campus de Malabo</span>
+                        </h2>
+                        <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
+                            Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
+                            Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et
+                            tempore modi architecto.</p>
+                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Leer
+                            Mas</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="background-image: url(assets/images/unge/1.3.jpg)">
+                <div class="carousel-container">
+                    <div class="container">
+                        <h2 class="animate__animated animate__fadeInDown">Semana Cientica</h2>
+                        <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
+                            Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
+                            Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et
+                            tempore modi architecto.</p>
+                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Leer
+                            Mas</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item" style="background-image: url(assets/images/unge/3.JPG)">
+                <div class="carousel-container">
+                    <div class="container">
+                        <h2 class="animate__animated animate__fadeInDown">Requisitos de las Matriculas</h2>
+                        <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
+                            Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
+                            Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et
+                            tempore modi architecto.</p>
+                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Leer
+                            Mas</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
     </div>
-  </div>
+</section><!-- End Hero -->
+
+
+
+
+
+
+
+<section class="w3l-features-8 text-center">
+    <!-- /features -->
+    <div class="features py-5" id="services">
+        <div class="container py-md-3">
+
+            <h1 class="p-3 border-top border-3 pb-3">NUESTRAS FACULTADES</h1>
+
+            <!-- aqui empiezan los acordeones lista desplegable -->
+            <div class="fea-gd-vv text-center row pt-3">
+
+                <!-- acordeon 1 -->
+                <div class="float-top col-lg-4 col-md-6 text-center">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item shadow mb-3">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed botton_acordeon" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <h3 class="fs-6"><a href="#">Ciencias de la Información y Filología lingüistica</a>
+                                    </h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
+                                        alt=""></a>
+                                <div class="accordion-body">
+                                    <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
+                                        sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin acordeon 1 -->
+
+                <!-- acordeon 2 -->
+                <div class="float-top col-lg-4 col-md-6 ">
+                    <div class="accordion accordion-flush  " id="accordionFlushExample">
+                        <div class="accordion-item shadow mb-3">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed  botton_acordeon" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    <h3 class="fs-6"><a href="#">Derecho y Ciencias Políticas</a>
+                                    </h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
+                                        alt=""></a>
+                                <div class="accordion-body">
+                                    <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
+                                        sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin acordeon 2 -->
+
+
+                <!-- acordeon 3 -->
+                <div class="float-top col-lg-4 col-md-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item shadow ">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed botton_acordeon" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <h3 class="fs-6"><a href="#">Pedagogía y Ciencia de la Educación</a>
+                                    </h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
+                                        alt=""></a>
+                                <div class="accordion-body">
+                                    <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
+                                        sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin acordeon 3 -->
+
+
+            </div>
+            <!-- aqui terminan -->
+
+
+
+
+            <!-- aqui empiezan los acordeones lista desplegable -->
+            <div class="fea-gd-vv text-center row pt-3">
+
+                <!-- acordeon 1 -->
+                <div class="float-top col-lg-4 col-md-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item shadow mb-3">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed botton_acordeon" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    <h3 class="fs-6"><a href="#">Humanudades y Ciencias Religiosas</a>
+                                    </h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
+                                        alt=""></a>
+                                <div class="accordion-body">
+                                    <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
+                                        sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin acordeon 1 -->
+
+                <!-- acordeon 2 -->
+                <div class="float-top col-lg-4 col-md-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item shadow mb-3">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed botton_acordeon" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    <h3 class="fs-6"><a href="#">Ingenieria Y Tecnologia de Petróleo</a>
+                                    </h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
+                                        alt=""></a>
+                                <div class="accordion-body">
+                                    <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
+                                        sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin acordeon 2 -->
+
+
+                <!-- acordeon 3 -->
+                <div class="float-top col-lg-4 col-md-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item shadow">
+                            <h2 class="accordion-header" id="flush-headingSix">
+                                <button class="accordion-button collapsed botton_acordeon" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                    aria-controls="flush-collapseSix">
+                                    <h3 class="fs-6"><a href="#">Facultad de medio ambiente</a>
+                                    </h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
+                                        alt=""></a>
+                                <div class="accordion-body">
+                                    <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
+                                        sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin acordeon 3 -->
+
+
+            </div>
+            <!-- aqui terminan -->
+
+
+
+            <!-- aqui empiezan los acordeones lista desplegable -->
+            <div class="fea-gd-vv text-center row pt-3">
+
+                <!-- acordeon 1 -->
+                <div class="float-top col-lg-4 col-md-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item shadow">
+                            <h2 class="accordion-header" id="flush-headingSeven">
+                                <button class="accordion-button collapsed botton_acordeon" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                                    aria-expanded="false" aria-controls="flush-collapseSeven">
+                                    <h3 class="fs-6"><a href="#">Administración y Ciencias Económicas</a>
+                                    </h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
+                                        alt=""></a>
+                                <div class="accordion-body">
+                                    <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
+                                        sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin acordeon 1 -->
+
+
+
+            </div>
+            <!-- aqui terminan -->
+
+
+        </div>
+    </div>
+    <!-- //features -->
 </section>
-<section class="w3l-features-8">
-       <!-- /features -->
-           <div class="features py-5" id="services">
-			<div class="container py-md-3">
-				
-					
-			   <div class="fea-gd-vv text-center row">
-				   	
-					<div class="float-top col-lg-4 col-md-6">	
-							<a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive" alt=""></a>
-							<div class="float-lt feature-gd">	
-									<h3><a href="#">Ciencias de la Información y Filología lingüistica</a> </h3>
-										<p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
-									</div>
-					</div>
-					<div class="float-top col-lg-4 col-md-6 mt-md-0 mt-5">	
-							<a href="#"><img src="assets/images/unge/1.2.jpg" class="img-responsive" alt=""></a>
-							<div class="float-lt feature-gd">	
-									<h3><a href="#">Derecho y Ciencias Políticas</a> </h3>
-									<p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
-									</div>
-						</div>
-						<div class="float-top col-lg-4 col-md-6 mt-lg-0 mt-5">	
-								<a href="#"><img src="assets/images/unge/1.3.jpg" class="img-responsive" alt=""></a>
-								<div class="float-lt feature-gd">	
-										<h3><a href="#">Pedagogía y Ciencia de la Educación de Malabo</a> </h3>
-										<p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
-									</div>
-						</div>
-						<div class="float-top col-lg-4 col-md-6 mt-5">	
-							<a href="#"><img src="assets/images/g5.jpg" class="img-responsive" alt=""></a>
-							<div class="float-lt feature-gd">	
-									<h3><a href="#">Humanudades y Ciencias Religiosas de Malabo</a> </h3>
-									<p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
-									</div>
-					</div>
-					<div class="float-top col-lg-4 col-md-6 mt-5">	
-							<a href="#"><img src="assets/images/unge/1.4.jpg" class="img-responsive" alt=""></a>
-							<div class="float-lt feature-gd">	
-									<h3><a href="#">Ingenieria Y Tecnologia de Petróleo</a> </h3>
-									<p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet... <a href="#">Leer  Más</a> </p>
-									</div>
-						</div>
-						<div class="float-top col-lg-4 col-md-6 mt-5">	
-								<a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive" alt=""></a>
-								<div class="float-lt feature-gd">	
-										<h3><a href="#">Facultad de medio ambiente</a> </h3>
-										<p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
-									</div>
-						</div>		
-            <div class="float-top col-lg-4 col-md-6 mt-5">	
-								<a href="#"><img src="assets/images/unge/1.2.jpg" class="img-responsive" alt=""></a>
-								<div class="float-lt feature-gd">	
-										<h3><a href="#">Administración y Ciencias Económicas</a> </h3>
-										<p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
-									</div>
-						</div>					 				 
-		     	</div>  
-		    </div>
-          </div>
-      <!-- //features -->
+
+
+
+
+
+<section class="w3l-features-8 text-center">
+    <!-- /features -->
+    <div class=" py-5" id="services">
+        <div class="container py-md-3">
+
+            <h1 class="p-3 border-top border-3 pb-3">ACTUALIDAD UNIVERSITARIA</h1>
+
+            <!-- aqui empiezan los acordeones lista desplegable -->
+            <div class="fea-gd-vv text-center row pt-3">
+
+
+
+                <!-- carta 1-->
+                <div class="float-top col-sm-12 col-lg-4 col-md-6">
+
+                    <div class="card shadow mb-1" >
+                        <img src="assets/images/unge/UNGE.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Selectividad 2023</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">08/07/2023</h6>
+                            <p class="card-text">Resultados de las Pruebas de Selectividad de
+                                junio 2023 Intentar mejorar cada día. La Universidad Nacional de Guinea Ecuatorial en tu
+                                lista MALABO BATA Convocatoria. <a href="#" class="text-warning">Leer Mas>></a> </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- fin de carta 1-->
+
+
+                <!-- carta 2-->
+                <div class="float-top col-sm-12 col-lg-4 col-md-6">
+
+                    <div class="card shadow mb-1" >
+                        <img src="assets/images/unge/UNGE.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Semana científica 2023</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">02/06/2023</h6>
+                            <p class="card-text">Semana Científica y Cultural en la UNGE Palabras del Excmo. Señor
+                                Rector Magnífico
+                                Tengo la satisfacción de tomar la palabra en este acto académico de carácter social, <a
+                                    href="#" class="text-warning">Leer Mas>></a> </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- fin de carta 2-->
+
+
+                <!-- carta 3-->
+                <div class="float-top col-sm-12 col-lg-4 col-md-6">
+
+                    <div class="card shadow " >
+                        <img src="assets/images/unge/UNGE.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Día Mundial de la Libertad de Prensa en la UNGE</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">03/05/2023</h6>
+                            <p class="card-text">Resumen de las palabras del Excmo. Señor Rector Magnífico de la UNGE Celebración del Día Mundial de la Libertad, <a
+                                    href="#" class="text-warning">Leer Mas>></a> </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- fin de carta 3-->
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
 </section>
+
+
+
+
+<section class="w3l-features-8 text-center">
+    <!-- /features -->
+    <div class=" py-5" id="services">
+        <div class="container py-md-3">
+
+            <h1 class="p-3 border-top border-3 pb-3">EL RECTORADO</h1>
+
+            <!-- aqui empiezan los acordeones lista desplegable -->
+            <div class="fea-gd-vv text-center row ">
+
+            
+                    <p class="text-justify p-3">
+                        La Universidad Nacional de Guinea Ecuatorial, en anagrama UNGE, se creó a iniciativa de S.E.
+                        OBIANG NGUEMA
+                        MBASOGO mediante Decreto Ley Nº 12, de fecha 6 de enero de 1.995, con el objetivo de formar
+                        cuadros nacionales
+                        en el suelo patrio, cuyas enseñanzas y carreras están siendo armonizadas con exigencias del
+                        desarrollo del país,
+                        sobre la base de los parámetros de pertinencia, excelencia, calidad y gestión de conocimientos.
+                    </p>
+
+
+
+                <!-- carta 1-->
+                <div class="float-top col-lg-4 col-md-6 mb-2">
+                <img src="assets/images/unge/2.jpg" class="img-fluid" alt="" />
+                </div>
+                <!-- fin de carta 1-->
+
+
+                <!-- carta 2-->
+                <div class="float-top col-lg-4 col-md-6 mb-2">
+                <img src="assets/images/unge/2.jpg" class="img-fluid" alt="" />
+                </div>
+                <!-- fin de carta 2-->
+
+                <!-- carta 2-->
+                <div class="float-top col-lg-4 col-md-6 ">
+                <img src="assets/images/unge/2.jpg" class="img-fluid" alt="" />
+                </div>
+                <!-- fin de carta 2-->
+
+
+              
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
 <!-- <section class="w3l-pricing-7" id="pricing">
   <div class="w3l-pricing-7_sur py-5">
     <div class="container py-md-3">
@@ -199,8 +572,8 @@
   </div>
 </section> -->
 <section class="w3l-features-4">
-	<!-- /features -->
-		<!--<div class="features py-5" id="services">
+    <!-- /features -->
+    <!--<div class="features py-5" id="services">
             <div class="container py-md-3">
 			<div class="heading text-center mx-auto">
 				<h3 class="head">Amazing Services</h3>
@@ -268,29 +641,29 @@
 		  </div>  
 		 </div>
 	   </div>-->
-   <!-- //features -->
+    <!-- //features -->
 </section>
 <!-- grids block 5 -->
-<?php require_once"./componentes/footer.php"; ?>
+<?php require_once "./componentes/footer.php"; ?>
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <!-- //footer-28 block -->
 </section>
 <script>
-  $(function () {
-    $('.navbar-toggler').click(function () {
-      $('body').toggleClass('noscroll');
+$(function() {
+    $('.navbar-toggler').click(function() {
+        $('body').toggleClass('noscroll');
     })
-  });
+});
 </script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 </script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 </script>
 
 <!-- Template JavaScript -->
@@ -299,43 +672,51 @@
 <!-- <script src="assets/js/smoothscroll.js"></script> -->
 <script src="assets/js/owl.carousel.js"></script>
 
+
+<!-- propio bootstrapp -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+
+
+
 <!-- script for -->
 <script>
-  $(document).ready(function () {
+$(document).ready(function() {
     $('.owl-one').owlCarousel({
-      loop: true,
-      margin: 0,
-      nav: true,
-      responsiveClass: true,
-      autoplay: false,
-      autoplayTimeout: 5000,
-      autoplaySpeed: 1000,
-      autoplayHoverPause: false,
-      responsive: {
-        0: {
-          items: 1,
-          nav: false
-        },
-        480: {
-          items: 1,
-          nav: false
-        },
-        667: {
-          items: 1,
-          nav: true
-        },
-        1000: {
-          items: 1,
-          nav: true
+        loop: true,
+        margin: 0,
+        nav: true,
+        responsiveClass: true,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false
+            },
+            480: {
+                items: 1,
+                nav: false
+            },
+            667: {
+                items: 1,
+                nav: true
+            },
+            1000: {
+                items: 1,
+                nav: true
+            }
         }
-      }
     })
-  })
+})
 </script>
 <!-- //script -->
 
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>
 <!-- // grids block 5 -->
-

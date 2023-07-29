@@ -13,6 +13,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-liberty.css">
+
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+ 
+    
+
+
+    <!-- animaciones -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    
   </head>
   <body>
   <?php require_once "./redes2.php"; ?>
@@ -81,11 +95,14 @@
               Direcciones
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#services.php">
+              <a class="dropdown-item" href="./direccion_de_investigacion_cientifica.php">
                 Investigaciones Cientificas
               </a>
-              <a class="dropdown-item" href="#blog.php">Nuevas Tecnologias</a>
+              <a class="dropdown-item" href="./direccion_de_nuevas_tecnologias.php">Nuevas Tecnologias</a>
               <a class="dropdown-item" href="#blog-single.php">Asuntos Academicos</a>
+              <a class="dropdown-item" href="./direccion_de_cooperacion.php">Cooperaciones InterUniversitarias</a>
+              <a class="dropdown-item" href="./residencia_universitaria.php">Residencia Universitaria</a>
+             
               
              </div>
           </li>
