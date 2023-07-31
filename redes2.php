@@ -105,6 +105,11 @@
                 <span class="span">Instagram </span>
                 <a href="#" class="fab fa-instagram-square"></a>
             </li>
+             <li>
+                <span class="span">Instagram </span>
+                <a href="#" class="fab fa-linkedin"></a>
+                
+            </li>
             <li>
                 <span class="span">Twitter </span>
                 <a href="https://twitter.com/OnlineUnge" target="_blank" class="fab fa-square-twitter"></a>
