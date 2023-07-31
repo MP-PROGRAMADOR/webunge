@@ -83,6 +83,10 @@
            
             background-color: #125688;
         }
+        .fa-linkedin{
+           
+           background-color: #0e76a8;
+       }
         .fa-square-twitter{
            
             background-color: #55acee;
@@ -106,9 +110,8 @@
                 <a href="#" class="fab fa-instagram-square"></a>
             </li>
              <li>
-                <span class="span">Instagram </span>
-                <a href="#" class="fab fa-linkedin"></a>
-                
+                <span class="span">Linkedin </span>
+                <a href="#" class="fab fa-linkedin"></a>                
             </li>
             <li>
                 <span class="span">Twitter </span>
