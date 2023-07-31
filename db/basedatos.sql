@@ -39,30 +39,34 @@ CREATE TABLE Evento(
 
 CREATE TABLE Lugar(
     Id int(3) not null auto_increment,
-    dia int not null,
-    mes varchar(20) not null,
-    year int(5) not null,
-    hora_inicio time not null,
-    hora_final time not null,
-    PRIMARY KEY (Id) not null,
+    Dia int(3) not null,
+    Mes varchar(20) not null,
+    Agno int(5) not null,
+    Hora_inicio time not null,
+    Hora_final time not null,
+    Facultad int(3) not null,
+    Evento int(3) not null,
+    PRIMARY KEY (Id),
     FOREIGN KEY (Facultad) REFERENCES Facultad (Id),
     FOREIGN KEY (Evento) REFERENCES Evento (Id)
 );
 
 CREATE TABLE Categoria(
     Id int(3) not null auto_increment,
-    nombre varchar(50) not null,
+    Nombre varchar(50) not null,
    PRIMARY KEY (Id)
 );
 
 CREATE TABLE Noticias(
     Id int(3) not null auto_increment,
-    titulo varchar(50) not null,
-    descripcion text not null,
-    img varchar(20) not null,
-    dia int(3) not null,
-    mes varchar(10) not null,
-    year int(5) not null,
+    Titulo varchar(50) not null,
+    Descripcion text not null,
+    Img varchar(20) not null,
+    Dia int(3) not null,
+    Mes varchar(10) not null,
+    Agno int(5) not null,
+    Categoria int(3) not null,
+    Facultad int(3) not null,
     PRIMARY KEY (Id),
     FOREIGN KEY (Categoria) REFERENCES Categoria (Id),
     FOREIGN KEY (Facultad) REFERENCES Facultad (Id)
@@ -71,7 +75,7 @@ CREATE TABLE Noticias(
 
 CREATE TABLE Usuario(
     Id int(3) not null auto_increment,
-    nombre varchar(50) not null,
+    Nombre varchar(50) not null,
     Email varchar(100) not null,
     password varchar(30) not null,
    PRIMARY KEY (Id)
