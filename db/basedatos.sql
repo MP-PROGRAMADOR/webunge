@@ -27,7 +27,9 @@ CREATE TABLE Facultad(
 CREATE TABLE Carreras(
     Id int(3) not null auto_increment,
     Nombre varchar(50) not null,
-   PRIMARY KEY (Id)
+    Facultad int(3) not null,
+   PRIMARY KEY (Id),
+   FOREIGN KEY (Facultad) REFERENCES Facultad (Id)
 );
 
 CREATE TABLE Evento(
