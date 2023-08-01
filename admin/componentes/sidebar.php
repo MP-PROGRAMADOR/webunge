@@ -18,7 +18,7 @@
            <li><a href="./categorias.php">Categorias</a></li>
          </ul>
        </li>
-       <li><a><i class="fa fa-calendar"></i>Eventos </a></li>
+       <li><a href="./evento.php"><i class="fa fa-calendar"></i>Eventos </a></li>
      </ul>
    </div>
  </div>
