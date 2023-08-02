@@ -1,3 +1,13 @@
+<?php
+
+  require './php/conexion.php';
+
+  $sqlCarreras = "SELECT * FROM carreras";
+
+  $carrera = $conn->query($sqlCarreras);
+
+
+?>
 <?php require_once "./componentes/head.php"; ?>
 
 <div class="container body">
@@ -141,13 +151,13 @@
     <!-- /top navigation -->
 
     <!-- inicio del contenido de la pagina -->
-    <div class="right_col" role="main">    
-    <?php include "./componentes/modal.php"; ?>
-     <?php require_once "./componentes/tablas.php"; ?>     
+    <div class="right_col" role="main">
+      <?php include "./componentes/modal_insertar_carreras.php"; ?>
+      <?php require_once "./componentes/tablas_carreras.php"; ?>
     </div>
     <!-- /fin del contenido de la pagina -->
 
-   
+
   </div>
 </div>
 

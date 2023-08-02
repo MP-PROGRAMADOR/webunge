@@ -31,6 +31,7 @@
 
     <!-- Custom Theme Style -->
     <link href="./build/css/custom.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./">
 
     
   <body class="nav-md">
