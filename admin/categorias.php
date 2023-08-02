@@ -142,8 +142,8 @@
 
         <!-- inicio del contenido de la pagina -->
         <div class="right_col" role="main">
-            <?php include "./componentes/modal.php"; ?>
-            <?php require_once "./componentes/tablas.php"; ?>
+            <?php include "./componentes/modal_insertar_categorias.php"; ?>
+            <?php require_once "./componentes/tablas_categorias.php"; ?>
         </div>
         <!-- /fin del contenido de la pagina -->
 

@@ -1,5 +1,17 @@
 <?php require_once "./componentes/head.php"; ?>
 
+<?php
+
+require './php/conexion.php';
+
+$sqlCampus = "SELECT * FROM sede";
+
+$campus = $conn->query($sqlCampus);
+
+
+?>
+<?php require_once "./componentes/head.php"; ?>
+
 <div class="container body">
   <div class="main_container">
     <div class="col-md-3 left_col">
@@ -142,8 +154,8 @@
 
     <!-- inicio del contenido de la pagina -->
     <div class="right_col" role="main">    
-    <?php include "./componentes/modal.php"; ?>
-     <?php require_once "./componentes/tablas.php"; ?>     
+    <?php include "./componentes/modal_insertar_sede.php"; ?>
+     <?php require_once "./componentes/tablas_sede.php"; ?>     
     </div>
     <!-- /fin del contenido de la pagina -->
 
