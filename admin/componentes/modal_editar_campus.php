@@ -1,11 +1,11 @@
 <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button> -->
 
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade bs-editar-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">INSERTANDO CAMPUS</h4>
+                <h4 class="modal-title" id="EditarModalCampusLabel">EDITANDO REGISTROS CAMPUS</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
                 </button>
             </div>
@@ -17,6 +17,8 @@
                     <!-- aqui empieza la fila del row -->
                     <div class="row">
                         <div class="col-md-12">
+
+                        <input type="hidden" class="form-control" id="id" name="id" required>
 
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">NOMBRE</label>
