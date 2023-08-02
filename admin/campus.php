@@ -165,4 +165,56 @@ $campus = $conn->query($sqlCampus);
   </div>
 </div>
 
+
+<script>
+  
+  let bsEditarModal = document.getElementById('bsEditarModal')
+    // let eliminaModalPaciente = document.getElementById('eliminaModalPaciente')
+    // let consultaModal = document.getElementById('consultaModal')
+
+    bsEditarModal.addEventListener('shown.bs.modal', event =>{
+    let button = event.relatedTarget
+    let id = button.getAttribute('data-id')
+
+    let inputId = bsEditarModal.querySelector('.modal-body #dip')
+    let inputNombre = bsEditarModal.querySelector('.modal-body #nombre')
+    let inputUbicacion = bsEditarModal.querySelector('.modal-body #ubicacion')
+   
+
+    let url = "getcampus.php"
+    let formData = new FormData()
+    formData.append('id', id)
+
+    fetch(url, {
+        method: "POST",
+        body: formData
+    }).then(response => response.json())
+    .then(data =>{
+
+        inputId.value = data.id
+        inputNombre.value = data.nombre
+        inputUbicacion.value = data.ubicacion
+      
+
+
+    }).catch(err => console.log(err))
+
+    })
+
+    
+     // boton eliminar codigo del modal..
+
+     eliminaModalusuario.addEventListener('shown.bs.modal', event =>{
+    let button = event.relatedTarget
+    let id_usuario = button.getAttribute('data-bs-id_usuario')
+    eliminaModalusuario.querySelector('.modal-footer #id_usuario').value =id_usuario
+
+
+
+    }) 
+   
+ 
+</script>
+
+
 <?php require_once "./componentes/footer.php"; ?>

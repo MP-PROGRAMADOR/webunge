@@ -44,7 +44,7 @@
         <div class="x_title">
 
             <!-- <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-plus"></i> Nuevo Campus </a> -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-plus"></i> Nuevo Campus</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-sede-modal-lg"><i class="fa fa-plus"></i> Nueva Sede</button>
             <ul class="nav navbar-right panel_toolbox">
                 <!-- <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                 </li>
@@ -83,9 +83,9 @@
                                 <input type="checkbox" id="check-all" class="flat">
                             </th>
                             <th class="column-title">ID </th>
-                            <th class="column-title">NOMBRE DEL CAMPUS</th>
-                            <th class="column-title">UBICACION </th>
-                            <th class="column-title no-link last"><span class="nobr">Action</span>
+                            <th class="column-title">NOMBRE DE LA SEDE</th>
+                            <th class="column-title">DIRECCION </th>
+                            <th class="column-title no-link last"><span class="nobr">ACCIONES</span>
                             </th>
                             <th class="bulk-actions" colspan="7">
                                 <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
@@ -106,7 +106,7 @@
 
                                 <td> <?= $row_campus['Id']; ?></td>
                                 <td> <?= $row_campus['Nombre']; ?></td>
-                                <td> <?= $row_campus['Ubicacion']; ?></td>
+                                <td> <?= $row_campus['Direccion']; ?></td>
 
                                 <td>
                                     <a href="#" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-editar-modal-lg" data-id="<?= $row_campus['Id'];   ?>">EDITAR</a>
