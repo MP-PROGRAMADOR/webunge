@@ -1,6 +1,6 @@
 <?php
 
-    $conexion = new mysqli("localhost", "root", "", "trabajofingrado");
+    $conexion = new mysqli("localhost", "root", "", "unge");
 
   /* check connection */
     if (mysqli_connect_errno()) {
