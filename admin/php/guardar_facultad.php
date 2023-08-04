@@ -6,19 +6,29 @@ require 'conexion.php';
 
 
 $nombre = $conn->real_escape_string($_POST['nombre']);
-$direccion = $conn->real_escape_string($_POST['direccion']);
+$sede = $conn->real_escape_string($_POST['sede']);
+$campus=$conn->real_escape_string($_POST['campus']);
 
+if($nombre!='' && $sede!='' && $campus!=''){
 
-
-$sql = "INSERT INTO sede (Nombre,Direccion)
-VALUES ('$nombre','$direccion')";
+    $sql = "INSERT INTO facultad (Nombre,Sede,Campus)
+VALUES ('$nombre','$sede','$campus')";
 
 
 if ($conn->query($sql)) {
     $id = $conn->insert_id;
 
   
-    header('Location: ../sede.php?mensaje=insertado');
+    header('Location: ../facultad.php?mensaje=insertado');
 } else {
-    header('Location: ../sede.php?mensaje=error');
+    header('Location: ../facultad.php?mensaje=error');
 }
+
+
+}else{
+    header('Location: ../facultad.php?mensaje=campos');
+}
+
+
+
+

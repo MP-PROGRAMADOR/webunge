@@ -167,7 +167,6 @@ $campus = $conn->query($sqlCampus);
 
 
 <script>
-  
   let bsEditarModal = document.getElementById('bsEditarModal')
     // let eliminaModalPaciente = document.getElementById('eliminaModalPaciente')
     // let consultaModal = document.getElementById('consultaModal')
@@ -180,7 +179,6 @@ $campus = $conn->query($sqlCampus);
     let inputNombre = bsEditarModal.querySelector('.modal-body #nombre')
     let inputUbicacion = bsEditarModal.querySelector('.modal-body #ubicacion')
    
-
     let url = "getcampus.php"
     let formData = new FormData()
     formData.append('id', id)

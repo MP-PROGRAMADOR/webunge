@@ -38,6 +38,24 @@
     ?>
 
 
+<!-- alerta -->
+
+<?php
+    if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'campos') {
+    ?>
+
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Eroor!</strong>considere llenar todos los campos.
+        </div>
+
+    <?php
+
+    }
+
+    ?>
+
+
 
 
     <div class="x_panel">
@@ -85,6 +103,7 @@
                             <th class="column-title">ID </th>
                             <th class="column-title">NOMBRE DE LA SEDE</th>
                             <th class="column-title">CAMPUS</th>
+                            <th class="column-title">SEDE</th>
                             <th class="column-title no-link last"><span class="nobr">ACCIONES</span>
                             </th>
                             <th class="bulk-actions" colspan="7">

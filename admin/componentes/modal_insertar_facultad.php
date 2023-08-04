@@ -19,7 +19,7 @@
             <div class="modal-body">
 
                 <!-- aqui comienza mi formulario -->
-                <form action="./php/guardar_sede.php" method="POST">
+                <form action="./php/guardar_facultad.php" method="POST">
 
                     <!-- aqui empieza la fila del row -->
                     <div class="row">
@@ -27,12 +27,28 @@
 
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">NOMBRE</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre de la Sede" required>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre de la Facultad" required>
                             </div>
 
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">SEDE</label>
                                 <select class="form-control" aria-label=".form-select-lg example" id="sede" name="sede" required>
+                                    <option selected value="">seleccione.....</option>
+
+                                    <?php
+
+                                    while ($row_sede = $sede->fetch_assoc()) { ?>
+
+                                        <option value=" <?php echo  $row_sede['Id'];  ?>  "> <?php echo  $row_sede['Nombre']; ?> </option>
+
+                                    <?php }  ?>
+
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="campus" class="form-label">CAMPUS</label>
+                                <select class="form-control" aria-label=".form-select-lg example" id="campus" name="campus" required>
                                     <option selected value="">seleccione.....</option>
 
                                     <?php
