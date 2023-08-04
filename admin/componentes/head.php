@@ -31,7 +31,11 @@
 
     <!-- Custom Theme Style -->
     <link href="./build/css/custom.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./">
+    <link rel="stylesheet" href="./css/sweet-alert.css">
+
+    <!-- js -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/sweetalert.js"></script>
 
     
   <body class="nav-md">

@@ -10,19 +10,18 @@
 
         <div class="alert alert-info alert-dismissible" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <strong>Hola!</strong> su registro se ha insertado.
+            <strong>Carrera registrada exitosamente!</strong>
         </div>
 
-    <?php
+        <?php
 
-    }
-
+    } 
     ?>
 
 
-<!-- alerta -->
+    <!-- alerta -->
 
-<?php
+    <?php
     if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'error') {
     ?>
 
@@ -37,14 +36,15 @@
 
     ?>
 
-
+    
+   
 
 
     <div class="x_panel">
         <div class="x_title">
 
             <!-- <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-plus"></i> Nuevo Campus </a> -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-carrera-modal-lg"><i class="fa fa-plus"></i>  Nueva Carrera</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-carrera-modal-lg"><i class="fa fa-plus"></i> Nueva Carrera</button>
             <ul class="nav navbar-right panel_toolbox">
                 <!-- <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                 </li>
@@ -111,7 +111,7 @@
                                 <td>
                                     <a href="#" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-editar-modal-lg" data-bs-id_usuario="<?= $row_carrera['Id'];   ?>">EDITAR</a>
 
-                                    <a href="#" onclick="alertarEliminar();" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminaModalusuario" data-bs-id_usuario="<?= $row_carrera['Id'];   ?>">ELIMINAR</a>
+                                    <a href="#" onclick="alertarEliminar('<?php echo $row_carrera['Id']; ?>');" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminaModalusuario" data-bs-id_usuario="<?= $row_carrera['Id'];   ?>">ELIMINAR</a>
 
                                 </td>
                             </tr>
@@ -130,33 +130,57 @@
 </div>
 
 <script>
-                function alertarEliminar(){
-                    // e.preventDefault();
-                  // alert("Estas seguro que quieres eliminar");
-                   Swal.fire({
-                    title: '¿Estas seguro?',
-                    text: "¡No podrás recuperarlo más!",
-                    icon: 'warning',
-                    showCancelButton: true,
-                    confirmButtonColor: '#3085d6',
-                    cancelButtonColor: '#d33',
-                    confirmButtonText: 'sí, eliminarlo!'
-                    }).then((result) => {
-                    if (result.isConfirmed) {
-                      Swal.fire(
-                      '¡Eliminado!',
-                      'Su registro ha sido eliminado.',
-                      'success'
-                      )
-                    }
-                    })                 
-                }
-                $(document).ready(function(){
-                  $("#buscador").on("keyup", function() {
-                    var value = $(this).val().toLowerCase();
-                    $("#tablita tr").filter(function() {
-                      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                    });
-                  });
-                });
-              </script>
+    function EliminarSala(id) {
+        // alert("el id recibido es: "+id);  
+        parametro = {
+            "id": id
+        }
+        $.ajax({
+            data: parametro,
+            url: './php/eliminarCarrera.php',
+            type: 'POST',
+            beforeSend: function() {},
+            success: function() {               
+                Swal.fire(
+                    '¡Eliminado!',
+                    'La carrera ha sido eliminado exitosamente',
+                    'success'
+                    
+                )    
+                // location.reload();            
+            }
+           
+        })
+
+    }
+    // *********************
+    function alertarEliminar(id) {
+        // e.preventDefault();
+        // alert("Estas seguro que quieres eliminar");
+        var codigo = id;
+        Swal.fire({
+            title: '¿Realmente quieres eliminar esa carrera?',
+            text: "¡Esa carrera será eliminada permanentemente!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sí, Eliminar',
+            cancelButtonText: 'No'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                EliminarSala(id);
+            }
+        })
+    }
+    // *******************
+
+    $(document).ready(function() {
+        $("#buscador").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#tablita tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
