@@ -180,8 +180,8 @@
         // alert("Estas seguro que quieres eliminar");
         var codigo = id;
         Swal.fire({
-            title: '¿Realmente quieres eliminar esa carrera?',
-            text: "¡Esa carrera será eliminada permanentemente!",
+            title: '¿Realmente quieres eliminar esa Facultad?',
+            text: "¡Esa Facultad será eliminada permanentemente!",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',

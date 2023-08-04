@@ -44,7 +44,7 @@
         <div class="x_title">
 
             <!-- <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-plus"></i> Nuevo Campus </a> -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-plus"></i> Nuevo Campus</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-categoria-modal-lg"><i class="fa fa-plus"></i> Nueva Categoria</button>
             <ul class="nav navbar-right panel_toolbox">
                 <!-- <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                 </li>
@@ -83,9 +83,8 @@
                                 <input type="checkbox" id="check-all" class="flat">
                             </th>
                             <th class="column-title">ID </th>
-                            <th class="column-title">NOMBRE DEL CAMPUS</th>
-                            <th class="column-title">UBICACION </th>
-                            <th class="column-title no-link last"><span class="nobr">Action</span>
+                            <th class="column-title">NOMBRE DE LA CATEGORIA</th>
+                            <th class="column-title no-link last"><span class="nobr">ACCIONES</span>
                             </th>
                             <th class="bulk-actions" colspan="7">
                                 <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
@@ -93,10 +92,10 @@
                         </tr>
                     </thead>
 
-                    <tbody  id="tablita">
+                    <tbody id="tablita">
 
 
-                        <?php while ($row_campus = $campus->fetch_assoc()) {  ?>
+                        <?php while ($row_categoria = $categorias->fetch_assoc()) {  ?>
 
                             <tr class="even pointer">
 
@@ -104,14 +103,13 @@
                                     <input type="checkbox" class="flat" name="table_records">
                                 </td>
 
-                                <td> <?= $row_campus['Id']; ?></td>
-                                <td> <?= $row_campus['Nombre']; ?></td>
-                                <td> <?= $row_campus['Ubicacion']; ?></td>
+                                <td> <?= $row_categoria['Id']; ?></td>
+                                <td> <?= $row_categoria['Nombre']; ?></td>
 
                                 <td>
-                                    <a href="#" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-editar-modal-lg" data-id="<?= $row_campus['Id'];   ?>">EDITAR</a>
+                                    <a href="#" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-editar-modal-lg" data-id="<?= $row_categoria['Id'];   ?>">EDITAR</a>
 
-                                    <a href="#" onclick="alertarEliminar('<?php echo $row_campus['Id']; ?>');" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminaModalusuario" data-bs-id_usuario="<?= $row_campus['Id'];   ?>">ELIMINAR</a>
+                                    <a href="#" onclick="alertarEliminar('<?php echo $row_categoria['Id']; ?>');" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminaModalusuario" data-bs-id_usuario="<?= $row_categoria['Id'];   ?>">ELIMINAR</a>
 
                                 </td>
                             </tr>
@@ -129,6 +127,7 @@
     </div>
 </div>
 
+
 <script>
     function EliminarSala(id) {
         // alert("el id recibido es: "+id);  
@@ -137,7 +136,7 @@
         }
         $.ajax({
             data: parametro,
-            url: './php/eliminarCampus.php',
+            url: './php/eliminarCategoria.php',
             type: 'POST',
             beforeSend: function() {},
             success: function() {               
@@ -161,8 +160,8 @@
         //  alert("Estas seguro que quieres eliminar"+codigo);
         //  return false;
         Swal.fire({
-            title: '¿Realmente quieres eliminar este Campus?',
-            text: "¡Este Campu será eliminada permanentemente!",
+            title: '¿Realmente quieres eliminar esa facultad?',
+            text: "¡Esa facultad será eliminada permanentemente!",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
