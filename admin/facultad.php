@@ -1,3 +1,21 @@
+<?php
+
+require './php/conexion.php';
+
+$sqlfacultad = "SELECT * FROM facultad";
+
+$facultad = $conn->query($sqlfacultad);
+
+$sqlcampus = "SELECT * FROM campus";
+
+$campus = $conn->query($sqlcampus);
+
+$sqlsede = "SELECT * FROM sede";
+
+$sede = $conn->query($sqlsede);
+
+?>
+
 <?php require_once "./componentes/head.php"; ?>
 
 <div class="container body">
@@ -142,8 +160,8 @@
 
     <!-- inicio del contenido de la pagina -->
     <div class="right_col" role="main">    
-    <?php include "./componentes/modal.php"; ?>
-     <?php require_once "./componentes/tablas.php"; ?>     
+    <?php include "./componentes/modal_insertar_facultad.php"; ?>
+     <?php require_once "./componentes/tablas_facultad.php"; ?>     
     </div>
     <!-- /fin del contenido de la pagina -->
 
