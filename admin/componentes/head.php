@@ -32,10 +32,12 @@
     <!-- Custom Theme Style -->
     <link href="./build/css/custom.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/sweet-alert.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 
     <!-- js -->
     <script src="./js/jquery.js"></script>
     <script src="./js/sweetalert.js"></script>
+    <script src="./ckeditor/ckeditor.js"></script>
 
     
-  <body class="nav-md">
+  <body class="nav-md"> 

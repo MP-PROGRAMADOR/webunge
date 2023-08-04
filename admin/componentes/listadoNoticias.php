@@ -18,13 +18,13 @@
              </div>
          </div>
 
-         <div class="clearfix"></div>
+         <div class="clearfix"></div> 
 
          <div class="row">
              <div class="col-md-12">
                  <div class="x_panel">
                      <div class="x_title">
-                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-plus"></i> Nuevo Campus</button>
+                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-noticia-modal-lg"><i class="fa fa-plus"></i> Nueva Noticia</button>
                          <ul class="nav navbar-right panel_toolbox">
                              <!-- <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                              </li>

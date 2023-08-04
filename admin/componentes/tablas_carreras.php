@@ -173,7 +173,7 @@
             }
         })
     }
-    // *******************
+    // ******************* BUSCADOR
 
     $(document).ready(function() {
         $("#buscador").on("keyup", function() {
