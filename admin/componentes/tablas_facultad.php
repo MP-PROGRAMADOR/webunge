@@ -85,7 +85,7 @@
                         </div>
                     </div>
                 </div> -->
-                <input type="text" class="form-control" placeholder="Buscar...">
+                <input type="text" id="buscador" class="form-control" placeholder="Buscar...">
             </ul>
             <div class="clearfix"></div>
         </div>
@@ -112,7 +112,7 @@
                         </tr>
                     </thead>
 
-                    <tbody>
+                    <tbody id="tablita">
 
 
                         <?php while ($row_facultad = $facultad->fetch_assoc()) {  ?>
@@ -131,7 +131,7 @@
                                 <td>
                                     <a href="#" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-editar-modal-lg" data-id="<?= $row_campus['Id'];   ?>">EDITAR</a>
 
-                                    <a href="#" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminaModalusuario" data-bs-id_usuario="<?= $row_campus['Id'];   ?>">ELIMINAR</a>
+                                    <a href="#" onclick="alertarEliminar('<?php echo $row_facultad['Id']; ?>');" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminaModalusuario" data-bs-id_usuario="<?= $row_facultad['Id'];   ?>">ELIMINAR</a>
 
                                 </td>
                             </tr>
@@ -148,3 +148,60 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    function EliminarSala(id) {
+        // alert("el id recibido es: "+id);  
+        parametro = {
+            "id": id
+        }
+        $.ajax({
+            data: parametro,
+            url: './php/eliminarFacultad.php',
+            type: 'POST',
+            beforeSend: function() {},
+            success: function() {               
+                Swal.fire(
+                    '¡Eliminado!',
+                    'La carrera ha sido eliminado exitosamente',
+                    'success'
+                    
+                )    
+                // location.reload();            
+            }
+           
+        })
+
+    }
+    // *********************
+    function alertarEliminar(id) {
+        // e.preventDefault();
+        // alert("Estas seguro que quieres eliminar");
+        var codigo = id;
+        Swal.fire({
+            title: '¿Realmente quieres eliminar esa carrera?',
+            text: "¡Esa carrera será eliminada permanentemente!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sí, Eliminar',
+            cancelButtonText: 'No'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                EliminarSala(id);
+            }
+        })
+    }
+    // *******************
+
+    $(document).ready(function() {
+        $("#buscador").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#tablita tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
