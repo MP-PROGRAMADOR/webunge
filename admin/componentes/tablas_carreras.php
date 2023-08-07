@@ -83,7 +83,7 @@
                                 <input type="checkbox" id="check-all" class="flat">
                             </th>
                             <th class="column-title">ID </th>
-                            <th class="column-title">NOMBRE DEL CAMPUS</th>
+                            <th class="column-title">NOMBRE DE LA CARRERA</th>
                             <th class="column-title">FACULTAD </th>
                             <th class="column-title no-link last"><span class="nobr">Action</span>
                             </th>
@@ -104,8 +104,8 @@
                                     <input type="checkbox" class="flat" name="table_records">
                                 </td>
 
-                                <td> <?= $row_carrera['Id']; ?></td>
-                                <td> <?= $row_carrera['Nombre']; ?></td>
+                                <td> <?= $row_carrera["'carreras'.'Id'"]; ?></td>
+                                <td> <?= $row_carrera['carreras.Nombre']; ?></td>
                                 <td> <?= $row_carrera['Facultad']; ?></td>
 
                                 <td>
