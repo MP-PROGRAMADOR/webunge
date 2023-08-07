@@ -156,6 +156,7 @@ $categorias = $conn->query($sqlCategorias);
         <!-- inicio del contenido de la pagina -->
         <div class="right_col" role="main">
         <?php include "./componentes/modal_insertar_categoria.php"; ?>
+        <?php include "./componentes/modal_editar_categoria.php"; ?>
             <?php require_once "./componentes/tablas_categorias.php"; ?>
         </div>
         <!-- /fin del contenido de la pagina -->

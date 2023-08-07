@@ -156,6 +156,7 @@
     <div class="right_col" role="main">
       <?php include "./componentes/modal_insertar_carreras.php"; ?>
       <?php require_once "./componentes/tablas_carreras.php"; ?>
+      <?php include "./componentes/modal_editar_carreras.php"; ?>
     </div>
     <!-- /fin del contenido de la pagina -->
 
@@ -164,3 +165,9 @@
 </div>
 
 <?php require_once "./componentes/footer.php"; ?>
+
+<script>
+  $("#btnActualizarCarreras").click(function(){
+    actualizarCarrera();
+  })
+</script>

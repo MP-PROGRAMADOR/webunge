@@ -96,7 +96,11 @@
                     <tbody id="tablita">
 
 
-                        <?php while ($row_carrera = $carrera->fetch_assoc()) {  ?>
+                        <?php while ($row_carrera = $carrera->fetch_assoc()) { 
+                            
+                            $datos = $row_carrera['Id'] . "||" . $row_carrera['Nombre'] . "||" . $row_carrera['Facultad'];
+                            
+                            ?>
 
                             <tr class="even pointer">
 
@@ -104,12 +108,12 @@
                                     <input type="checkbox" class="flat" name="table_records">
                                 </td>
 
-                                <td> <?= $row_carrera["'carreras'.'Id'"]; ?></td>
-                                <td> <?= $row_carrera['carreras.Nombre']; ?></td>
+                                <td> <?= $row_carrera["Id"]; ?></td>
+                                <td> <?= $row_carrera['Nombre']; ?></td>
                                 <td> <?= $row_carrera['Facultad']; ?></td>
 
                                 <td>
-                                    <a href="#" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-editar-modal-lg" data-bs-id_usuario="<?= $row_carrera['Id'];   ?>">EDITAR</a>
+                                <a href="#" onclick="agregarForm('<?php echo $datos; ?>');" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-carrera2-modal-lg">EDITAR</a>
 
                                     <a href="#" onclick="alertarEliminar('<?php echo $row_carrera['Id']; ?>');" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminaModalusuario" data-bs-id_usuario="<?= $row_carrera['Id'];   ?>">ELIMINAR</a>
 
@@ -171,8 +175,61 @@
             if (result.isConfirmed) {
                 EliminarSala(id);
             }
+
         })
     }
+
+
+
+     // agregar datos al formulario
+     function agregarForm(datos) {
+        var d = datos.split('||');
+        // alert("los datos son: "+d);
+        // return false;
+        $('#idCarrera').val(d[0]);
+        $('#nombreCarrera').val(d[1]);
+        $('#facultadCarrera').val(d[2]);
+    }
+
+    // esta funcion actualiza los datos
+    function actualizarCarrera() {
+        var idCarrera = $('#idCarrera').val();
+        var nombreCarrera = $('#nombreCarrera').val();
+        var facultadCarrera = $('#facultadCarrera').val();
+
+        var cadena = "idCarrera=" + idCarrera +
+            "&nombreCarrera=" + nombreCarrera +
+            "&facultadCarrera=" + facultadCarrera;
+
+        $.ajax({
+            type: "POST",
+            url: "./php/actualizarCarreras.php",
+            data: cadena,
+            success: function(r) {
+                if (r==1) {
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Carrara actualizado exitosamente',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Algo salio mal!',
+                        footer: '<a href="">¿Por qué tengo este problema?</a>'
+                    })
+                }
+            }
+        })
+
+
+    }
+
+
+
     // ******************* BUSCADOR
 
     $(document).ready(function() {
