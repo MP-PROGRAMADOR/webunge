@@ -195,16 +195,16 @@
         var nomCampus = $('#nombreCamp').val();
         var ubicacionCamp = $('#ubicacionCamp').val();
 
-        var cadena = "idCam" + idCam +
-            "&nomCampus" + nomCampus +
-            "&ubicacionCamp" + ubicacionCamp;
+        var cadena = "idCam=" + idCam +
+            "&nomCampus=" + nomCampus +
+            "&ubicacionCamp=" + ubicacionCamp;
 
         $.ajax({
             type: "POST",
             url: "./php/actualizarCampus.php",
             data: cadena,
             success: function(r) {
-                if (r == 1) {
+                if (r==1) {
                     Swal.fire({
                         position: 'center',
                         icon: 'success',
@@ -217,7 +217,7 @@
                         icon: 'error',
                         title: 'Oops...',
                         text: 'Algo salio mal!',
-                        footer: '<a href="">Why do I have this issue?</a>'
+                        footer: '<a href="">¿Por qué tengo este problema?</a>'
                     })
                 }
             }

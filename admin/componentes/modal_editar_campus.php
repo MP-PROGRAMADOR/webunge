@@ -39,7 +39,7 @@
 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                                <button type="submit" class="btn btn-primary">GUARDAR</button>
+                                <button type="submit" class="btn btn-primary" id="btnActualizarCampus">GUARDAR</button>
                             </div>
 
                         </div>

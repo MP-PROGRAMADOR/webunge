@@ -166,7 +166,11 @@ $campus = $conn->query($sqlCampus);
 </div> 
 
 
-
+<script>
+  $("#btnActualizarCampus").click(function(){
+    actualizarCampus();
+  })
+</script>
 
 
 <?php require_once "./componentes/footer.php"; ?>
