@@ -20,9 +20,9 @@
     ?>
 
 
-<!-- alerta -->
+    <!-- alerta -->
 
-<?php
+    <?php
     if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'error') {
     ?>
 
@@ -93,10 +93,14 @@
                         </tr>
                     </thead>
 
-                    <tbody  id="tablita">
+                    <tbody id="tablita">
 
 
-                        <?php while ($row_campus = $campus->fetch_assoc()) {  ?>
+                        <?php
+                        while ($row_campus = $campus->fetch_assoc()) {
+
+                            $datos = $row_campus['Id'] . "||" . $row_campus['Nombre'] . "||" . $row_campus['Ubicacion'];
+                        ?>
 
                             <tr class="even pointer">
 
@@ -109,7 +113,7 @@
                                 <td> <?= $row_campus['Ubicacion']; ?></td>
 
                                 <td>
-                                    <a href="#" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-editar-modal-lg" data-id="<?= $row_campus['Id'];   ?>">EDITAR</a>
+                                    <a href="#" onclick="agregarForm('<?php echo $datos; ?>');" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-editar-modal-lg">EDITAR</a>
 
                                     <a href="#" onclick="alertarEliminar('<?php echo $row_campus['Id']; ?>');" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminaModalusuario" data-bs-id_usuario="<?= $row_campus['Id'];   ?>">ELIMINAR</a>
 
@@ -140,16 +144,16 @@
             url: './php/eliminarCampus.php',
             type: 'POST',
             beforeSend: function() {},
-            success: function() {               
+            success: function() {                
                 Swal.fire(
                     '¡Eliminado!',
                     'La carrera ha sido eliminado exitosamente',
                     'success'
-                    
-                )    
-                // location.reload();            
+                )
+                setInterval('location.reload()', 3000);  
+                          
             }
-           
+
         })
 
     }
@@ -176,7 +180,54 @@
         })
     }
     // *******************
+    // agregar datos al formulario
+    function agregarForm(datos) {
+        var d = datos.split('||');
+        // alert("los datos son: "+d);
+        // return false;
+        $('#idCamp').val(d[0]);
+        $('#nombreCamp').val(d[1]);
+    }
 
+    // esta funcion actualiza los datos
+    function actualizarCampus() {
+        var idCam = $('#idCamp').val();
+        var nomCampus = $('#nombreCamp').val();
+        var ubicacionCamp = $('#ubicacionCamp').val();
+
+        var cadena = "idCam" + idCam +
+            "&nomCampus" + nomCampus +
+            "&ubicacionCamp" + ubicacionCamp;
+
+        $.ajax({
+            type: "POST",
+            url: "./php/actualizarCampus.php",
+            data: cadena,
+            success: function(r) {
+                if (r == 1) {
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Campus actualizado exitosamente',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Algo salio mal!',
+                        footer: '<a href="">Why do I have this issue?</a>'
+                    })
+                }
+            }
+        })
+
+
+    }
+
+
+    // buscador
     $(document).ready(function() {
         $("#buscador").on("keyup", function() {
             var value = $(this).val().toLowerCase();

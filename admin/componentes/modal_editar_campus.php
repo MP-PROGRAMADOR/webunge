@@ -12,23 +12,23 @@
             <div class="modal-body">
 
                 <!-- aqui comienza mi formulario -->
-                <form action="./php/guardar_campus.php"  method="POST">
+                <form>
 
                     <!-- aqui empieza la fila del row -->
                     <div class="row">
                         <div class="col-md-12">
 
-                        <input type="hidden" class="form-control" id="id" name="id" required>
+                        <input type="hidden" class="form-control" id="idCamp" name="id" required>
 
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">NOMBRE</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre del Campus" required>
+                                <input type="text" class="form-control" id="nombreCamp" name="nombre"  required>
                             </div>
 
                             <div class="mb-3">
                                 
                                 <label for="departamento" class="form-label">DEPARTAMENTO</label>
-                                <select class="form-control" aria-label=".form-select-lg example" id="ubicacion" name="ubicacion" required>
+                                <select class="form-control" aria-label=".form-select-lg example" id="ubicacionCamp" name="ubicacion" required>
                                     <option selected value="">seleccione.....</option>
                                     <option value="CAMPUS I DE MALABO">CAMPUS I DE MALABO</option>
                                     <option value="CAMPUS II DE MALABO">CAMPUS II DE MALABO</option>
@@ -38,7 +38,7 @@
                             </div>
 
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
                                 <button type="submit" class="btn btn-primary">GUARDAR</button>
                             </div>
 
