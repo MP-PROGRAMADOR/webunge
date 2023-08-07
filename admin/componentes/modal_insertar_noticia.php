@@ -12,7 +12,7 @@
             <div class="modal-body">
 
                 <!-- aqui comienza mi formulario -->
-                <form action="./php/guardar_carrera.php" method="POST">
+                <form action="./php/guardar_noticia.php" method="POST">
 
                     <!-- aqui empieza la fila del row -->
                     <div class="row">
@@ -24,7 +24,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">Descripción</label>
-                                <textarea id="ckeditor" class="ckeditor"> </textarea>
+                                <textarea name="descripcion" id="ckeditor" class="ckeditor" required> </textarea>
                                 <!-- <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Títulos de la noticia" required> -->
                             </div>
                             <div class="mb-3 fechaNoticia">
@@ -37,14 +37,14 @@
                                 </div>
                                 <div class="mes">
                                     <label for="dia">Mes</label>
-                                    <select class="form-control" name="dia" id="dia" class="form-label">
+                                    <select class="form-control" name="mes" id="dia" class="form-label">
                                         <option value="">Seleccione un mes.....</option>
                                         <option value="Ene">Enero</option>
                                     </select>
                                 </div>
                                 <div class="agno">
                                     <label for="dia">Año</label>
-                                    <select class="form-control" name="dia" id="dia" class="form-label">
+                                    <select class="form-control" name="agno" id="dia" class="form-label">
                                         <option value="">Seleccione un año.....</option>
                                         <option value="2020">2020</option>
                                     </select>
@@ -71,15 +71,15 @@
 
                             <?php
 
-                                $sqlCategoria = "SELECT * FROM categoria";
-                                $resulCateg = mysqli_query($conn, $sqlCategoria);
+                            $sqlCategoria = "SELECT * FROM categoria";
+                            $resulCateg = mysqli_query($conn, $sqlCategoria);
 
                             ?>
 
                             <div class="mb-3">
 
                                 <label for="categoria" class="form-label">CATEGORIA</label>
-                                <select class="form-control" aria-label=".form-select-lg example" id="categoria" name="facultad" required>
+                                <select class="form-control" aria-label=".form-select-lg example" id="categoria" name="categoria" required>
                                     <option selected value="">seleccione una categoria.....</option>
                                     <?php while ($grupos = mysqli_fetch_array($resulCateg)) { ?>
                                         <option value="<?php echo $grupos['Id']; ?>"><?php echo $grupos['Nombre']; ?></option>
@@ -87,7 +87,7 @@
                                 </select>
                             </div>
                             <div class="imgnoti">
-                                <input type="file">
+                                <input type="file" name="imgnoti">
                             </div>
 
 
