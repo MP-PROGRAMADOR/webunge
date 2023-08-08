@@ -7,7 +7,7 @@ $directorio = "../images/noticias/";
 $archivo = $directorio . basename($_FILES["imgnoti"]["name"]);
 $tipoArchivo = strtolower(pathinfo($archivo, PATHINFO_EXTENSION));
 //Validar que es imagen
-$checarSiImagen = getimagesize($_FILES["imgnoti"]["tmp_name"]);
+$checarSiImagen = getimagesize($_FILES["imgnoti"]["tmp_name"]); 
 if ($checarSiImagen != false) {
     //validar tamaño imagen
     $size = $_FILES["fileAlumn"]["size"];
