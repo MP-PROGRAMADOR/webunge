@@ -1,4 +1,4 @@
-<h2>Campus</h2>
+<h2>Sede</h2>
 <div class="col-md-12 col-sm-12  ">
 
 
@@ -20,9 +20,9 @@
     ?>
 
 
-<!-- alerta -->
+    <!-- alerta -->
 
-<?php
+    <?php
     if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'error') {
     ?>
 
@@ -96,7 +96,10 @@
                     <tbody id="tablita">
 
 
-                        <?php while ($row_campus = $campus->fetch_assoc()) {  ?>
+                        <?php
+                        while ($row_sede = $sede->fetch_assoc()) {
+                            $datos = $row_sede['Id'] . "||" . $row_sede['Nombre'] . "||" . $row_sede['Direccion'];
+                        ?>
 
                             <tr class="even pointer">
 
@@ -104,14 +107,14 @@
                                     <input type="checkbox" class="flat" name="table_records">
                                 </td>
 
-                                <td> <?= $row_campus['Id']; ?></td>
-                                <td> <?= $row_campus['Nombre']; ?></td>
-                                <td> <?= $row_campus['Direccion']; ?></td>
+                                <td> <?= $row_sede['Id']; ?></td>
+                                <td> <?= $row_sede['Nombre']; ?></td>
+                                <td> <?= $row_sede['Direccion']; ?></td>
 
                                 <td>
-                                    <a href="#" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-editar-modal-lg" data-id="<?= $row_campus['Id'];   ?>">EDITAR</a>
+                                    <a href="#" onclick="agregarForm('<?php echo $datos; ?>');" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-editarSede-modal-lg">EDITAR</a>
 
-                                    <a href="#" onclick="alertarEliminar('<?php echo $row_campus['Id']; ?>');" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminaModalusuario" data-bs-id_usuario="<?= $row_campus['Id'];   ?>">ELIMINAR</a>
+                                    <a href="#" onclick="alertarEliminar('<?php echo $row_sede['Id']; ?>');" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminaModalusuario" data-bs-id_usuario="<?= $row_sede['Id'];   ?>">ELIMINAR</a>
 
                                 </td>
                             </tr>
@@ -141,16 +144,15 @@
             url: './php/eliminarSede.php',
             type: 'POST',
             beforeSend: function() {},
-            success: function() {               
+            success: function() {
                 Swal.fire(
                     '¡Eliminado!',
                     'La carrera ha sido eliminado exitosamente',
                     'success'
-                    
-                )    
-                // location.reload();            
+                )
+                setInterval('location.reload()', 3000);
             }
-           
+
         })
 
     }
@@ -177,6 +179,51 @@
         })
     }
     // *******************
+    // agregar datos al formulario
+    function agregarForm(datos) {
+        var d = datos.split('||');
+        // alert("los datos son: "+d);
+        // return false;
+        $('#idSede').val(d[0]);
+        $('#nombreSede').val(d[1]);
+        $('#direccionSede').val(d[2]);
+    }
+
+    // esta funcion actualiza los datos
+    function actualizarSede() {
+        var idSede = $('#idSede').val();
+        var nomSede = $('#nombreSede').val();
+        var direccionSede = $('#direccionSede').val();
+
+        var cadena = "idSede=" + idSede +
+            "&nomSede=" + nomSede +
+            "&direccionSede=" + direccionSede;
+
+        $.ajax({
+            type: "POST",
+            url: "./php/actualizarSede.php",
+            data: cadena,
+            success: function(r) {
+                if (r == 1) {
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Sede actualizado exitosamente',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Algo salio mal!',
+                        footer: '<a href="">¿Por qué tengo este problema?</a>'
+                    })
+                }
+            }
+        })
+    }
+
 
     $(document).ready(function() {
         $("#buscador").on("keyup", function() {

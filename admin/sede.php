@@ -4,9 +4,9 @@
 
 require './php/conexion.php';
 
-$sqlCampus = "SELECT * FROM sede";
+$sqlSede = "SELECT * FROM sede";
 
-$campus = $conn->query($sqlCampus);
+$sede = $conn->query($sqlSede);
 
 
 ?>
@@ -153,14 +153,20 @@ $campus = $conn->query($sqlCampus);
     <!-- /top navigation -->
 
     <!-- inicio del contenido de la pagina -->
-    <div class="right_col" role="main">    
-    <?php include "./componentes/modal_insertar_sede.php"; ?>
-     <?php require_once "./componentes/tablas_sede.php"; ?>     
+    <div class="right_col" role="main">
+      <?php include "./componentes/modal_insertar_sede.php"; ?>
+      <?php include "./componentes/modal_editar_sede.php"; ?>
+      <?php require_once "./componentes/tablas_sede.php"; ?>
     </div>
     <!-- /fin del contenido de la pagina -->
 
-   
+
   </div>
 </div>
 
 <?php require_once "./componentes/footer.php"; ?>
+<script>
+  $("#btnActualizarSede").click(function(){
+    actualizarSede();
+  })
+</script>
