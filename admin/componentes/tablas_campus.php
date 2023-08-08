@@ -212,6 +212,7 @@
                         showConfirmButton: false,
                         timer: 1500
                     })
+                    setInterval('location.reload()', 3000);  
                 } else {
                     Swal.fire({
                         icon: 'error',
@@ -219,11 +220,10 @@
                         text: 'Algo salio mal!',
                         footer: '<a href="">¿Por qué tengo este problema?</a>'
                     })
+                    setInterval('location.reload()', 3000);  
                 }
             }
         })
-
-
     }
 
 
