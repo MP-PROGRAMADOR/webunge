@@ -128,7 +128,20 @@
 
                                 <td> <?= $row_carrera["Id"]; ?></td>
                                 <td> <?= $row_carrera['Nombre']; ?></td>
-                                <td> <?= $row_carrera['Facultad']; ?></td>
+
+                                <?php 
+                                // estamos obtenienbdo el nombre de la tabla facultad
+                                $codfacultad = $row_carrera['Facultad'];
+
+                                $sqlfacultad = "SELECT * FROM facultad where Id='$codfacultad'";
+                                $facultad1 = $conn->query($sqlfacultad);
+                                $fila3 = mysqli_fetch_assoc($facultad1);
+                                $facultad = $fila3['Nombre'];
+                                
+                                
+                                ?>
+
+                                <td> <?= $facultad; ?></td>
 
                                 <td>
                                 <a href="#" onclick="agregarForm('<?php echo $datos; ?>');" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-carrera2-modal-lg">EDITAR</a>

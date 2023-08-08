@@ -20,6 +20,28 @@
     ?>
 
 
+
+
+
+    <!-- alerta -->
+
+    <?php
+    if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'actualizado') {
+    ?>
+
+        <div class="alert alert-info alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Hola!</strong> su registro se ha Actualizado.
+        </div>
+
+    <?php
+
+    }
+
+    ?>
+
+
+
 <!-- alerta -->
 
 <?php
@@ -95,7 +117,11 @@
                     <tbody id="tablita">
 
 
-                        <?php while ($row_categoria = $categorias->fetch_assoc()) {  ?>
+                        <?php while ($row_categoria = $categorias->fetch_assoc()) { 
+                            
+                            $datos = $row_categoria['Id'] . "||" . $row_categoria['Nombre'];
+                            
+                            ?>
 
                             <tr class="even pointer">
 
@@ -107,7 +133,7 @@
                                 <td> <?= $row_categoria['Nombre']; ?></td>
 
                                 <td>
-                                    <a href="#" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-editar-modal-lg" data-id="<?= $row_categoria['Id'];   ?>">EDITAR</a>
+                                    <a href="#" onclick="agregarForm('<?php echo $datos; ?>');" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-categoria2-modal-lg" data-id="<?= $row_categoria['Id'];   ?>">EDITAR</a>
 
                                     <a href="#" onclick="alertarEliminar('<?php echo $row_categoria['Id']; ?>');" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminaModalusuario" data-bs-id_usuario="<?= $row_categoria['Id'];   ?>">ELIMINAR</a>
 
@@ -174,6 +200,25 @@
             }
         })
     }
+
+
+
+     // agregar datos al formulario
+     function agregarForm(datos) {
+        var d = datos.split('||');
+        // alert("los datos son: "+d);
+        // return false;
+        $('#idCategoria').val(d[0]);
+        $('#nombreCategoria').val(d[1]);
+       
+    }
+
+
+
+
+
+
+
     // *******************
 
     $(document).ready(function() {

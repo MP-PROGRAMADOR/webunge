@@ -19,9 +19,9 @@
 
     ?>
 
-     <!-- alerta -->
+    <!-- alerta -->
 
-     <?php
+    <?php
     if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'actaulizado') {
     ?>
 
@@ -37,9 +37,9 @@
     ?>
 
 
-<!-- alerta -->
+    <!-- alerta -->
 
-<?php
+    <?php
     if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'error') {
     ?>
 
@@ -55,9 +55,9 @@
     ?>
 
 
-<!-- alerta -->
+    <!-- alerta -->
 
-<?php
+    <?php
     if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'campos') {
     ?>
 
@@ -132,13 +132,17 @@
                     <tbody id="tablita">
 
 
-                        <?php while ($row_facultad = $facultad->fetch_assoc()) { 
-                            
+                        <?php while ($row_facultad = $facultad->fetch_assoc()) {
+
                             $datos = $row_facultad['Id'] . "||" . $row_facultad['Nombre'] . "||" . $row_facultad['Sede'] . "||" . $row_facultad['Campus'];
 
-                           
-                            
-                            ?>
+
+
+
+                        ?>
+
+
+
 
                             <tr class="even pointer">
 
@@ -147,12 +151,33 @@
                                 </td>
 
                                 <td> <?= $row_facultad['Id']; ?></td>
+
                                 <td> <?= $row_facultad['Nombre']; ?></td>
-                                <td> <?= $row_facultad['Sede']; ?></td>
-                                <td> <?= $row_facultad['Campus']; ?></td>
+
+                                <?php
+                                $codSede = $row_facultad['Sede'];
+
+                                $sqlsede1 = "SELECT * FROM sede where Id='$codSede'";
+                                $sede1 = $conn->query($sqlsede1);
+                                $fila1 = mysqli_fetch_assoc($sede1);
+                                $sede = $fila1['Nombre'];
+                                ?>
+
+                                <td> <?= $sede; ?></td>
+
+                                <?php
+                                $codcampus = $row_facultad['Campus'];
+
+                                $sqlcampus = "SELECT * FROM campus where Id='$codcampus'";
+                                $campus1 = $conn->query($sqlcampus);
+                                $fila2 = mysqli_fetch_assoc($campus1);
+                                $campus = $fila2['Nombre'];
+                                ?>
+
+                                <td> <?= $campus; ?></td>
 
                                 <td>
-                                    <a href="#" onclick="agregarForm('<?php echo $datos; ?>');"  class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-facultad2-modal-lg">EDITAR</a>
+                                    <a href="#" onclick="agregarForm('<?php echo $datos; ?>');" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-facultad2-modal-lg">EDITAR</a>
 
                                     <a href="#" onclick="alertarEliminar('<?php echo $row_facultad['Id']; ?>');" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminaModalusuario" data-bs-id_usuario="<?= $row_facultad['Id'];   ?>">ELIMINAR</a>
 
@@ -184,16 +209,16 @@
             url: './php/eliminarFacultad.php',
             type: 'POST',
             beforeSend: function() {},
-            success: function() {               
+            success: function() {
                 Swal.fire(
                     '¡Eliminado!',
                     'La carrera ha sido eliminado exitosamente',
                     'success'
-                    
-                )    
+
+                )
                 // location.reload();            
             }
-           
+
         })
 
     }
@@ -220,8 +245,8 @@
 
 
 
-     // agregar datos al formulario
-     function agregarForm(datos) {
+    // agregar datos al formulario
+    function agregarForm(datos) {
         var d = datos.split('||');
         // alert("los datos son: "+d);
         // return false;
