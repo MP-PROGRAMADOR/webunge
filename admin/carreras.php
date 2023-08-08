@@ -2,9 +2,7 @@
 
   require './php/conexion.php';
 
-  $sqlCarreras = "SELECT `carreras`.*, `facultad`.*
-  FROM `carreras` 
-    LEFT JOIN `facultad` ON `carreras`.`Facultad` = `facultad`.`Id`";
+  $sqlCarreras = "SELECT * FROM carreras";
 
   $carrera = $conn->query($sqlCarreras);
 

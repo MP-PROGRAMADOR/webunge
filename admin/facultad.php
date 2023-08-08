@@ -161,7 +161,9 @@ $sede = $conn->query($sqlsede);
     <!-- inicio del contenido de la pagina -->
     <div class="right_col" role="main">    
     <?php include "./componentes/modal_insertar_facultad.php"; ?>
-     <?php require_once "./componentes/tablas_facultad.php"; ?>     
+    <?php require_once "./componentes/tablas_facultad.php"; ?> 
+    <?php include "./componentes/modal_editar_facultad.php"; ?>
+        
     </div>
     <!-- /fin del contenido de la pagina -->
 

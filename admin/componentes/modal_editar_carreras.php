@@ -12,7 +12,7 @@
             <div class="modal-body">
 
                 <!-- aqui comienza mi formulario -->
-                <form >
+                <form method="POST" action="./php/actualizarCarreras.php">
 
                     <!-- aqui empieza la fila del row -->
                     <div class="row">

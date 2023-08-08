@@ -2,9 +2,18 @@
 
 require_once './conexion.php';
 
-$id = $_POST['idCarrera'];
-$nombre = $_POST['nombreCarrera'];
-$facultad = $_POST['facultadCarrera'];
+$id= $conn->real_escape_string($_POST['idCarrera']);
+$nombre = $conn-> real_escape_string( $_POST['nombreCarrera']);
+$facultad = $conn-> real_escape_string($_POST['facultadCarrera']) ;
 
-$queryUpdate = "UPDATE carreras SET Nombre = '$nombre', Facultad = '$facultad' WHERE Id = '$id'";
-echo $resul = mysqli_query($conn, $queryUpdate);
+$sql= "UPDATE  carreras SET Nombre='$nombre', Facultad='$facultad' WHERE Id=$id";
+
+
+if($conn->query($sql)){
+    $id=$conn->insert_id;
+
+    header('Location: ../carreras.php?mensaje=actaulizado');
+}else{
+    header('Location: ../carreras.php?mensaje=error');
+}
+

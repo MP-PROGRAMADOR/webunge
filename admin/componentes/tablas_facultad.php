@@ -115,7 +115,13 @@
                     <tbody id="tablita">
 
 
-                        <?php while ($row_facultad = $facultad->fetch_assoc()) {  ?>
+                        <?php while ($row_facultad = $facultad->fetch_assoc()) { 
+                            
+                            $datos = $row_facultad['Id'] . "||" . $row_facultad['Nombre'] . "||" . $row_facultad['Sede'] . "||" . $row_facultad['Campus'];
+
+                           
+                            
+                            ?>
 
                             <tr class="even pointer">
 
@@ -129,7 +135,7 @@
                                 <td> <?= $row_facultad['Campus']; ?></td>
 
                                 <td>
-                                    <a href="#" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-editar-modal-lg" data-id="<?= $row_campus['Id'];   ?>">EDITAR</a>
+                                    <a href="#" onclick="agregarForm('<?php echo $datos; ?>');"  class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-facultad2-modal-lg">EDITAR</a>
 
                                     <a href="#" onclick="alertarEliminar('<?php echo $row_facultad['Id']; ?>');" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminaModalusuario" data-bs-id_usuario="<?= $row_facultad['Id'];   ?>">ELIMINAR</a>
 
@@ -194,6 +200,24 @@
             }
         })
     }
+
+
+
+     // agregar datos al formulario
+     function agregarForm(datos) {
+        var d = datos.split('||');
+        // alert("los datos son: "+d);
+        // return false;
+        $('#idFacultad').val(d[0]);
+        $('#nombreFacultad').val(d[1]);
+        $('#sedeFacultad').val(d[2]);
+        $('#campusFacultad').val(d[3]);
+    }
+
+
+
+
+
     // *******************
 
     $(document).ready(function() {

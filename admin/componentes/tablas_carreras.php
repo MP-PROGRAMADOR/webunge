@@ -19,6 +19,24 @@
     ?>
 
 
+
+ <!-- alerta -->
+
+ <?php
+    if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'actaulizado') {
+    ?>
+
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Carrera actualizada exitosamente!</strong>
+        </div>
+
+        <?php
+
+    } 
+    ?>
+
+
     <!-- alerta -->
 
     <?php
@@ -189,44 +207,45 @@
         $('#idCarrera').val(d[0]);
         $('#nombreCarrera').val(d[1]);
         $('#facultadCarrera').val(d[2]);
+       
     }
 
     // esta funcion actualiza los datos
-    function actualizarCarrera() {
-        var idCarrera = $('#idCarrera').val();
-        var nombreCarrera = $('#nombreCarrera').val();
-        var facultadCarrera = $('#facultadCarrera').val();
+    // function actualizarCarrera() {
+    //     var idCarrera = $('#idCarrera').val();
+    //     var nombreCarrera = $('#nombreCarrera').val();
+    //     var facultadCarrera = $('#facultadCarrera').val();
 
-        var cadena = "idCarrera=" + idCarrera +
-            "&nombreCarrera=" + nombreCarrera +
-            "&facultadCarrera=" + facultadCarrera;
+    //     var cadena = "idCarrera=" + idCarrera +
+    //         "&nombreCarrera=" + nombreCarrera +
+    //         "&facultadCarrera=" + facultadCarrera;
 
-        $.ajax({
-            type: "POST",
-            url: "./php/actualizarCarreras.php",
-            data: cadena,
-            success: function(r) {
-                if (r==1) {
-                    Swal.fire({
-                        position: 'center',
-                        icon: 'success',
-                        title: 'Carrara actualizado exitosamente',
-                        showConfirmButton: false,
-                        timer: 1500
-                    })
-                } else {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: 'Algo salio mal!',
-                        footer: '<a href="">¿Por qué tengo este problema?</a>'
-                    })
-                }
-            }
-        })
+    //     $.ajax({
+    //         type: "POST",
+    //         url: "./php/actualizarCarreras.php",
+    //         data: cadena,
+    //         success: function(r) {
+    //             if (r==1) {
+    //                 Swal.fire({
+    //                     position: 'center',
+    //                     icon: 'success',
+    //                     title: 'Carrara actualizado exitosamente',
+    //                     showConfirmButton: false,
+    //                     timer: 1500
+    //                 })
+    //             } else {
+    //                 Swal.fire({
+    //                     icon: 'error',
+    //                     title: 'Oops...',
+    //                     text: 'Algo salio mal!',
+    //                     footer: '<a href="">¿Por qué tengo este problema?</a>'
+    //                 })
+    //             }
+    //         }
+    //     })
 
 
-    }
+    // }
 
 
 
