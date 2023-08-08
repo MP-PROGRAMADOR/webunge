@@ -19,12 +19,12 @@
             <div class="modal-body">
 
                 <!-- aqui comienza mi formulario -->
-                <form action="./php/actualizar_facultad.php" method="POST">
+                <form action="./php/actualizarFacultad.php" method="POST">
 
                     <!-- aqui empieza la fila del row -->
                     <div class="row">
                         <div class="col-md-12">
-                         <input type="hidden" name="idFacultad" id="idFacultad">
+                     <input type="hidden" id="idFacultad" name="idFacultad">
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">NOMBRE</label>
                                 <input type="text" class="form-control" id="nombreFacultad" name="nombreFacultad" placeholder="Nombre de la Facultad" required>
@@ -37,9 +37,9 @@
 
                                     <?php
 
-                                    while ($row_sede = $sede->fetch_assoc()) { ?>
+                                    while ($row_sede2 = $sede2->fetch_assoc()) { ?>
 
-                                        <option value=" <?php echo  $row_sede['Id'];  ?>  "> <?php echo  $row_sede['Nombre']; ?> </option>
+                                        <option value=" <?php echo  $row_sede2['Id'];  ?>  "> <?php echo  $row_sede2['Nombre']; ?> </option>
 
                                     <?php }  ?>
 
@@ -53,9 +53,9 @@
 
                                     <?php
 
-                                    while ($row_campusddw = $campus->fetch_assoc()) { ?>
+                                    while ($row_campus2 = $campus2->fetch_assoc()) { ?>
 
-                                        <option value=" <?php echo  $row_campus['Id'];  ?>  "> <?php echo  $row_campus['Nombre']; ?> </option>
+                                        <option value=" <?php echo  $row_campus2['Id'];  ?>  "> <?php echo  $row_campus2['Nombre']; ?> </option>
 
                                     <?php }  ?>
 

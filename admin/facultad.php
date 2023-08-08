@@ -10,9 +10,17 @@ $sqlcampus = "SELECT * FROM campus";
 
 $campus = $conn->query($sqlcampus);
 
+$sqlcampus2 = "SELECT * FROM campus";
+
+$campus2 = $conn->query($sqlcampus2);
+
 $sqlsede = "SELECT * FROM sede";
 
 $sede = $conn->query($sqlsede);
+
+$sqlsede2 = "SELECT * FROM sede";
+
+$sede2 = $conn->query($sqlsede2);
 
 ?>
 
