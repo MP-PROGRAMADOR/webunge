@@ -1,6 +1,6 @@
 <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button> -->
 
-<div class="modal fade bs-categoria-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade bs-categoria2-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
@@ -12,21 +12,21 @@
             <div class="modal-body">
 
                 <!-- aqui comienza mi formulario -->
-                <form action="./php/guardar_categoria.php"  method="POST">
+                <form action="./php/actualizarCategoria.php"  method="POST">
 
                     <!-- aqui empieza la fila del row -->
                     <div class="row">
                         <div class="col-md-12">
 
-                        <input type="hidden" id="id" name="id">
+                        <input type="hidden" id="idCategoria" name="idCategoria">
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">NOMBRE</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre de la Categoria" required>
+                                <input type="text" class="form-control" id="nombreCategoria" name="nombreCategoria" placeholder="Nombre de la Categoria" required>
                             </div>
 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">GUARDAR</button>
+                                <button type="submit" class="btn btn-primary">ACTUALIZAR</button>
                             </div>
 
                         </div>
