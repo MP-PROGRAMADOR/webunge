@@ -12,7 +12,7 @@
             <div class="modal-body">
 
                 <!-- aqui comienza mi formulario -->
-                <form action="./php/guardar_noticia.php" method="POST">
+                <form action="./php/guardar_noticia.php" method="POST" enctype="multipart/form-data">
 
                     <!-- aqui empieza la fila del row -->
                     <div class="row">

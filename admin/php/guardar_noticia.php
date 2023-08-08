@@ -10,9 +10,9 @@ $tipoArchivo = strtolower(pathinfo($archivo, PATHINFO_EXTENSION));
 $checarSiImagen = getimagesize($_FILES["imgnoti"]["tmp_name"]); 
 if ($checarSiImagen != false) {
     //validar tamaño imagen
-    $size = $_FILES["fileAlumn"]["size"];
+    $size = $_FILES["imgnoti"]["size"];
     if ($size > 500000) {
-        echo "La imagen pesa mas de 500KB";
+        echo "La imagen pesa mas de 5000KB";
     } else {
         //validar tipo de imagen
         if ($tipoArchivo == "jpg" || $tipoArchivo == "jpeg" || $tipoArchivo == "png") {
@@ -45,7 +45,7 @@ $imgnoti = $_FILES["imgnoti"]["name"];
 
 
 $sql = "INSERT INTO noticias (Titulo,Descripcion,Img,Dia,Mes,Agno,Categoria,Facultad) 
-VALUES ('$titulo','$descripcion','$dia','$mes','$agno','$facultad','$categoria','$imgnoti')";
+VALUES ('$titulo','$descripcion','$imgnoti','$dia','$mes','$agno','$categoria','$facultad')";
 
 
 if ($conn->query($sql)) {

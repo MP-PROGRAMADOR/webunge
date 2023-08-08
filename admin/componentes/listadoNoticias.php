@@ -1,5 +1,5 @@
  <!-- page content -->
- <div class="col-md-12 col-sm-12" >
+ <div class="col-md-12 col-sm-12">
      <div class="">
          <div class="page-title">
              <div class="title_left">
@@ -18,7 +18,7 @@
              </div>
          </div>
 
-         <div class="clearfix"></div> 
+         <div class="clearfix"></div>
 
          <div class="row">
              <div class="col-md-12">
@@ -44,193 +44,48 @@
                      <div class="x_content">
 
                          <div class="row">
-                             <div class="col-md-55">
-                                 <div class="thumbnail">
-                                     <div class="image view view-first">
-                                         <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
-                                         <div class="mask">
-                                             <p>Your Text</p>
-                                             <div class="tools tools-bottom">
-                                                 <a href="#"><i class="fa fa-link"></i></a>
-                                                 <a href="#"><i class="fa fa-pencil"></i></a>
-                                                 <a href="#"><i class="fa fa-times"></i></a>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="caption">
-                                         <p>Snow and Ice Incoming for the South</p>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="col-md-55">
-                                 <div class="thumbnail">
-                                     <div class="image view view-first">
-                                         <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
-                                         <div class="mask">
-                                             <p>Your Text</p>
-                                             <div class="tools tools-bottom">
-                                                 <a href="#"><i class="fa fa-link"></i></a>
-                                                 <a href="#"><i class="fa fa-pencil"></i></a>
-                                                 <a href="#"><i class="fa fa-times"></i></a>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="caption">
-                                         <p>Snow and Ice Incoming for the South</p>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="col-md-55">
-                                 <div class="thumbnail">
-                                     <div class="image view view-first">
-                                         <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
-                                         <div class="mask">
-                                             <p>Your Text</p>
-                                             <div class="tools tools-bottom">
-                                                 <a href="#"><i class="fa fa-link"></i></a>
-                                                 <a href="#"><i class="fa fa-pencil"></i></a>
-                                                 <a href="#"><i class="fa fa-times"></i></a>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="caption">
-                                         <p>Snow and Ice Incoming for the South</p>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="col-md-55">
-                                 <div class="thumbnail">
-                                     <div class="image view view-first">
-                                         <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
-                                         <div class="mask">
-                                             <p>Your Text</p>
-                                             <div class="tools tools-bottom">
-                                                 <a href="#"><i class="fa fa-link"></i></a>
-                                                 <a href="#"><i class="fa fa-pencil"></i></a>
-                                                 <a href="#"><i class="fa fa-times"></i></a>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="caption">
-                                         <p>Snow and Ice Incoming for the South</p>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="col-md-55">
-                                 <div class="thumbnail">
-                                     <div class="image view view-first">
-                                         <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
-                                         <div class="mask">
-                                             <p>Your Text</p>
-                                             <div class="tools tools-bottom">
-                                                 <a href="#"><i class="fa fa-link"></i></a>
-                                                 <a href="#"><i class="fa fa-pencil"></i></a>
-                                                 <a href="#"><i class="fa fa-times"></i></a>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="caption">
-                                         <p>Snow and Ice Incoming for the South</p>
-                                     </div>
-                                 </div>
-                             </div>
+                             <?php
 
 
-                             <div class="col-md-55">
-                                 <div class="thumbnail">
-                                     <div class="image view view-first">
-                                         <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
-                                         <div class="mask no-caption">
-                                             <div class="tools tools-bottom">
-                                                 <a href="#"><i class="fa fa-link"></i></a>
-                                                 <a href="#"><i class="fa fa-pencil"></i></a>
-                                                 <a href="#"><i class="fa fa-times"></i></a>
+                                $sqlCarreras = "SELECT * FROM noticias";
+
+                                $carreras = $conn->query($sqlCarreras);
+
+                                ?>
+
+                             <?php while ($carrera = mysqli_fetch_array($carreras)) {
+
+                                ?>
+
+                                 <div class="col-md-55">
+                                     <div class="thumbnail">
+                                         <div class="image view view-first">
+                                             <img style="width: 100%; display: block;" src="./images/noticias/<?php echo $carrera['Img']; ?>" alt="image" />
+                                             <div class="mask">
+                                                    <?php 
+                                                        $CodCate = $carrera['Categoria'];
+                                                        $qCateg = "SELECT * FROM categoria WHERE Id = '$CodCate'";
+                                                        $categorias = $conn->query($qCateg);
+
+                                                        while ($categori = mysqli_fetch_array($categorias)) {                                                        
+                                                    ?>
+                                                  <p><?php echo $categori['Nombre']; ?></p>
+                                                  <?php } ?>    
+                                                        
+                                                 <div class="tools tools-bottom">
+                                                     <a href="#"><i class="fa fa-eye"></i></a>
+                                                     <a href="#"><i class="fa fa-pencil"></i></a>
+                                                     <a href="#"><i class="fa fa-times"></i></a>
+                                                 </div>
                                              </div>
                                          </div>
-                                     </div>
-                                     <div class="caption">
-                                         <p><strong>Image Name</strong>
-                                         </p>
-                                         <p>Snow and Ice Incoming</p>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="col-md-55">
-                                 <div class="thumbnail">
-                                     <div class="image view view-first">
-                                         <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
-                                         <div class="mask no-caption">
-                                             <div class="tools tools-bottom">
-                                                 <a href="#"><i class="fa fa-link"></i></a>
-                                                 <a href="#"><i class="fa fa-pencil"></i></a>
-                                                 <a href="#"><i class="fa fa-times"></i></a>
-                                             </div>
+                                         <div class="caption">
+                                             <p><?php echo $carrera['Titulo']; ?></p>
                                          </div>
                                      </div>
-                                     <div class="caption">
-                                         <p><strong>Image Name</strong>
-                                         </p>
-                                         <p>Snow and Ice Incoming</p>
-                                     </div>
                                  </div>
-                             </div>
-                             <div class="col-md-55">
-                                 <div class="thumbnail">
-                                     <div class="image view view-first">
-                                         <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
-                                         <div class="mask no-caption">
-                                             <div class="tools tools-bottom">
-                                                 <a href="#"><i class="fa fa-link"></i></a>
-                                                 <a href="#"><i class="fa fa-pencil"></i></a>
-                                                 <a href="#"><i class="fa fa-times"></i></a>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="caption">
-                                         <p><strong>Image Name</strong>
-                                         </p>
-                                         <p>Snow and Ice Incoming</p>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="col-md-55">
-                                 <div class="thumbnail">
-                                     <div class="image view view-first">
-                                         <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
-                                         <div class="mask no-caption">
-                                             <div class="tools tools-bottom">
-                                                 <a href="#"><i class="fa fa-link"></i></a>
-                                                 <a href="#"><i class="fa fa-pencil"></i></a>
-                                                 <a href="#"><i class="fa fa-times"></i></a>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="caption">
-                                         <p><strong>Image Name</strong>
-                                         </p>
-                                         <p>Snow and Ice Incoming</p>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="col-md-55">
-                                 <div class="thumbnail">
-                                     <div class="image view view-first">
-                                         <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
-                                         <div class="mask no-caption">
-                                             <div class="tools tools-bottom">
-                                                 <a href="#"><i class="fa fa-link"></i></a>
-                                                 <a href="#"><i class="fa fa-pencil"></i></a>
-                                                 <a href="#"><i class="fa fa-times"></i></a>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="caption">
-                                         <p><strong>Image Name</strong>
-                                         </p>
-                                         <p>Snow and Ice Incoming</p>
-                                     </div>
-                                 </div>
-                             </div>
+                             <?php  } ?>
+
                          </div>
                      </div>
                  </div>

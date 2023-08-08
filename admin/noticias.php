@@ -2,9 +2,6 @@
 
 require './php/conexion.php';
 
-$sqlCarreras = "SELECT * FROM carreras";
-
-$carrera = $conn->query($sqlCarreras);
 
 
 ?>
@@ -152,7 +149,7 @@ $carrera = $conn->query($sqlCarreras);
 
     <!-- inicio del contenido de la pagina -->
     <div class="right_col" role="main">
-      <?php include "./componentes/modal_insertar_noticia.php"; ?>
+      <?php include "./componentes/modal_insertar_noticia.php"; ?> 
 
       <?php require_once "./componentes/listadoNoticias.php"; ?>
     </div>
