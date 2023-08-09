@@ -104,8 +104,33 @@
 
 <Script>
 
-
+// *********************
 function alertarEliminar(id) {
+        // e.preventDefault();
+        // alert("Estas seguro que quieres eliminar");
+        var codigo = id;
+        //  alert("Estas seguro que quieres eliminar"+codigo);
+        //  return false;
+        Swal.fire({
+            title: '¿Realmente quieres eliminar este Campus?',
+            text: "¡Este Campu será eliminada permanentemente!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sí, Eliminar',
+            cancelButtonText: 'No'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                EliminarSala(id);
+            }
+        })
+    }
+    // *******************
+
+
+
+function alertarSala(id) {
         // alert("el id recibido es: "+id);  
         parametro = {
             "id": id
