@@ -79,16 +79,10 @@
                                                  <?php } ?>
 
                                                  <div class="tools tools-bottom">
-<<<<<<< HEAD
-                                                     <a href="#" onclick="mandarId('<?php echo $carrera['Id']; ?>');" data-toggle="modal" data-target=".bs-verNoti-modal-lg"><i class="fa fa-eye"></i></a>
-                                                     <a href="#"><i class="fa fa-pencil"></i></a>
-                                                     <a href="#"><i class="fa fa-times"></i></a>
-=======
                                                      <a href="#"><i class="fa fa-eye"></i></a>
                                                     
                                                      <a href="#" onclick="agregarForm('<?php echo $datos; ?>');" class="btn btn-sm" data-toggle="modal" data-target=".bs-noticia2-modal-lg"> <i class="fa fa-pencil"></i></a>
                                                      <a href="#" onclick="alertarEliminar('<?php echo $carrera['Id']; ?>');" data-bs-id_usuario="<?= $carrera['Id'];   ?>" ><i class="fa fa-times"></i></a>
->>>>>>> 6fa74730342580252f6632169e3c11e5dbdea251
                                                  </div>
                                              </div>
                                          </div>
@@ -107,14 +101,6 @@
      </div>
  </div>
  <!-- /page content -->
-<<<<<<< HEAD
- <script>
-     function mandarId(id) {        
-        var codigo = id;       
-       
-    }
- </script>
-=======
 
 <Script>
 
@@ -161,4 +147,3 @@ function alertarEliminar(id) {
     }
 
 </Script>
->>>>>>> 6fa74730342580252f6632169e3c11e5dbdea251
