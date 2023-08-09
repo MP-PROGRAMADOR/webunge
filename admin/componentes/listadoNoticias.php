@@ -57,7 +57,7 @@
 
                                 ?>
 
-                                 <div class="col-md-55">
+                                 <div class="col-md-55"> 
                                      <div class="thumbnail">
                                          <div class="image view view-first">
                                              <img style="width: 100%; display: block;" src="./images/noticias/<?php echo $carrera['Img']; ?>" alt="image" />
@@ -73,7 +73,7 @@
                                                   <?php } ?>    
                                                         
                                                  <div class="tools tools-bottom">
-                                                     <a href="#"><i class="fa fa-eye"></i></a>
+                                                     <a href="#" onclick="alertarEliminar('<?php echo $carrera['Id']; ?>');" data-toggle="modal" data-target=".bs-verNoti-modal-lg"><i class="fa fa-eye"></i></a>
                                                      <a href="#"><i class="fa fa-pencil"></i></a>
                                                      <a href="#"><i class="fa fa-times"></i></a>
                                                  </div>
@@ -94,3 +94,9 @@
      </div>
  </div>
  <!-- /page content -->
+ <script>
+     function alertarEliminar(id) {        
+        var codigo = id;       
+       
+    }
+ </script>
