@@ -1,3 +1,18 @@
+<?php
+include 'admin/php/conexion.php';
+
+$id= $conn->real_escape_string($_GET['id']) ;
+
+
+
+$sqlBloc = "SELECT * FROM noticias WHERE Id=$id";
+
+$bloc = $conn->query($sqlBloc);
+
+
+?>
+
+
 <?php require_once"./componentes/header.php"; ?>
 
 <section class="w3l-blog-breadcrum">
@@ -15,17 +30,26 @@
 		<div class="d-grid grid-colunm-2">
 		  <!-- left side blog post content -->
 		  <div class="single-left">
+
+
+		  <?php
+					while ($row_bloc = $bloc->fetch_assoc()) {
+
+			?>
+
+
+
 			<div class="single-left1">
-				<div class="blg-img">
-			 <img src="assets/images/unge/9.jpg" alt=" " class="img-responsive img-fluid">
+				<div class="blg-img" style="height: 25rem ;">
+			 <img src="./admin/images/noticias/<?php echo $row_bloc['Img']; ?>" alt=" " class="img-responsive img-fluid">
 			  <div class="bl-top">
-				<h4>15 Feb</h4>
-				<h6>2023</h6>
+				<h4><?= $row_bloc['Dia']; ?> <?= $row_bloc['Mes']; ?> </h4>
+				<h6><?= $row_bloc['Agno']; ?></h6>
 			 </div>
 			</div>
 			 
 			  <div class="btom-cont1 pt-4">
-				<h5 class="card-title"><a href="blog-single.php">La UNGE recibe una formacion sobre planificacion familiar</a></h5>
+				<h5 class="card-title"><a href="blog-single.php"><?= $row_bloc['Titulo']; ?></a></h5>
 				<ul class="admin-post">
 				  <li>
 					<a href="blog-single.php"><span class="fa fa-user"></span> Felisa NCHAMA</a>
@@ -37,10 +61,16 @@
 					<a href="blog-single.php"><span class="fa fa-comments-o"></span>Comentarios (20)</a>
 				  </li>
 				</ul>
-				<p class="mb-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like.</p>
-				<p class="">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years</p>
+				<p class="mb-3"><?= $row_bloc['Descripcion']; ?></p>
+				
 			</div>
+
+			<?php } ?>
+
 		</div>
+
+
+
 			<div class="comments mt-5">
 				<h3 class="post-content-title">Comentarios (4)</h3>
 				<div class="media mt-5 bod-1">

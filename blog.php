@@ -16,95 +16,74 @@ require './admin/php/conexion.php';
 		<div class="container py-md-3">
 
 			<div class="d-grid grid-colunm-2">
+
+
+
+
+
 				<!-- left side blog post content -->
-				<div class="single-left">
-					<div class="single-left1">
-						<div class="blg-img">
-							<a href="blog-single.php"><img src="assets/images/unge/9.jpg" alt=" " class="img-responsive img-fluid">
-								<div class="bl-top">
-									<h4>25 May</h4>
-									<h6>2023</h6>
-								</div>
-							</a>
-						</div>
+				<div class="single-left ">
 
-						<div class="btom-cont">
-							<h5 class="card-title"><a href="blog-single.php">La UNGE recibe una formacion sobre planificacion familiar</a></h5>
-							<ul class="admin-post">
-								<li>
-									<a href="blog-single.php"><span class="fa fa-user"></span> Felisa NCHAMA</a>
-								</li>
-								<li>
-									<a href="blog-single.php"><span class="fa fa-tag"></span>Peridista</a>
-								</li>
-								<li>
-									<a href="blog-single.php"><span class="fa fa-comments-o"></span>Comentarios (20)</a>
-								</li>
-							</ul>
-							<p class="">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium tatum
-								deleniti atque corrupti quos dolores et quas molestias excepturi sint,
-								similique sunt in culpa qui officia deserunt mollitia animi.</p>
-							<a href="blog-single.php" class="btn btn-theme2 mt-3">Leer Más</a>
+
+
+					<?php $sqlBloc = "SELECT * FROM noticias";
+
+					$bloc = $conn->query($sqlBloc);
+
+
+					?>
+
+					<?php
+					while ($row_bloc = $bloc->fetch_assoc()) {
+
+					?>
+
+
+
+
+
+						<div class="single-left1 mt-5">
+							<div class="blg-img" style="height: 25rem ;">
+								<a href="blog-single.php"><img src="./admin/images/noticias/<?php echo $row_bloc['Img']; ?>" width="400" height="300" alt=" " class="img-responsive img-fluid">
+									<div class="bl-top">
+										<h4><?= $row_bloc['Dia']; ?> <?= $row_bloc['Mes']; ?> </h4>
+										<h6><?= $row_bloc['Agno']; ?></h6>
+									</div>
+								</a>
+							</div>
+
+							<div class="btom-cont">
+								<h5 class="card-title"><a href="blog-single.php"><?= $row_bloc['Titulo']; ?></a></h5>
+								<ul class="admin-post">
+									<li>
+										<a href="blog-single.php"><span class="fa fa-user"></span> Felisa NCHAMA</a>
+									</li>
+									<li>
+										<a href="blog-single.php"><span class="fa fa-tag"></span>Peridista</a>
+									</li>
+									<li>
+										<a href="blog-single.php"><span class="fa fa-comments-o"></span>Comentarios (20)</a>
+									</li>
+								</ul>
+
+
+								<p class=""><?= $row_bloc['Descripcion']; ?></p>
+
+
+
+								<a href="blog-single.php?id=<?= $row_bloc['Id']; ?>" class="btn btn-theme2 mt-3">Leer Más</a>
+
+							</div>
 
 						</div>
-					</div>
-					<div class="single-left1 mt-5">
-						<div class="blg-img">
-							<a href="blog-single.php"><img src="assets/images/unge/UNGE.jpg" alt=" " class="img-responsive img-fluid">
-								<div class="bl-top">
-									<h4>15 Abr</h4>
-									<h6>2023</h6>
-								</div>
-							</a>
-						</div>
-						<div class="btom-cont">
-							<h5 class="card-title"><a href="blog-single.php">La prueba de la selectividad tendrá lugar los dias 27 y 28 de junio de 2023</a></h5>
-							<ul class="admin-post">
-								<li>
-									<a href="blog-single.php"><span class="fa fa-user"></span> Monstery</a>
-								</li>
-								<li>
-									<a href="blog-single.php"><span class="fa fa-tag"></span>Design, Php</a>
-								</li>
-								<li>
-									<a href="blog-single.php"><span class="fa fa-comments-o"></span>Comments (15)</a>
-								</li>
-							</ul>
-							<p class="">Fermentum viverra eros. Praesent neque purus, rhoncus nec nibh non, mollis
-								sodales odio. Nullam
-								facilisis diam non magna porta luctus. Aenean facilisis erat posuere erat ornare
-								ultrices.
-								semper augue. </p>
-							<a href="blog-single.php" class="btn btn-theme2 mt-3">Leer Más</a>
-						</div>
-					</div>
-					<div class="single-left1 mt-5">
-						<div class="blg-img">
-							<a href="blog-single.php"><img src="assets/images/unge/3.JPG" alt=" " class="img-responsive img-fluid">
-								<div class="bl-top">
-									<h4>12 Feb</h4>
-									<h6>2023</h6>
-								</div>
-							</a>
-						</div>
-						<div class="btom-cont">
-							<h5 class="card-title"><a href="blog-single.php">La UNGE conmemora el segundo aniversario del Día Nacional de la Universidad en Guinea Ecuatorial</a> </h5>
-							<ul class="admin-post">
-								<li>
-									<a href="blog-single.php"><span class="fa fa-user"></span> Will Smith</a>
-								</li>
-								<li>
-									<a href="blog-single.php"><span class="fa fa-tag"></span>Design, Php</a>
-								</li>
-								<li>
-									<a href="blog-single.php"><span class="fa fa-comments-o"></span>Comments (18)</a>
-								</li>
-							</ul>
-							<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-								labore et dolore magna aliqua. Ut enim ad minim sunt in culpa qui officia deserunt. </p>
-							<a href="blog-single.php" class="btn btn-theme2 mt-3">Leer Más</a>
-						</div>
-					</div>
+					<?php } ?>
+
+
+
+
+
+
+
 					<!-- pagination -->
 					<div class="pagination">
 						<ul>
@@ -149,92 +128,88 @@ require './admin/php/conexion.php';
 
 						<table>
 
-						<thead>
-                        <tr class="headings">
-                            <th>
-								
-								
-							<a href="#link"> <span class="fa fa-angle-right"></span>Todas</a>
-							   	
-								
-						</th>
-						</tr>
-						</thead>
+							<thead>
+								<tr class="headings">
+									<th>
 
 
-						<tbody id="tablita">
-
-						<tr>
-							<td>
-
-							<ul class="category" >
-							<?php
-							while ($row_categoria = $categoria->fetch_assoc()) {
-
-							?>
-
-								<li><a href="#link"><span class="fa fa-angle-right"></span><?= $row_categoria['Nombre']; ?></a></li>
-
-							<?php } ?>
-						</ul>
+										<a href="blog.php"> <span class="fa fa-angle-right"></span>Todas</a>
 
 
-							</td>
-						</tr>
+									</th>
+								</tr>
+							</thead>
 
 
-						
+							<tbody id="tablita">
 
-						</tbody>
+								<tr>
+									<td>
+
+										<ul class="category">
+											<?php
+											while ($row_categoria = $categoria->fetch_assoc()) {
+
+											?>
+
+												<li><a href="#link"><span class="fa fa-angle-right"></span><?= $row_categoria['Nombre']; ?></a></li>
+
+											<?php } ?>
+										</ul>
+
+
+									</td>
+								</tr>
+
+
+
+
+							</tbody>
 
 						</table>
 
-						
+
 
 					</aside>
 					<aside class="posts p-4 border">
 						<h3 class="aside-title">Entradas Recientes</h3>
 						<div class="posts-grids">
-							<div class="posts-grid-inner">
-								<div class="posts-grid-left pr-0">
-									<a href="blog-single.php">
-										<img src="assets/images/g1.jpg" alt=" " class="img-responsive ">
-									</a>
+
+
+							<?php $sqlRecientes = "SELECT * FROM noticias ORDER BY Id ASC LIMIT 3";
+
+							$recientes = $conn->query($sqlRecientes);
+
+							?>
+
+
+							<?php
+							while ($row_recientes = $recientes->fetch_assoc()) {
+
+							?>
+
+								<div class="posts-grid-inner">
+
+
+									<div class="posts-grid-left pr-0">
+										<a href="blog-single.php">
+											<img src="./admin/images/noticias/<?php echo $row_recientes['Img']; ?>" alt=" " class="img-responsive ">
+										</a>
+									</div>
+									<div class="posts-grid-right">
+										<h4>
+											<a href="blog-single.php" class="text-bl"><?= $row_recientes['Titulo']; ?></a>
+										</h4>
+										<span class="price"> 11 Minutes ago</span>
+									</div>
 								</div>
-								<div class="posts-grid-right">
-									<h4>
-										<a href="blog-single.php" class="text-bl">Sed ut perspiciatis</a>
-									</h4>
-									<span class="price"> 11 Minutes ago</span>
-								</div>
-							</div>
-							<div class="posts-grid-inner">
-								<div class="posts-grid-left pr-0">
-									<a href="blog-single.php">
-										<img src="assets/images/g2.jpg" alt=" " class="img-responsive ">
-									</a>
-								</div>
-								<div class="posts-grid-right">
-									<h4>
-										<a href="blog-single.php" class="text-bl">Unde omnis iste natus</a>
-									</h4>
-									<span class="price"> 15 Minutes ago</span>
-								</div>
-							</div>
-							<div class="posts-grid-inner">
-								<div class="posts-grid-left pr-0">
-									<a href="blog-single.php">
-										<img src="assets/images/g3.jpg" alt=" " class="img-responsive ">
-									</a>
-								</div>
-								<div class="posts-grid-right">
-									<h4>
-										<a href="blog-single.php" class="text-bl">Otam rem aperiam</a>
-									</h4>
-									<span class="price"> 11 Minutes ago </span>
-								</div>
-							</div>
+
+
 						</div>
+
+					<?php } ?>
+
+
 					</aside>
 
 					<aside class="posts p-4 border">
@@ -335,20 +310,15 @@ require './admin/php/conexion.php';
 
 
 
-    // buscador
-    $(document).ready(function() {
-        $("#buscador").on("keyup", function() {
-            var value = $(this).val().toLowerCase();
-            $("#tablita tr").filter(function() {
-                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-            });
-        });
-    });
-
-
-
-
-
+	// buscador
+	$(document).ready(function() {
+		$("#buscador").on("keyup", function() {
+			var value = $(this).val().toLowerCase();
+			$("#tablita tr").filter(function() {
+				$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			});
+		});
+	});
 </script>
 <!-- //script -->
 

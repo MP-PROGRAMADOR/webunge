@@ -1,4 +1,4 @@
-<?php require_once"./componentes/header.php"; ?>
+<?php require_once "./componentes/header.php"; ?>
 
 <section class="w3l-about-breadcrum">
     <div class="breadcrum-bg py-sm-5 py-4">
@@ -18,7 +18,7 @@
             <div class="cwp4-two row  animate__animated animate__backInLeft animate__slow 7s">
 
                 <div class="cwp4-text col-lg-6">
-                    <h3  >SOBRE NUESTRA INSTITUCION</h3>
+                    <h3>SOBRE NUESTRA INSTITUCION</h3>
                     <p class="text-justify">
                         La Universidad Nacional de Guinea Ecuatorial, en anagrama UNGE, se creó a iniciativa de S.E.
                         OBIANG NGUEMA
@@ -44,10 +44,15 @@
     </div>
 </section>
 <!-- content-with-photo4 block -->
+
+
+
+
+
 <section class="w3l-features-1">
     <!-- /features -->
     <div class="features py-4">
-        <div class="container pb-5">
+        <div class="container pb-1">
 
 
 
@@ -59,14 +64,11 @@
                     <div class="accordion accordion-flush " id="accordionFlushExample">
                         <div class="accordion-item shadow mb-3   ">
                             <h2 class="accordion-header ">
-                                <button class="accordion-button collapsed   bg-warning text-dark" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
+                                <button class="accordion-button collapsed   bg-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                     ACTUALIZACION DE LA FORMACION UNIVERSITARIA
                                 </button>
                             </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body text-justify">El Campus virtual UNGE es un espacio de
                                     formación, de
                                     respeto a la dignidad de las personas y de intercambio de ideas y conocimientos.
@@ -87,14 +89,11 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item shadow mb-3">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-warning text-dark" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseTwo">
+                                <button class="accordion-button collapsed bg-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                     EL PROFESORADO
                                 </button>
                             </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body text-justify">os profesores universitarios constituyen la
                                     esencia
                                     intelectual de la calidad de enseñanza universitaria. Una experiencia reciente es
@@ -113,14 +112,11 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item shadow mb-3">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-warning text-dark" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                <button class="accordion-button collapsed bg-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                     EL ALUMNADO
                                 </button>
                             </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body text-justify">Una universidad con una directiva que sitúa su
                                     foco mental
                                     muy por delante del curso académico que se inaugura, y con una labor eficaz,
@@ -186,14 +182,11 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item shadow mb-3">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed  bg-warning text-dark" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                    aria-controls="flush-collapseFour">
+                                <button class="accordion-button collapsed  bg-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                                     NUESTRA IDENTIDAD
                                 </button>
                             </h2>
-                            <div id="flush-collapseFour" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body text-justify">La Universidad Nacional de Guinea Euatorial
                                     ofrece
                                     entornos de apoyo e inspiración para que, las mentes jóvenes e inquisitivas
@@ -215,14 +208,11 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item shadow mb-3">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed  bg-warning text-dark" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
-                                    aria-controls="flush-collapseFive">
+                                <button class="accordion-button collapsed  bg-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                                     ORDEN SOCIAL Y DISCIPLINA
                                 </button>
                             </h2>
-                            <div id="flush-collapseFive" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body text-justify">La Universidad ha dispuesto un cuerpo normativo
                                     que regula
                                     el comportamiento de toda la comunidad universitaria.
@@ -244,29 +234,26 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item shadow mb-3">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed  bg-warning text-dark" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
-                                    aria-controls="flush-collapseSix">
+                                <button class="accordion-button collapsed  bg-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
                                     CALENDARIO ACADEMICO
                                 </button>
                             </h2>
-                            <div id="flush-collapseSix" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body text-justify">El año académico está dividido en dos (2)
                                     semestres por 18
                                     semanas.
 
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">El primer semestre inicia sus labores
-                                    académicas el 30 de septiembre y el segundo semestre, del 09 febrero al 26 de junio.</li>
+                                            académicas el 30 de septiembre y el segundo semestre, del 09 febrero al 26 de junio.</li>
                                         <li class="list-group-item"> Convocatoria del primer semestre: Del 06 al 17 de Febrero.</li>
                                         <li class="list-group-item">Convocatoria del segundo semestre: Del 19 al 30 de Junio.</li>
                                         <li class="list-group-item">Evaluación de trabajos fin de grado Periodo ordinario (para finalistas en curso
-                                    oficiales): Del 13 al 24 de Julio.</li>
+                                            oficiales): Del 13 al 24 de Julio.</li>
                                         <li class="list-group-item">Convocatoria extraordinaria de Septiembre: Del 04 al 15 de Septiembre.</li>
-                                    </ul> 
-                                    
-                                    
+                                    </ul>
+
+
                                 </div>
                             </div>
                         </div>
@@ -282,7 +269,7 @@
 
 
 
-            <div class="fea-gd-vv row  text-center mb-3 mt-5 animate__animated animate__backInLeft animate__slow 7s">
+            <div class="fea-gd-vv row  text-center mb-1 mt-5 animate__animated animate__backInLeft animate__slow 7s">
 
                 <div class="float-lt feature-gd col-lg-6 col-sm-6">
 
@@ -323,6 +310,152 @@
     </div>
     <!-- //features -->
 </section>
+
+
+
+
+
+
+<section class="w3l-features-1">
+    <!-- /features -->
+    <div class="features">
+        <div class="container">
+
+
+
+
+
+            <div class="fea-gd-vv row  text-center mt-5 animate__animated animate__backInLeft animate__slow 7s">
+
+                <div class="float-lt feature-gd col-lg-4 col-sm-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item shadow mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed  bg-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour1" aria-expanded="false" aria-controls="flush-collapseFour1">
+                                    NUESTRA HISTORIA
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-justify">La Universidad Nacional de Guinea Ecuatorial, en anagrama UNGE, se creó a iniciativa de S.E. OBIANG NGUEMA MBASOGO mediante
+                                    Decreto Ley Nº 12, de fecha 6 de enero de 1.995, con el objetivo de formar cuadros nacionales en el suelo patrio, cuyas enseñanzas y carreras están siendo
+                                    armonizadas con exigencias del desarrollo del país, sobre la base de los parámetros de pertinencia, excelencia, calidad y gestión de conocimientos. <br>
+                                    La UNGE es una institución universitaria con una vocación de servicio en relación a las personas y a la sociedad así como promover el espíritu de patriotismo,
+                                    disciplina y respeto entre los estudiantes y profesores; así como el desarrollo económico y social. <br>
+                                    El fin que reúne libremente la UNGE a profesores y estudiantes es “el gozo de buscar la verdad, la ciencia y la tecnología, de descubrirla y de comunicarla a
+                                    todos los campos del conocimiento”. Pues, en este sentido, se esfuerza constantemente en la búsqueda del conocimiento como fuente que alimenta el progreso, el
+                                    futuro sostenible y fija la política de investigación propia que, fortaleciéndose mutuamente con la docencia, la permita definir prioridades y asignar sus
+                                    Recursos Humanos y Materiales a aquellas áreas en que sean, o quieran ser en el futuro, centros de investigación para los estudiantes más competitivos o con
+                                    mayor rendimiento académico que quieran especializarse en sus Facultades. La UNGE apuesta desde su creación por la internacionalidad y la movilidad académica
+                                    de los profesores y estudiantes. La Universidad Nacional de Guinea Ecuatorial, en anagrama UNGE, se creó a iniciativa de S.E. OBIANG NGUEMA MBASOGO mediante
+                                    Decreto Ley Nº 12, de fecha 6 de enero de 1.995, con el objetivo de formar cuadros nacionales en el suelo patrio, cuyas enseñanzas y carreras están siendo
+                                    armonizadas con exigencias del desarrollo del país, sobre la base de los parámetros de pertinencia, excelencia, calidad y gestión de conocimientos.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="float-lt feature-gd col-lg-4 col-sm-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item shadow mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed  bg-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive1" aria-expanded="false" aria-controls="flush-collapseFive1">
+                                    FACTORES CRITICOS DEL EXITO
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-justify">El personal académico comprometido tanto intelectual como emocionalmente con la misión de la
+                                    Universidad; y competente, a nivel tecnológico-científico: <br>
+                                    - En el dominio y uso de la tecnología de información y de la investigación científica exploratoria. <br>
+                                    - En el dominio de y uso del Enfoque Modular Interdisciplinario.
+                                    - En el dominio y aplicación de su campo profesional específico; y estando remunerado e incentivado adecuadamente para garantizar la calidad de su servicio, lealtad y permanencia en la Universidad. <br>
+                                    - En la gestión académica, administrativa y financiera.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="float-lt feature-gd col-lg-4 col-sm-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item shadow mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed  bg-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix1" aria-expanded="false" aria-controls="flush-collapseSix1">
+                                    ORGANOS COLEGIADOS
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-justify"> <b>Organos colegiados</b> <br> 
+
+                                    - Consejo Social <br>
+                                    - Consejo de Gobierno Universitario <br>
+                                    - Claustro Universitario <br>
+                                    - Juntas de Facultades y Escuelas
+                                    Universitarias.  <br>
+                                    
+                                    <b>Organos Unipersonales</b> <br>
+                                    - Rector <br>
+                                    - Vicerrector <br>
+                                    - Secretarios Generales <br>
+                                    - Gerente <br>
+                                    - Directores Universitarios <br>
+                                    - Decanos de Facultades <br>
+                                    - Vicedecanos de Facultades <br>
+                                    - Subdirectores Universitarios <br>
+                                    - Secretarios de los Centros <br>
+                                    - Jefes de Departamentos <br>
+                                    - Secretarios de Departamentos
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+    <!-- //features -->
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="w3l-feature-2">
     <div class="grid top-bottom py-5">
         <div class="container py-md-5">
@@ -488,21 +621,18 @@
 <!-- //footer-28 block -->
 </section>
 <script>
-$(function() {
-    $('.navbar-toggler').click(function() {
-        $('body').toggleClass('noscroll');
-    })
-});
+    $(function() {
+        $('.navbar-toggler').click(function() {
+            $('body').toggleClass('noscroll');
+        })
+    });
 </script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 </script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
 </script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 </script>
 
 <!-- Template JavaScript -->
@@ -519,36 +649,36 @@ $(function() {
 
 <!-- script for -->
 <script>
-$(document).ready(function() {
-    $('.owl-one').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: true,
-        responsiveClass: true,
-        autoplay: false,
-        autoplayTimeout: 5000,
-        autoplaySpeed: 1000,
-        autoplayHoverPause: false,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            480: {
-                items: 1,
-                nav: false
-            },
-            667: {
-                items: 1,
-                nav: true
-            },
-            1000: {
-                items: 1,
-                nav: true
+    $(document).ready(function() {
+        $('.owl-one').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            responsiveClass: true,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                480: {
+                    items: 1,
+                    nav: false
+                },
+                667: {
+                    items: 1,
+                    nav: true
+                },
+                1000: {
+                    items: 1,
+                    nav: true
+                }
             }
-        }
+        })
     })
-})
 </script>
 <!-- //script -->
 

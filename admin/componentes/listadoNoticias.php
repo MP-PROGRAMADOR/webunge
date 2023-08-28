@@ -51,6 +51,7 @@
 
                                 $carreras = $conn->query($sqlCarreras);
 
+                                $dir="./php/fotos/";
                                 ?>
 
                              <?php while ($carrera = mysqli_fetch_array($carreras)) {
@@ -66,7 +67,8 @@
                                  <div class="col-md-55">
                                      <div class="thumbnail">
                                          <div class="image view view-first">
-                                             <img style="width: 100%; display: block;" src="./images/noticias/<?php echo $carrera['Img']; ?>" alt="image" />
+                                         
+                                             <img style="width: 100%; display: block;" src="<?= $dir .$carrera['Id'].'.jpg'; ?>" alt="image" />
                                              <div class="mask">
                                                  <?php
                                                     $CodCate = $carrera['Categoria'];

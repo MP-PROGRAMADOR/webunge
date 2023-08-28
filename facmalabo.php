@@ -92,17 +92,13 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item shadow mb-3">
                             <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed botton_acordeon" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
+                                <button class="accordion-button collapsed botton_acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                     <h3 class="fs-6"><a href="#">Ciencias de la Información y Filología lingüistica</a>
                                     </h3>
                                 </button>
                             </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
-                                        alt=""></a>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -118,17 +114,13 @@
                     <div class="accordion accordion-flush  " id="accordionFlushExample">
                         <div class="accordion-item shadow mb-3">
                             <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed  botton_acordeon" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseTwo">
+                                <button class="accordion-button collapsed  botton_acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                     <h3 class="fs-6"><a href="#">Derecho y Ciencias Políticas</a>
                                     </h3>
                                 </button>
                             </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
-                                        alt=""></a>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -145,17 +137,13 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item shadow ">
                             <h2 class="accordion-header" id="flush-headingThree">
-                                <button class="accordion-button collapsed botton_acordeon" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                <button class="accordion-button collapsed botton_acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                     <h3 class="fs-6"><a href="#">Pedagogía y Ciencia de la Educación</a>
                                     </h3>
                                 </button>
                             </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
-                                        alt=""></a>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -181,17 +169,13 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item shadow mb-3">
                             <h2 class="accordion-header" id="flush-headingFour">
-                                <button class="accordion-button collapsed botton_acordeon" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                    aria-controls="flush-collapseFour">
+                                <button class="accordion-button collapsed botton_acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                                     <h3 class="fs-6"><a href="#">Humanudades y Ciencias Religiosas</a>
                                     </h3>
                                 </button>
                             </h2>
-                            <div id="flush-collapseFour" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
-                                        alt=""></a>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -207,17 +191,13 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item shadow mb-3">
                             <h2 class="accordion-header" id="flush-headingFive">
-                                <button class="accordion-button collapsed botton_acordeon" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
-                                    aria-controls="flush-collapseFive">
+                                <button class="accordion-button collapsed botton_acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                                     <h3 class="fs-6"><a href="#">Ingenieria Y Tecnologia de Petróleo</a>
                                     </h3>
                                 </button>
                             </h2>
-                            <div id="flush-collapseFive" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
-                                        alt=""></a>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -234,17 +214,13 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item shadow">
                             <h2 class="accordion-header" id="flush-headingSix">
-                                <button class="accordion-button collapsed botton_acordeon" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
-                                    aria-controls="flush-collapseSix">
+                                <button class="accordion-button collapsed botton_acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
                                     <h3 class="fs-6"><a href="#">Facultad de medio ambiente</a>
                                     </h3>
                                 </button>
                             </h2>
-                            <div id="flush-collapseSix" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
-                                        alt=""></a>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -269,17 +245,13 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item shadow">
                             <h2 class="accordion-header" id="flush-headingSeven">
-                                <button class="accordion-button collapsed botton_acordeon" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
-                                    aria-expanded="false" aria-controls="flush-collapseSeven">
+                                <button class="accordion-button collapsed botton_acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
                                     <h3 class="fs-6"><a href="#">Administración y Ciencias Económicas</a>
                                     </h3>
                                 </button>
                             </h2>
-                            <div id="flush-collapseSeven" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
-                                        alt=""></a>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -320,7 +292,7 @@
                 <!-- carta 1-->
                 <div class="float-top col-sm-12 col-lg-4 col-md-6">
 
-                    <div class="card shadow mb-1" >
+                    <div class="card shadow mb-1">
                         <img src="assets/images/unge/UNGE.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Selectividad 2023</h5>
@@ -338,15 +310,14 @@
                 <!-- carta 2-->
                 <div class="float-top col-sm-12 col-lg-4 col-md-6">
 
-                    <div class="card shadow mb-1" >
+                    <div class="card shadow mb-1">
                         <img src="assets/images/unge/UNGE.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Semana científica 2023</h5>
                             <h6 class="card-subtitle mb-2 text-body-secondary">02/06/2023</h6>
                             <p class="card-text">Semana Científica y Cultural en la UNGE Palabras del Excmo. Señor
                                 Rector Magnífico
-                                Tengo la satisfacción de tomar la palabra en este acto académico de carácter social, <a
-                                    href="#" class="text-warning">Leer Mas>></a> </p>
+                                Tengo la satisfacción de tomar la palabra en este acto académico de carácter social, <a href="#" class="text-warning">Leer Mas>></a> </p>
                         </div>
                     </div>
 
@@ -357,13 +328,12 @@
                 <!-- carta 3-->
                 <div class="float-top col-sm-12 col-lg-4 col-md-6">
 
-                    <div class="card shadow " >
+                    <div class="card shadow ">
                         <img src="assets/images/unge/UNGE.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Día Mundial de la Libertad de Prensa en la UNGE</h5>
                             <h6 class="card-subtitle mb-2 text-body-secondary">03/05/2023</h6>
-                            <p class="card-text">Resumen de las palabras del Excmo. Señor Rector Magnífico de la UNGE Celebración del Día Mundial de la Libertad, <a
-                                    href="#" class="text-warning">Leer Mas>></a> </p>
+                            <p class="card-text">Resumen de las palabras del Excmo. Señor Rector Magnífico de la UNGE Celebración del Día Mundial de la Libertad, <a href="#" class="text-warning">Leer Mas>></a> </p>
                         </div>
                     </div>
 
@@ -393,40 +363,40 @@
             <!-- aqui empiezan los acordeones lista desplegable -->
             <div class="fea-gd-vv text-center row ">
 
-            
-                    <p class="text-justify p-3">
-                        La Universidad Nacional de Guinea Ecuatorial, en anagrama UNGE, se creó a iniciativa de S.E.
-                        OBIANG NGUEMA
-                        MBASOGO mediante Decreto Ley Nº 12, de fecha 6 de enero de 1.995, con el objetivo de formar
-                        cuadros nacionales
-                        en el suelo patrio, cuyas enseñanzas y carreras están siendo armonizadas con exigencias del
-                        desarrollo del país,
-                        sobre la base de los parámetros de pertinencia, excelencia, calidad y gestión de conocimientos.
-                    </p>
+
+                <p class="text-justify p-3">
+                    La Universidad Nacional de Guinea Ecuatorial, en anagrama UNGE, se creó a iniciativa de S.E.
+                    OBIANG NGUEMA
+                    MBASOGO mediante Decreto Ley Nº 12, de fecha 6 de enero de 1.995, con el objetivo de formar
+                    cuadros nacionales
+                    en el suelo patrio, cuyas enseñanzas y carreras están siendo armonizadas con exigencias del
+                    desarrollo del país,
+                    sobre la base de los parámetros de pertinencia, excelencia, calidad y gestión de conocimientos.
+                </p>
 
 
 
                 <!-- carta 1-->
                 <div class="float-top col-lg-4 col-md-6 mb-2">
-                <img src="assets/images/unge/2.jpg" class="img-fluid" alt="" />
+                    <img src="assets/images/unge/2.jpg" class="img-fluid" alt="" />
                 </div>
                 <!-- fin de carta 1-->
 
 
                 <!-- carta 2-->
                 <div class="float-top col-lg-4 col-md-6 mb-2">
-                <img src="assets/images/unge/2.jpg" class="img-fluid" alt="" />
+                    <img src="assets/images/unge/2.jpg" class="img-fluid" alt="" />
                 </div>
                 <!-- fin de carta 2-->
 
                 <!-- carta 2-->
                 <div class="float-top col-lg-4 col-md-6 ">
-                <img src="assets/images/unge/2.jpg" class="img-fluid" alt="" />
+                    <img src="assets/images/unge/2.jpg" class="img-fluid" alt="" />
                 </div>
                 <!-- fin de carta 2-->
 
 
-              
+
 
             </div>
         </div>
@@ -436,6 +406,189 @@
 
 
 
+
+
+<section class="w3l-features-8 text-center">
+    <!-- /features -->
+    <div class=" py-5" id="services">
+        <div class="container py-md-3">
+
+            <h1 class="p-3 border-top border-3 pb-3">ACCESO A LA UNIVERSIDAD</h1>
+
+
+            <!-- aqui empiezan los acordeones lista desplegable -->
+            <div class="fea-gd-vv text-center row pt-3">
+
+                <!-- acordeon 1 -->
+                <div class="float-top col-lg-4 col-md-6 text-center">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item shadow mb-3">
+                            <h2 class="accordion-header" id="flush-headingOne1">
+                                <button class="accordion-button collapsed botton_acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
+                                    <h3 class="fs-6"><a href="#">Nuevos Estudiantes</a>
+                                    </h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne1" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p class="text-justify">1. Instancia de solicitud de matrícula dirigida al Decano de la Facultad interesada. <br>
+                                        2. Certificado de selectividad o estudios equivalentes <br>
+                                        3. Hoja académica actualizada de los estudios realizados. <br>
+                                        4. Fotocopia de documento de identidad personal o pasaporte en vigor <br>
+                                        5. Dos fotografías de tamaño carnet en color <br>
+                                        6. Importe de la matrícula. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin acordeon 1 -->
+
+                <!-- acordeon 2 -->
+                <div class="float-top col-lg-4 col-md-6 ">
+                    <div class="accordion accordion-flush  " id="accordionFlushExample">
+                        <div class="accordion-item shadow mb-3">
+                            <h2 class="accordion-header" id="flush-headingTwo1">
+                                <button class="accordion-button collapsed  botton_acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo1" aria-expanded="false" aria-controls="flush-collapseTwo1">
+                                    <h3 class="fs-6"><a href="#">Antiguos Alumnos</a>
+                                    </h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo1" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo1" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p class="text-justify"> 1. Instancia de solicitud de matrícula dirigida al Decano de la Facultad interesada. <br>
+                                        2. Hoja de notas del curso anterior <br>
+                                        3. Dos fotografías de tamaño carnet en color <br>
+                                        4. Importe de matrícula</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin acordeon 2 -->
+
+
+                <!-- acordeon 3 -->
+                <div class="float-top col-lg-4 col-md-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item shadow ">
+                            <h2 class="accordion-header" id="flush-headingThree1">
+                                <button class="accordion-button collapsed botton_acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree1" aria-expanded="false" aria-controls="flush-collapseThree1">
+                                    <h3 class="fs-6"><a href="#">Otras Procedencias</a>
+                                    </h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree1" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p class="text-justify"> De conformidad con la Ley General de Educación vigente, el acceso a los estudios universitarios de los estudiantes
+                                        con estudios extranjeros y diferentes a los del Sistema Educativo Nacional, pasan por la vía de convalidación de los mismos.
+                                        Los estudiantes extranjeros y nacionales que hayan cursado estudios superiores de nivel medio del Sistema Educativo
+                                        Nacional sin haber superado
+                                        la Prueba de Selectividad, sus estudios serán equiparados. <a href="about.php">
+                                            <b>Ver las normas de régimen académico sobre el acceso de estudiantes a la UNGE.</b> </a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin acordeon 3 -->
+
+
+            </div>
+            <!-- aqui terminan -->
+
+
+        </div>
+    </div>
+
+</section>
+
+
+
+
+<section class="w3l-features-8 text-center">
+    <!-- /features -->
+    <div class=" py-5" id="services">
+        <div class="container py-md-3">
+
+            <h1 class="p-3 border-top border-3 pb-3">ACTIVIDADES</h1>
+
+
+            <!-- aqui empiezan los acordeones lista desplegable -->
+            <div class="fea-gd-vv text-center row pt-3">
+
+                <!-- acordeon 1 -->
+                <div class="float-top col-lg-4 col-md-6 text-center">
+                    <img src="assets/images/cultura.jpg" class="img-fluid mb-1" alt="" />
+                    <P><b>Rincón de la cultura nacional</b> </P>
+
+                </div>
+                <!-- fin acordeon 1 -->
+
+                <!-- acordeon 2 -->
+                <div class="float-top col-lg-4 col-md-6 ">
+
+                    <img src="assets/images/deporte.jpg" class="img-fluid mb-1" alt="" />
+                    <P><b>Deporte</b> </P>
+
+                </div>
+                <!-- fin acordeon 2 -->
+
+
+                <!-- acordeon 3 -->
+                <div class="float-top col-lg-4 col-md-6">
+                    <img src="assets/images/exposocion.jpg" class="img-fluid mb-1" alt="" />
+                    <P><b>Exposición</b> </P>
+                </div>
+                <!-- fin acordeon 3 -->
+
+
+            </div>
+            <!-- aqui terminan -->
+
+
+        </div>
+    </div>
+
+</section>
+
+
+<section class="w3l-features-8 text-center">
+    <!-- /features -->
+    <div class=" py-5" id="services">
+        <div class="container py-md-3">
+
+            <h1 class="p-3 border-top border-3 mb-3">Aprender el chino mandarín en la UNGE</h1>
+
+            <div class="cwp4-two row">
+
+                <div class="cwp4-text col-lg-6">
+                    <p><b class="p-3">Instituto Confucio de la UNGE</b>
+                    <p class="text-justify">
+                    El <b>Instituto Confucio</b>  de la Universidad Nacional de Guinea Ecuatorial pretende convertirse en una plataforma de intercambio cultural
+                     y educativa importante, donde los profesores y estudiantes de la UNGE y los ciudadanos locales del pueblo ecuatoguineano aprendan 
+                     el idioma chino y la cultura de china con el fin de promover los intercambios en el área educativa, 
+                    cultural y social entre Guinea Ecuatorial y China, con el propósito de desarrollar la comprensión y la amistad entre los dos pueblos.
+                    </p>
+
+                    <!-- <ul class="cont-4">
+        <li><span class="fa fa-check"></span>Materiality & Interpretation</li>
+        <li><span class="fa fa-check"></span>Design Management and Cultural Enterprise </li>
+        <li><span class="fa fa-check"></span>Experience Design (XD)</li>
+        <li><span class="fa fa-check"></span>Sound Design; Social Media and SEO </li>
+    </ul> -->
+                </div>
+                <div class="cwp4-image col-lg-6 pl-lg-5 mt-lg-0 mt-5">
+                    <img src="assets/images/unge/6.jpg" class="img-fluid" alt="" />
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</section>
 
 
 
@@ -649,21 +802,18 @@
 <!-- //footer-28 block -->
 </section>
 <script>
-$(function() {
-    $('.navbar-toggler').click(function() {
-        $('body').toggleClass('noscroll');
-    })
-});
+    $(function() {
+        $('.navbar-toggler').click(function() {
+            $('body').toggleClass('noscroll');
+        })
+    });
 </script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 </script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
 </script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 </script>
 
 <!-- Template JavaScript -->
@@ -682,36 +832,36 @@ $(function() {
 
 <!-- script for -->
 <script>
-$(document).ready(function() {
-    $('.owl-one').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: true,
-        responsiveClass: true,
-        autoplay: false,
-        autoplayTimeout: 5000,
-        autoplaySpeed: 1000,
-        autoplayHoverPause: false,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            480: {
-                items: 1,
-                nav: false
-            },
-            667: {
-                items: 1,
-                nav: true
-            },
-            1000: {
-                items: 1,
-                nav: true
+    $(document).ready(function() {
+        $('.owl-one').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            responsiveClass: true,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                480: {
+                    items: 1,
+                    nav: false
+                },
+                667: {
+                    items: 1,
+                    nav: true
+                },
+                1000: {
+                    items: 1,
+                    nav: true
+                }
             }
-        }
+        })
     })
-})
 </script>
 <!-- //script -->
 
