@@ -1,5 +1,7 @@
 <?php
 require './admin/php/conexion.php';
+
+$categoria=$_GET['id'];
 ?>
 <?php require_once "./componentes/header.php"; ?>
 
@@ -26,7 +28,7 @@ require './admin/php/conexion.php';
 
 
 
-					<?php $sqlBloc = "SELECT * FROM noticias LIMIT 2";
+					<?php $sqlBloc = "SELECT * FROM noticias WHERE Categoria=$categoria";
 
 					$bloc = $conn->query($sqlBloc);
 					$dir = "./admin/php/fotos/";
@@ -45,7 +47,7 @@ require './admin/php/conexion.php';
 
 						<div class="single-left1 mt-2">
 							<div class="blg-img"">
-								<a href=" blog-single.php?id=<?= $row_bloc['Id']; ?>"><img src="<?= $dir . $row_bloc['Id'] . '.jpg'; ?>" width="400" height="300" alt=" " class="img-responsive img-fluid">
+								<a href="blog-single.php?id=<?= $row_bloc['Id']; ?>"><img src="<?= $dir . $row_bloc['Id'] . '.jpg'; ?>" width="400" height="300" alt=" " class="img-responsive img-fluid">
 								<div class="bl-top">
 									<h4><?= $row_bloc['Dia']; ?> <?= $row_bloc['Mes']; ?> </h4>
 									<h6><?= $row_bloc['Agno']; ?></h6>
@@ -118,8 +120,8 @@ require './admin/php/conexion.php';
 						</form>
 					</aside>
 					<aside class="posts p-4 border">
-
-						<h3 class="aside-title">Todas las Categorias</h3>
+						
+					<h3 class="aside-title">Todas las Categorias</h3>
 						<ul class="category">
 
 							<?php $sqlCategoria = "SELECT * FROM categoria";
@@ -161,12 +163,12 @@ require './admin/php/conexion.php';
 
 					<aside class="posts p-4 border">
 
-						<h3 class="aside-title">Entradas Recientes</h3>
-						<div class="posts-grids">
+							<h3 class="aside-title">Entradas Recientes</h3>
+							<div class="posts-grids">
 							<?php
-							while ($row_recientes = $recientes->fetch_assoc()) {
+						while ($row_recientes = $recientes->fetch_assoc()) {
 
-							?>
+						?>
 								<div class="posts-grid-inner">
 									<div class="posts-grid-left pr-0">
 										<a href="blog-single.php?id=<?= $row_recientes['Id']; ?>">
@@ -181,11 +183,11 @@ require './admin/php/conexion.php';
 									</div>
 								</div>
 
-							<?php } ?>
+								<?php } ?>
 
-						</div>
+							</div>
 
-
+						
 
 
 					</aside>
