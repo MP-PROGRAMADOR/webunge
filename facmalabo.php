@@ -277,6 +277,23 @@
 
 
 
+<!-- seccion de noticias -->
+
+<?php 
+
+include 'admin/php/conexion.php';
+
+
+$sqlnoticias = "SELECT * FROM noticias ORDER BY Id DESC LIMIT 3";
+
+	$noticias = $conn->query($sqlnoticias);
+	$dir='./admin/php/fotos/';		
+
+?>
+
+					
+
+
 <section class="w3l-features-8 text-center">
     <!-- /features -->
     <div class=" py-5" id="services">
@@ -287,61 +304,31 @@
             <!-- aqui empiezan los acordeones lista desplegable -->
             <div class="fea-gd-vv text-center row pt-3">
 
+            <?php
 
+				while ($row_noticias = $noticias->fetch_assoc()) {
+
+			?>
 
                 <!-- carta 1-->
                 <div class="float-top col-sm-12 col-lg-4 col-md-6">
 
                     <div class="card shadow mb-1">
-                        <img src="assets/images/unge/UNGE.jpg" class="card-img-top" alt="...">
+                        <img src="<?= $dir . $row_noticias['Id'] . '.jpg'; ?>" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Selectividad 2023</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">08/07/2023</h6>
-                            <p class="card-text">Resultados de las Pruebas de Selectividad de
-                                junio 2023 Intentar mejorar cada día. La Universidad Nacional de Guinea Ecuatorial en tu
-                                lista MALABO BATA Convocatoria. <a href="#" class="text-warning">Leer Mas>></a> </p>
+                            <h5 class="card-title"><?= $row_noticias['Titulo']; ?></h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary"><?= $row_noticias['Dia']; ?>/<?= $row_noticias['Mes']; ?>/<?= $row_noticias['Agno']; ?></h6>
+                            <p class="card-text text-justify"><?=  substr($row_noticias['Descripcion'],0,150); ?><a href="blog-single.php?id=<?= $row_noticias['Id']; ?>" class="text-warning"> Leer Mas>></a> </p>
                         </div>
                     </div>
 
                 </div>
                 <!-- fin de carta 1-->
 
+                <?php } ?>
+            
 
-                <!-- carta 2-->
-                <div class="float-top col-sm-12 col-lg-4 col-md-6">
-
-                    <div class="card shadow mb-1">
-                        <img src="assets/images/unge/UNGE.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Semana científica 2023</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">02/06/2023</h6>
-                            <p class="card-text">Semana Científica y Cultural en la UNGE Palabras del Excmo. Señor
-                                Rector Magnífico
-                                Tengo la satisfacción de tomar la palabra en este acto académico de carácter social, <a href="#" class="text-warning">Leer Mas>></a> </p>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- fin de carta 2-->
-
-
-                <!-- carta 3-->
-                <div class="float-top col-sm-12 col-lg-4 col-md-6">
-
-                    <div class="card shadow ">
-                        <img src="assets/images/unge/UNGE.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Día Mundial de la Libertad de Prensa en la UNGE</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">03/05/2023</h6>
-                            <p class="card-text">Resumen de las palabras del Excmo. Señor Rector Magnífico de la UNGE Celebración del Día Mundial de la Libertad, <a href="#" class="text-warning">Leer Mas>></a> </p>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- fin de carta 3-->
-
-
-
+                
 
 
             </div>
@@ -349,6 +336,9 @@
     </div>
 
 </section>
+
+
+
 
 
 
@@ -372,6 +362,7 @@
                     en el suelo patrio, cuyas enseñanzas y carreras están siendo armonizadas con exigencias del
                     desarrollo del país,
                     sobre la base de los parámetros de pertinencia, excelencia, calidad y gestión de conocimientos.
+                    <a href="historia.php" class="text-warning"> Leer Mas>></a>
                 </p>
 
 
