@@ -100,8 +100,8 @@
                             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                 <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
-                                    <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
-                                        sit amet</p>
+                                    <p class="text-justify"> La Facultad de Ciencias de la Información y Filología Lingüística de la Universidad Nacional de Guinea
+                                         Ecuatorial se creó por acuerdo unánime en la Junta de Gobierno celebrada en la ciudad de Bata en el año 2016.<a href="filologia_hispanica.php" class="text-warning"> Leer Mas>></a> </p>
                                 </div>
                             </div>
                         </div>
