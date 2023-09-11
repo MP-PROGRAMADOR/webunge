@@ -157,7 +157,7 @@
 					<a class="btn btn-secondary btn-theme2 mt-3" href="about.php"> Leer Más</a>
 				</div>
 				<div class="column ccont-left col-lg-6">
-					<img src="assets/images/unge/7.jpg" class="img-responsive" alt="">
+					<img src="assets/images/unge/principal2.jpg" class="img-responsive" alt="">
 				</div>
 			</div>
 		</div>
