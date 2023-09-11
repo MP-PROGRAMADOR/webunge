@@ -79,9 +79,8 @@
                 <!-- aqui empieza el segundo div dentro de la primera columna -->
 
                 <div class="cwp4-image col-lg-6 pl-lg-6 mt-lg-0">
-                    <img src="assets/images/unge/37.jpg" class="img-fluid" alt="" />
-                    <p><b>Fernando PANADÉS GARCÍA</b> <br> <b>Director de Nuevas Tecnologías de Información y
-                            Comunicación</b></p>
+                    <img src="assets/images/panades.png" class="img-fluid" alt="" />
+                    
                 </div>
                 <!-- aqui termina el segundo div dentro de la primera columna -->
 

@@ -199,8 +199,10 @@
                             <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
                                 <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
-                                    <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
-                                        sit amet</p>
+                                    <p  class="text-justify"> La Facultad de Ingenierías y Tecnologías, su origen se remonta desde 1988 fecha en que se crea la Escuela
+                                         Nacional de Agricultura (ENA) Obiang Nguema Mbasogo, con vocación Subregional y rango universitario que 
+                                         posteriormente con el decreto  Ley
+                                         Nº 12 de fecha 6 de enero /1995 que crea la Universidad Nacional de Guinea Ecuatorial en anagrama UNGE <a href="facultad_ingenieria.php" class="text-warning"> Leer Mas>></a> </p>
                                 </div>
                             </div>
                         </div>
