@@ -150,8 +150,9 @@ require './php/conexion.php';
     <!-- inicio del contenido de la pagina -->
     <div class="right_col" role="main">
       <?php include "./componentes/modal_insertar_noticia.php"; ?> 
-      <?php include "./componentes/modalVerNoticia.php"; ?> 
+      <?php include "./componentes/modal_editar_noticia.php"; ?>      
       <?php require_once "./componentes/listadoNoticias.php"; ?>
+      <?php include "./componentes/modalVerNoticia.php"; ?> 
     </div>
     <!-- /fin del contenido de la pagina -->
 

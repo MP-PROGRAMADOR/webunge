@@ -42,6 +42,10 @@
     <!-- Custom Theme Scripts -->
     <script src="./build/js/custom.min.js"></script>
 
+    <script src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>	
+    <script src='./locales/es.js'></script>
+
 
   </body>
 </html>

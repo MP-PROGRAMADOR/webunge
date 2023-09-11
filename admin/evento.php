@@ -1,4 +1,8 @@
-<?php require_once "./componentes/head.php"; ?>
+<?php 
+
+  require_once "./componentes/head.php"; 
+  require './php/conexion.php';
+?>
 
 <div class="container body">
   <div class="main_container">
@@ -20,7 +24,7 @@
             <h2>John Doe</h2>
           </div>
         </div>
-        <!-- /menu profile quick info -->
+        <!-- /menu profile quick info --> 
 
         <br />
 
@@ -143,7 +147,7 @@
     <!-- inicio del contenido de la pagina -->
     <div class="right_col" role="main">    
     <?php include "./componentes/modal.php"; ?>
-     <?php require_once "./componentes/calendario.php"; ?>     
+     <?php require_once "./componentes/calendario1.php"; ?>     
      <?php require_once "./componentes/calendarModal.php"; ?>   
     </div>
     <!-- /fin del contenido de la pagina -->

@@ -41,11 +41,8 @@ CREATE TABLE Evento(
 
 CREATE TABLE Lugar(
     Id int(3) not null auto_increment,
-    Dia int(3) not null,
-    Mes varchar(20) not null,
-    Agno int(5) not null,
-    Hora_inicio time not null,
-    Hora_final time not null,
+    FechaEvento varchar(20) not null,
+    HoraEvento varchar(20) not null,
     Facultad int(3) not null,
     Evento int(3) not null,
     PRIMARY KEY (Id),

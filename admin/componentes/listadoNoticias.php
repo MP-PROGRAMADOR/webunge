@@ -59,6 +59,8 @@
                                     . "||" . $carrera['Dia']. "||" . $carrera['Mes']. "||" . $carrera['Agno']. "||"
                                      . $carrera['Categoria']. "||" . $carrera['Facultad'];
 
+                                     $dato =$carrera['Id'];
+
                                      
 
                                 ?>
@@ -79,7 +81,7 @@
                                                  <?php } ?>
 
                                                  <div class="tools tools-bottom">
-                                                     <a href="#"><i class="fa fa-eye"></i></a>
+                                                     <a href="#" onclick="pasarVar('<?php echo $dato; ?>');"  data-toggle="modal" data-target=".bs-verNotie-modal-lg"><i class="fa fa-eye"></i></a>
                                                     
                                                      <a href="#" onclick="agregarForm('<?php echo $datos; ?>');" class="btn btn-sm" data-toggle="modal" data-target=".bs-noticia2-modal-lg"> <i class="fa fa-pencil"></i></a>
                                                      <a href="#" onclick="alertarEliminar('<?php echo $carrera['Id']; ?>');" data-bs-id_usuario="<?= $carrera['Id'];   ?>" ><i class="fa fa-times"></i></a>
@@ -103,6 +105,14 @@
  <!-- /page content -->
 
 <Script>
+
+// pasar parametro
+function pasarVar(id){    
+    var codigo = id;
+    return codigo;
+}
+
+console.log("El codigo recibido es: "+pasarVar());
 
 
 function alertarEliminar(id) {
