@@ -87,7 +87,7 @@
                                 </select>
                             </div>
                             <div class="imgnoti">
-                                <input type="file" name="imgnoti">
+                                <input type="file" name="archivo">
                             </div>
 
 

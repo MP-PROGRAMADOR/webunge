@@ -8,7 +8,7 @@ $campus = $conn->query($sqlCampus);
 
 
 ?>
-<?php require_once "./componentes/head.php"; ?>
+<?php require_once "./componentes/head.php"; ?> 
 
 
 

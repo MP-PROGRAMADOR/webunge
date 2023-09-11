@@ -95,7 +95,7 @@
                                 <button class="accordion-button collapsed botton_acordeon" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
                                     aria-controls="flush-collapseOne">
-                                    <h3 class="fs-6"><a href="#">Pedagogía Y Ciencias De La Educacion</a>
+                                    <h3 class="fs-6"><a href="#">Pedagogía Y Ciencias De La Educacion de Bata</a>
                                     </h3>
                                 </button>
                             </h2>
@@ -121,7 +121,7 @@
                                 <button class="accordion-button collapsed  botton_acordeon" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                     aria-controls="flush-collapseTwo">
-                                    <h3 class="fs-6"><a href="#">Ciencias De La Salud</a>
+                                    <h3 class="fs-6"><a href="#">Ciencias De La Salud de Bata</a>
                                     </h3>
                                 </button>
                             </h2>
@@ -148,7 +148,7 @@
                                 <button class="accordion-button collapsed botton_acordeon" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
                                     aria-expanded="false" aria-controls="flush-collapseThree">
-                                    <h3 class="fs-6"><a href="#">Arquitectura e Ingenierias</a>
+                                    <h3 class="fs-6"><a href="#">Arquitectura e Ingenierias de Bata</a>
                                     </h3>
                                 </button>
                             </h2>
@@ -184,7 +184,7 @@
                                 <button class="accordion-button collapsed botton_acordeon" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
                                     aria-controls="flush-collapseFour">
-                                    <h3 class="fs-6"><a href="#">Humanudades y Ciencias Religiosas</a>
+                                    <h3 class="fs-6"><a href="#">Humanudades y Ciencias Religiosas de Bata</a>
                                     </h3>
                                 </button>
                             </h2>
@@ -217,6 +217,22 @@
 
 
 
+<!-- seccion de noticias -->
+
+<?php 
+
+include 'admin/php/conexion.php';
+
+
+$sqlnoticias = "SELECT * FROM noticias ORDER BY Id DESC LIMIT 3";
+
+	$noticias = $conn->query($sqlnoticias);
+	$dir='./admin/php/fotos/';		
+
+?>
+
+					
+
 
 <section class="w3l-features-8 text-center">
     <!-- /features -->
@@ -228,63 +244,31 @@
             <!-- aqui empiezan los acordeones lista desplegable -->
             <div class="fea-gd-vv text-center row pt-3">
 
+            <?php
 
+				while ($row_noticias = $noticias->fetch_assoc()) {
+
+			?>
 
                 <!-- carta 1-->
                 <div class="float-top col-sm-12 col-lg-4 col-md-6">
 
-                    <div class="card shadow mb-1" style="width: 18rem;">
-                        <img src="assets/images/unge/UNGE.jpg" class="card-img-top" alt="...">
+                    <div class="card shadow mb-1">
+                        <img src="<?= $dir . $row_noticias['Id'] . '.jpg'; ?>" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Selectividad 2023</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">08/07/2023</h6>
-                            <p class="card-text">Resultados de las Pruebas de Selectividad de
-                                junio 2023 Intentar mejorar cada día. La Universidad Nacional de Guinea Ecuatorial en tu
-                                lista MALABO BATA Convocatoria. <a href="#" class="text-warning">Leer Mas>></a> </p>
+                            <h5 class="card-title"><?= $row_noticias['Titulo']; ?></h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary"><?= $row_noticias['Dia']; ?>/<?= $row_noticias['Mes']; ?>/<?= $row_noticias['Agno']; ?></h6>
+                            <p class="card-text text-justify"><?=  substr($row_noticias['Descripcion'],0,150); ?><a href="blog-single.php?id=<?= $row_noticias['Id']; ?>" class="text-warning"> Leer Mas>></a> </p>
                         </div>
                     </div>
 
                 </div>
                 <!-- fin de carta 1-->
 
+                <?php } ?>
+            
 
-                <!-- carta 2-->
-                <div class="float-top col-sm-12 col-lg-4 col-md-6">
-
-                    <div class="card shadow mb-1" style="width: 18rem;">
-                        <img src="assets/images/unge/UNGE.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Semana científica 2023</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">02/06/2023</h6>
-                            <p class="card-text">Semana Científica y Cultural en la UNGE Palabras del Excmo. Señor
-                                Rector Magnífico
-                                Tengo la satisfacción de tomar la palabra en este acto académico de carácter social, <a
-                                    href="#" class="text-warning">Leer Mas>></a> </p>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- fin de carta 2-->
-
-
-                <!-- carta 3-->
-                <div class="float-top col-sm-12 col-lg-4 col-md-6">
-
-                    <div class="card shadow " style="width: 18rem;">
-                        <img src="assets/images/unge/UNGE.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Día Mundial de la Libertad de Prensa en la UNGE</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">03/05/2023</h6>
-                            <p class="card-text">Resumen de las palabras del Excmo. Señor Rector Magnífico de la UNGE Celebración del Día Mundial de la Libertad, <a
-                                    href="#" class="text-warning">Leer Mas>></a> </p>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- fin de carta 3-->
-
-
-
+                
 
 
             </div>
@@ -292,6 +276,8 @@
     </div>
 
 </section>
+
+
 
 
 
@@ -350,6 +336,153 @@
 
 
 
+
+<section class="w3l-features-8 text-center">
+    <!-- /features -->
+    <div class=" py-5" id="services">
+        <div class="container py-md-3">
+
+            <h1 class="p-3 border-top border-3 pb-3">ACCESO A LA UNIVERSIDAD</h1>
+
+
+            <!-- aqui empiezan los acordeones lista desplegable -->
+            <div class="fea-gd-vv text-center row pt-3">
+
+                <!-- acordeon 1 -->
+                <div class="float-top col-lg-4 col-md-6 text-center">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item shadow mb-3">
+                            <h2 class="accordion-header" id="flush-headingOne1">
+                                <button class="accordion-button collapsed botton_acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
+                                    <h3 class="fs-6"><a href="#">Nuevos Estudiantes</a>
+                                    </h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne1" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p class="text-justify">1. Instancia de solicitud de matrícula dirigida al Decano de la Facultad interesada. <br>
+                                        2. Certificado de selectividad o estudios equivalentes <br>
+                                        3. Hoja académica actualizada de los estudios realizados. <br>
+                                        4. Fotocopia de documento de identidad personal o pasaporte en vigor <br>
+                                        5. Dos fotografías de tamaño carnet en color <br>
+                                        6. Importe de la matrícula. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin acordeon 1 -->
+
+                <!-- acordeon 2 -->
+                <div class="float-top col-lg-4 col-md-6 ">
+                    <div class="accordion accordion-flush  " id="accordionFlushExample">
+                        <div class="accordion-item shadow mb-3">
+                            <h2 class="accordion-header" id="flush-headingTwo1">
+                                <button class="accordion-button collapsed  botton_acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo1" aria-expanded="false" aria-controls="flush-collapseTwo1">
+                                    <h3 class="fs-6"><a href="#">Antiguos Alumnos</a>
+                                    </h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo1" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo1" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p class="text-justify"> 1. Instancia de solicitud de matrícula dirigida al Decano de la Facultad interesada. <br>
+                                        2. Hoja de notas del curso anterior <br>
+                                        3. Dos fotografías de tamaño carnet en color <br>
+                                        4. Importe de matrícula</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin acordeon 2 -->
+
+
+                <!-- acordeon 3 -->
+                <div class="float-top col-lg-4 col-md-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item shadow ">
+                            <h2 class="accordion-header" id="flush-headingThree1">
+                                <button class="accordion-button collapsed botton_acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree1" aria-expanded="false" aria-controls="flush-collapseThree1">
+                                    <h3 class="fs-6"><a href="#">Otras Procedencias</a>
+                                    </h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree1" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p class="text-justify"> De conformidad con la Ley General de Educación vigente, el acceso a los estudios universitarios de los estudiantes
+                                        con estudios extranjeros y diferentes a los del Sistema Educativo Nacional, pasan por la vía de convalidación de los mismos.
+                                        Los estudiantes extranjeros y nacionales que hayan cursado estudios superiores de nivel medio del Sistema Educativo
+                                        Nacional sin haber superado
+                                        la Prueba de Selectividad, sus estudios serán equiparados. <a href="about.php">
+                                            <b>Ver las normas de régimen académico sobre el acceso de estudiantes a la UNGE.</b> </a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin acordeon 3 -->
+
+
+            </div>
+            <!-- aqui terminan -->
+
+
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<section class="w3l-features-8 text-center">
+    <!-- /features -->
+    <div class=" py-5" id="services">
+        <div class="container py-md-3">
+
+            <h1 class="p-3 border-top border-3 pb-3">ACTIVIDADES</h1>
+
+
+            <!-- aqui empiezan los acordeones lista desplegable -->
+            <div class="fea-gd-vv text-center row pt-3">
+
+                <!-- acordeon 1 -->
+                <div class="float-top col-lg-4 col-md-6 text-center">
+                    <img src="assets/images/cultura.jpg" class="img-fluid mb-1" alt="" />
+                    <P><b>Rincón de la cultura nacional</b> </P>
+
+                </div>
+                <!-- fin acordeon 1 -->
+
+                <!-- acordeon 2 -->
+                <div class="float-top col-lg-4 col-md-6 ">
+
+                    <img src="assets/images/deporte.jpg" class="img-fluid mb-1" alt="" />
+                    <P><b>Deporte</b> </P>
+
+                </div>
+                <!-- fin acordeon 2 -->
+
+
+                <!-- acordeon 3 -->
+                <div class="float-top col-lg-4 col-md-6">
+                    <img src="assets/images/exposocion.jpg" class="img-fluid mb-1" alt="" />
+                    <P><b>Exposición</b> </P>
+                </div>
+                <!-- fin acordeon 3 -->
+
+
+            </div>
+            <!-- aqui terminan -->
+
+
+        </div>
+    </div>
+
+</section>
 
 
 

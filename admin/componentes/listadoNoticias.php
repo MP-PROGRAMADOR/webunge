@@ -51,6 +51,7 @@
 
                                 $carreras = $conn->query($sqlCarreras);
 
+                                $dir="./php/fotos/";
                                 ?>
 
                              <?php while ($carrera = mysqli_fetch_array($carreras)) {
@@ -68,7 +69,8 @@
                                  <div class="col-md-55"> 
                                      <div class="thumbnail">
                                          <div class="image view view-first">
-                                             <img style="width: 100%; display: block;" src="./images/noticias/<?php echo $carrera['Img']; ?>" alt="image" />
+                                         
+                                             <img style="width: 100%; display: block;" src="<?= $dir .$carrera['Id'].'.jpg'; ?>" alt="image" />
                                              <div class="mask">
                                                  <?php
                                                     $CodCate = $carrera['Categoria'];
@@ -106,6 +108,7 @@
 
 <Script>
 
+<<<<<<< HEAD
 // pasar parametro
 function pasarVar(id){    
     var codigo = id;
@@ -115,7 +118,35 @@ function pasarVar(id){
 console.log("El codigo recibido es: "+pasarVar());
 
 
+=======
+// *********************
+>>>>>>> 7531890606ab03630464537edecbbd5f61f8c1c2
 function alertarEliminar(id) {
+        // e.preventDefault();
+        // alert("Estas seguro que quieres eliminar");
+        var codigo = id;
+        //  alert("Estas seguro que quieres eliminar"+codigo);
+        //  return false;
+        Swal.fire({
+            title: '¿Realmente quieres eliminar este Campus?',
+            text: "¡Este Campu será eliminada permanentemente!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sí, Eliminar',
+            cancelButtonText: 'No'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                EliminarSala(id);
+            }
+        })
+    }
+    // *******************
+
+
+
+function alertarSala(id) {
         // alert("el id recibido es: "+id);  
         parametro = {
             "id": id
