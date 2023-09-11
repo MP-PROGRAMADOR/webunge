@@ -144,10 +144,10 @@
     </div>
     <!-- /top navigation -->
 
-    <!-- inicio del contenido de la pagina -->
+    <!-- inicio del contenido de la pagina --> 
     <div class="right_col" role="main">    
     <?php include "./componentes/modal.php"; ?>
-     <?php require_once "./componentes/calendario1.php"; ?>     
+     <?php require_once "./componentes/calendario.php"; ?>     
      <?php require_once "./componentes/calendarModal.php"; ?>   
     </div>
     <!-- /fin del contenido de la pagina -->

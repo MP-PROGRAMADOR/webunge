@@ -98,13 +98,13 @@ $(document).ready(function() {
     events: [
       <?php
        while($dataEvento = mysqli_fetch_array($resulEventos)){ ?>
-          {
+          
           _id: '<?php echo $dataEvento['id']; ?>',
           title: '<?php echo $dataEvento['evento']; ?>',
           start: '<?php echo $dataEvento['fecha_inicio']; ?>',
           end:   '<?php echo $dataEvento['fecha_fin']; ?>',
           color: '<?php echo $dataEvento['color_evento']; ?>'
-          },
+          
         <?php } ?>
     ],
 
