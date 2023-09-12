@@ -157,14 +157,14 @@ require_once "./componentes/header.php";
           <p class="more-gap editContent">Para poder acceder a a la Universidad Nacional de Guinea Ecuatorial, el estudiante
             debe poseer los siguientes documentos.
           </p>
-          <a class="btn btn-secondary btn-theme2 mt-3" href="about.php"> Leer Más</a>
-        </div>
-        <div class="column ccont-left col-lg-6">
-          <img src="assets/images/unge/7.jpg" class="img-responsive" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
+					<a class="btn btn-secondary btn-theme2 mt-3" href="about.php"> Leer Más</a>
+				</div>
+				<div class="column ccont-left col-lg-6">
+					<img src="assets/images/unge/principal2.jpg" class="img-responsive" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 <!-- features-4 block -->
 <section class="services-12" id="course">
