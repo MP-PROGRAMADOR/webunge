@@ -20,11 +20,11 @@
        </li>
        <li><a><i class="fa fa-calendar"></i> Eventos <span class="fa fa-chevron-down"></span></a>
          <ul class="nav child_menu">
-           <li><a href="./evento.php">Nuevo Evento</a></li>
-           <li><a href="./categorias.php">Lugar/Fecha</a></li>
+           <li><a href="./eventos.php">Nuevo Evento</a></li>
+           <li><a href="./agenda.php">Lugar/Fecha</a></li>
          </ul>
        </li>
-       <li><a href="./evento.php"><i class="fa fa-calendar"></i>Eventos </a></li>
+      
      </ul>
    </div>
  </div>

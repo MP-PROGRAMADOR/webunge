@@ -1,8 +1,14 @@
-<?php 
+<?php
 
-  require_once "./componentes/head.php"; 
-  require './php/conexion.php';
+require './php/conexion.php';
+$sqlCampus = "SELECT * FROM evento";
+
+$campus = $conn->query($sqlCampus);
+
+
+
 ?>
+<?php require_once "./componentes/head.php"; ?>
 
 <div class="container body">
   <div class="main_container">
@@ -24,7 +30,7 @@
             <h2>John Doe</h2>
           </div>
         </div>
-        <!-- /menu profile quick info --> 
+        <!-- /menu profile quick info -->
 
         <br />
 
@@ -144,15 +150,16 @@
     </div>
     <!-- /top navigation -->
 
-    <!-- inicio del contenido de la pagina --> 
-    <div class="right_col" role="main">    
-    <?php include "./componentes/modal.php"; ?>
-     <?php require_once "./componentes/calendario.php"; ?>     
-     <?php require_once "./componentes/calendarModal.php"; ?>   
+    <!-- inicio del contenido de la pagina -->
+    <div class="right_col" role="main">
+      <?php include "./componentes/modal_insertar_evento.php"; ?>  
+      <?php include "./componentes/modal_editar_noticia.php"; ?>      
+      <?php require_once "./componentes/tablas_eventos.php"; ?>
+      <?php include "./componentes/modalVerNoticia.php"; ?> 
     </div>
     <!-- /fin del contenido de la pagina -->
 
-   
+
   </div>
 </div>
 

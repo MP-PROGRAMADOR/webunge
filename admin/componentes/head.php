@@ -35,7 +35,7 @@
   <!-- Custom Theme Style -->
   <link href="./build/css/custom.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/sweet-alert.css">
-  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="stylesheet" href="./css/estilos.css"> 
 
   <!-- js -->
   <script src="./js/jquery.js"></script>

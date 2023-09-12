@@ -1,11 +1,14 @@
-<?php
+<?php 
 
-require './php/conexion.php';
+  require_once "./componentes/head.php"; 
+  require './php/conexion.php';
 
+  $sqlFacul = "SELECT * FROM facultad";
+  $facul = $conn->query($sqlFacul);
 
-
+  $sqlEvento = "SELECT * FROM evento";
+  $Evento = $conn->query($sqlEvento);
 ?>
-<?php require_once "./componentes/head.php"; ?>
 
 <div class="container body">
   <div class="main_container">
@@ -27,7 +30,7 @@ require './php/conexion.php';
             <h2>John Doe</h2>
           </div>
         </div>
-        <!-- /menu profile quick info -->
+        <!-- /menu profile quick info --> 
 
         <br />
 
@@ -147,16 +150,16 @@ require './php/conexion.php';
     </div>
     <!-- /top navigation -->
 
-    <!-- inicio del contenido de la pagina -->
-    <div class="right_col" role="main">
-      <?php include "./componentes/modal_insertar_noticia.php"; ?> 
-      <?php include "./componentes/modal_editar_noticia.php"; ?>      
-      <?php require_once "./componentes/listadoNoticias.php"; ?> 
-      <?php include "./componentes/modalVerNoticia.php"; ?> 
+    <!-- inicio del contenido de la pagina --> 
+    <div class="right_col" role="main">    
+    <?php include "./componentes/modal.php"; ?>
+    <?php require_once "./componentes/fechaEventos.php" ?>
+    <?php require_once "./componentes/modal_insertar_agenda.php" ?>
+       
     </div>
     <!-- /fin del contenido de la pagina -->
 
-
+   
   </div>
 </div>
 

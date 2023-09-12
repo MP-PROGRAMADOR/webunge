@@ -1,6 +1,6 @@
 <?php
 
-    $conn = new mysqli("localhost", "root", "", "calendario");
+    $conn = new mysqli("localhost", "root", "", "unge");
 
   /* check connection */
     if (mysqli_connect_errno()) {

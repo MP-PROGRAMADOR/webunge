@@ -1,4 +1,4 @@
-<h2>Carreras</h2>
+<h2>Eventos</h2>
 <div class="col-md-12 col-sm-12  ">
 
 
@@ -10,30 +10,13 @@
 
         <div class="alert alert-info alert-dismissible" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <strong>Carrera registrada exitosamente!</strong>
+            <strong>Hola!</strong> su registro se ha insertado.
         </div>
 
-        <?php
+    <?php
 
-    } 
-    ?>
+    }
 
-
-
- <!-- alerta -->
-
- <?php
-    if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'actaulizado') {
-    ?>
-
-        <div class="alert alert-warning alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <strong>Carrera actualizada exitosamente!</strong>
-        </div>
-
-        <?php
-
-    } 
     ?>
 
 
@@ -54,17 +37,16 @@
 
     ?>
 
-    
-   
+
 
 
     <div class="x_panel">
         <div class="x_title">
 
             <!-- <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-plus"></i> Nuevo Campus </a> -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-carrera-modal-lg"><i class="fa fa-plus"></i> Nueva Carrera</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-noticia-modal-lg"><i class="fa fa-plus"></i> Nuevo Evento</button>
             <ul class="nav navbar-right panel_toolbox">
-                <!-- <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a> 
+                <!-- <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
@@ -97,12 +79,9 @@
                 <table class="table table-striped jambo_table bulk_action">
                     <thead>
                         <tr class="headings">
-                            <th>
-                                <input type="checkbox" id="check-all" class="flat">
-                            </th>
-                            <th class="column-title">ID </th>
-                            <th class="column-title">NOMBRE DE LA CARRERA</th>
-                            <th class="column-title">FACULTAD </th>
+                            
+                            <th class="column-title">Título del evento</th>
+                            <th class="column-title">Descripcion </th>
                             <th class="column-title no-link last"><span class="nobr">Action</span>
                             </th>
                             <th class="bulk-actions" colspan="7">
@@ -114,39 +93,22 @@
                     <tbody id="tablita">
 
 
-                        <?php while ($row_carrera = $carrera->fetch_assoc()) { 
-                            
-                            $datos = $row_carrera['Id'] . "||" . $row_carrera['Nombre'] . "||" . $row_carrera['Facultad'];
-                            
-                            ?>
+                        <?php
+                        while ($row_campus = $campus->fetch_assoc()) {
+
+                            $datos = $row_campus['Id'] . "||" . $row_campus['titulo'] . "||" . $row_campus['descripcion'];
+                        ?>
 
                             <tr class="even pointer">
 
-                                <td class="a-center ">
-                                    <input type="checkbox" class="flat" name="table_records">
-                                </td>
-
-                                <td> <?= $row_carrera["Id"]; ?></td>
-                                <td> <?= $row_carrera['Nombre']; ?></td>
-
-                                <?php 
-                                // estamos obtenienbdo el nombre de la tabla facultad
-                                $codfacultad = $row_carrera['Facultad'];
-
-                                $sqlfacultad = "SELECT * FROM facultad where Id='$codfacultad'";
-                                $facultad1 = $conn->query($sqlfacultad);
-                                $fila3 = mysqli_fetch_assoc($facultad1);
-                                $facultad = $fila3['Nombre'];
-                                
-                                
-                                ?>
-
-                                <td> <?= $facultad; ?></td>
+                               
+                                <td> <?= $row_campus['titulo']; ?></td>
+                                <td> <?= $row_campus['descripcion']; ?></td>
 
                                 <td>
-                                <a href="#" onclick="agregarForm('<?php echo $datos; ?>');" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-carrera2-modal-lg">EDITAR</a>
+                                    <a href="#" onclick="agregarForm('<?php echo $datos; ?>');" class="btn btn-sm btn-warning" data-toggle="modal" data-target=".bs-editar-modal-lg">EDITAR</a>
 
-                                    <a href="#" onclick="alertarEliminar('<?php echo $row_carrera['Id']; ?>');" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminaModalusuario" data-bs-id_usuario="<?= $row_carrera['Id'];   ?>">ELIMINAR</a>
+                                    <a href="#" onclick="alertarEliminar('<?php echo $row_campus['Id']; ?>');" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminaModalusuario" data-bs-id_usuario="<?= $row_campus['Id'];   ?>">ELIMINAR</a>
 
                                 </td>
                             </tr>
@@ -172,19 +134,19 @@
         }
         $.ajax({
             data: parametro,
-            url: './php/eliminarCarrera.php',
+            url: './php/eliminarCampus.php',
             type: 'POST',
             beforeSend: function() {},
-            success: function() {               
+            success: function() {                
                 Swal.fire(
                     '¡Eliminado!',
                     'La carrera ha sido eliminado exitosamente',
                     'success'
-                    
-                )    
-                // location.reload();            
+                )
+                setInterval('location.reload()', 3000);  
+                          
             }
-           
+
         })
 
     }
@@ -193,9 +155,11 @@
         // e.preventDefault();
         // alert("Estas seguro que quieres eliminar");
         var codigo = id;
+        //  alert("Estas seguro que quieres eliminar"+codigo);
+        //  return false;
         Swal.fire({
-            title: '¿Realmente quieres eliminar esa carrera?',
-            text: "¡Esa carrera será eliminada permanentemente!",
+            title: '¿Realmente quieres eliminar este Campus?',
+            text: "¡Este Campu será eliminada permanentemente!",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
@@ -206,64 +170,57 @@
             if (result.isConfirmed) {
                 EliminarSala(id);
             }
+        })
+    }
+    // *******************
+    // agregar datos al formulario
+    function agregarForm(datos) {
+        var d = datos.split('||');
+        // alert("los datos son: "+d);
+        // return false;
+        $('#idCamp').val(d[0]);
+        $('#nombreCamp').val(d[1]);
+    }
 
+    // esta funcion actualiza los datos
+    function actualizarCampus() {
+        var idCam = $('#idCamp').val();
+        var nomCampus = $('#nombreCamp').val();
+        var ubicacionCamp = $('#ubicacionCamp').val();
+
+        var cadena = "idCam=" + idCam +
+            "&nomCampus=" + nomCampus +
+            "&ubicacionCamp=" + ubicacionCamp;
+
+        $.ajax({
+            type: "POST",
+            url: "./php/actualizarCampus.php",
+            data: cadena,
+            success: function(r) {
+                if (r==1) {
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Campus actualizado exitosamente',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                    setInterval('location.reload()', 3000);  
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Algo salio mal!',
+                        footer: '<a href="">¿Por qué tengo este problema?</a>'
+                    })
+                    setInterval('location.reload()', 3000);  
+                }
+            }
         })
     }
 
 
-
-     // agregar datos al formulario
-     function agregarForm(datos) {
-        var d = datos.split('||');
-        // alert("los datos son: "+d);
-        // return false;
-        $('#idCarrera').val(d[0]);
-        $('#nombreCarrera').val(d[1]);
-        $('#facultadCarrera').val(d[2]);
-       
-    }
-
-    // esta funcion actualiza los datos
-    // function actualizarCarrera() {
-    //     var idCarrera = $('#idCarrera').val();
-    //     var nombreCarrera = $('#nombreCarrera').val();
-    //     var facultadCarrera = $('#facultadCarrera').val();
-
-    //     var cadena = "idCarrera=" + idCarrera +
-    //         "&nombreCarrera=" + nombreCarrera +
-    //         "&facultadCarrera=" + facultadCarrera;
-
-    //     $.ajax({
-    //         type: "POST",
-    //         url: "./php/actualizarCarreras.php",
-    //         data: cadena,
-    //         success: function(r) {
-    //             if (r==1) {
-    //                 Swal.fire({
-    //                     position: 'center',
-    //                     icon: 'success',
-    //                     title: 'Carrara actualizado exitosamente',
-    //                     showConfirmButton: false,
-    //                     timer: 1500
-    //                 })
-    //             } else {
-    //                 Swal.fire({
-    //                     icon: 'error',
-    //                     title: 'Oops...',
-    //                     text: 'Algo salio mal!',
-    //                     footer: '<a href="">¿Por qué tengo este problema?</a>'
-    //                 })
-    //             }
-    //         }
-    //     })
-
-
-    // }
-
-
-
-    // ******************* BUSCADOR
-
+    // buscador
     $(document).ready(function() {
         $("#buscador").on("keyup", function() {
             var value = $(this).val().toLowerCase();

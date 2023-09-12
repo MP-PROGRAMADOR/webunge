@@ -108,19 +108,7 @@
 
 <Script>
 
-<<<<<<< HEAD
-// pasar parametro
-function pasarVar(id){    
-    var codigo = id;
-    return codigo;
-}
-
-console.log("El codigo recibido es: "+pasarVar());
-
-
-=======
 // *********************
->>>>>>> 7531890606ab03630464537edecbbd5f61f8c1c2
 function alertarEliminar(id) {
         // e.preventDefault();
         // alert("Estas seguro que quieres eliminar");
