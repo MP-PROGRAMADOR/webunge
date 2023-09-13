@@ -13,7 +13,7 @@
         <div class="carousel-inner" role="listbox">
 
             <!-- Slide 1 -->
-            <div class="carousel-item active" style="background-image: url(assets/images/unge/2.JPG)">
+            <div class="carousel-item active" style="background-image: url(assets/images/unge/cmalabo1.jpg)">
                 <div class="carousel-container">
                     <div class="container">
                         <h2 class="animate__animated animate__fadeInDown">Bienvenido al <span>Campus de Malabo</span>
@@ -29,7 +29,7 @@
             </div>
 
             <!-- Slide 2 -->
-            <div class="carousel-item" style="background-image: url(assets/images/unge/1.3.jpg)">
+            <div class="carousel-item" style="background-image: url(assets/images/unge/cmalabo2.jpg)">
                 <div class="carousel-container">
                     <div class="container">
                         <h2 class="animate__animated animate__fadeInDown">Semana Cientica</h2>
@@ -98,7 +98,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50" alt=""></a>
+                                <a href="#"><img src="assets/images/unge/cmalabo1.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p class="text-justify"> La Facultad de Ciencias de la Información y Filología Lingüística de la Universidad Nacional de Guinea
                                          Ecuatorial se creó por acuerdo unánime en la Junta de Gobierno celebrada en la ciudad de Bata en el año 2016.<a href="filologia_hispanica.php" class="text-warning"> Leer Mas>></a> </p>
@@ -120,7 +120,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50" alt=""></a>
+                                <a href="#"><img src="assets/images/unge/cmalabo1.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -143,7 +143,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50" alt=""></a>
+                                <a href="#"><img src="assets/images/unge/cmalabo1.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -175,7 +175,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50" alt=""></a>
+                                <a href="#"><img src="assets/images/unge/cmalabo1.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -197,7 +197,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50" alt=""></a>
+                                <a href="#"><img src="assets/images/unge/cmalabo1.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p  class="text-justify"> La Facultad de Ingenierías y Tecnologías, su origen se remonta desde 1988 fecha en que se crea la Escuela
                                          Nacional de Agricultura (ENA) Obiang Nguema Mbasogo, con vocación Subregional y rango universitario que 
@@ -222,7 +222,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50" alt=""></a>
+                                <a href="#"><img src="assets/images/unge/cmalabo1.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -253,7 +253,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50" alt=""></a>
+                                <a href="#"><img src="assets/images/unge/cmalabo1.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
