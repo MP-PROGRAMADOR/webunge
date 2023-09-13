@@ -420,23 +420,22 @@ require_once "./componentes/header.php";
           <div class="tatest-top mt-md-5 mt-4">
             <?php
 
-            $qLugar = "SELECT lugar.Id, lugar.FechaEvento, lugar.HoraEvento, lugar.Facultad, evento.titulo FROM lugar INNER JOIN evento 
-ON lugar.Evento = evento.Id ORDER BY Id DESC LIMIT 3";
-            $ResulLugar = mysqli_query($conn, $qLugar);
-            while ($filas = mysqli_fetch_array($ResulLugar)) {
+            $qNoti = "SELECT * FROM noticias ORDER BY Id DESC LIMIT 3";
+            $ResulNoti = mysqli_query($conn, $qNoti);
+            while ($noticias = mysqli_fetch_array($ResulNoti)) {
             ?>
 
               <div class="price-box btn-layout bt6">
                 <div class="grid grid-column-2">
                   <div class="column-6">
-                    <img src="assets/images/unge/UNGE.jpg" alt="" class="img-fluid">
+                    <img src="admin/php/fotos/<?php echo $noticias['Id'].".jpg"; ?>" alt="" class="img-fluid">
                   </div>
                   <div class="column1">
 
                     <div class="job-info">
 
-                      <h6 class="pricehead"><a href="blog.php"> Convocatoria de la selectividad de Junio 2023 </a></h6>
-                      <h5>May 25, 2023</h5>
+                      <h6 class="pricehead"><a href="blog.php"> <?php echo $noticias['Titulo']; ?></a></h6>
+                      <h5><?php echo $noticias['Dia']; ?> <?php echo $noticias['Mes']; ?>, <?php echo $noticias['Agno']; ?></h5>
 
                     </div>
                   </div>

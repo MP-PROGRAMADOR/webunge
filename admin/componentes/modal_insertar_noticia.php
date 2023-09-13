@@ -6,7 +6,7 @@
 
             <div class="modal-header">
                 <h4 class="modal-title" id="myModalLabel">NUEVA NOTICIA</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span> 
                 </button>
             </div>
             <div class="modal-body">
