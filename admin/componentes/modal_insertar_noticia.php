@@ -87,7 +87,7 @@
                                 </select>
                             </div>
                             <div class="imgnoti">
-                                <input type="file" name="archivo">
+                                <input class="form-control" type="file" name="archivo" accept="image/jpeg">
                             </div>
 
 
