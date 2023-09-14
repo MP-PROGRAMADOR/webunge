@@ -237,33 +237,33 @@
 
 
 
-<section class="w3l-features-8 text-center">
+<section class="w3l-features-8 text-center mt-4">
     <!-- /features -->
     <div class="features py-5" id="services">
         <div class="container py-md-3">
 
 
             <div class="row main-cont-wthree-fea">
-                <div class="col-lg-3 col-sm-6  mt-lg-0 mt-4">
+                <div class="col-lg-3 col-sm-6  mt-lg-0 p-2">
                     <div class="grids-speci1">
                         <h3 class="title-spe">8.463</h3>
                         <p>ESTUDIANTES</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-3 col-sm-6 p-2">
                     <div class="grids-speci1">
                         <h3 class="title-spe">754</h3>
                         <p>DOCENTES</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 mt-sm-0 mt-4">
+                <div class="col-lg-3 col-sm-6 mt-sm-0 p-2">
                     <div class="grids-speci1">
                         <h3 class="title-spe">181</h3>
                         <p>ADMINISTRATIVOS</p>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4">
+                <div class="col-lg-3 col-sm-6 mt-lg-0 p-2">
                     <div class="grids-speci1">
                         <h3 class="title-spe">65</h3>
                         <p>PERSONAL <br>DE SERVICIO</p>
@@ -278,6 +278,7 @@
     </div>
     <!-- //features -->
 </section>
+
 
 
 
@@ -305,7 +306,7 @@
                     <div class="row">
                         <!-- imagen -->
                         <div class="col-lg-12">
-                            <img src="assets/images/unge/40.jpg" class="img-fluid rounded" alt="" />
+                            <img src="assets/images/unge/historia1.jpg" class="img-fluid rounded" alt="" />
                         </div>
 
 
@@ -372,7 +373,7 @@
                     <div class="row">
                         <!-- imagen -->
                         <div class="col-lg-12">
-                            <img src="assets/images/unge/40.jpg" class="img-fluid rounded" alt="" />
+                            <img src="assets/images/unge/historia2.jpg" class="img-fluid rounded" alt="" />
                         </div>
 
 

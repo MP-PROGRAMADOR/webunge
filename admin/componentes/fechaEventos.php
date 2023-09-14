@@ -35,7 +35,7 @@
 
                             $qLugar = "SELECT lugar.Id, lugar.FechaEvento, lugar.HoraEvento, lugar.Facultad, evento.titulo FROM lugar INNER JOIN evento ON lugar.Evento = evento.Id ORDER BY Id DESC";
                             $ResulLugar = mysqli_query($conn, $qLugar);
-                            while ($filas = mysqli_fetch_array($ResulLugar)) {
+                            while ($filas = mysqli_fetch_assoc($ResulLugar)) {
                             ?>
 
                              <div class="event">

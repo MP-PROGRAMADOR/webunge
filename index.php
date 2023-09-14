@@ -17,7 +17,7 @@ require_once "./componentes/header.php";
                   <h5>
                     La UNGE participa en los trabajos para reactivar la Conferencia de Rectores de Universidades...
                   </h5>
-                  <a class="btn btn-secondary btn-theme2 mt-md-5 mt-4" href="#">Leer Más</a>
+                  <a class="btn btn-secondary btn-theme2 mt-md-5 mt-4" href="historia.php">Leer Más</a>
                 </div>
 
               </div>
@@ -133,7 +133,7 @@ require_once "./componentes/header.php";
           <p>La Universidad Nacional de Guinea Ecuatorial, en anagrama UNGE, se creó a iniciativa de S.E. OBIANG NGUEMA MBASOGO
             mediante Decreto Ley Nº 12, de fecha 6 de enero de 1.995, con el objetivo de formar cuadros nacionales en el suelo
             patrio...</p>
-          <a href="services.html" class="btn btn-secondary btn-theme3 mt-4">Leer Más </a>
+          <a href="historia.php" class="btn btn-secondary btn-theme3 mt-4">Leer Más </a>
         </div>
         <div class="three-grids-columns">
           <!-- <span class="fa fa-book"></span> -->
@@ -157,7 +157,7 @@ require_once "./componentes/header.php";
           <p class="more-gap editContent">Para poder acceder a a la Universidad Nacional de Guinea Ecuatorial, el estudiante
             debe poseer los siguientes documentos.
           </p>
-					<a class="btn btn-secondary btn-theme2 mt-3" href="about.php"> Leer Más</a>
+					<a class="btn btn-secondary btn-theme2 mt-3" href="#acceso"> Leer Más</a>
 				</div>
 				<div class="column ccont-left col-lg-6">
 					<img src="./assets/images/unge/principal2.jpg" class="img-responsive" alt="">
@@ -187,7 +187,7 @@ require_once "./componentes/header.php";
   </div>
 </section>
 <!-- //inicio de acceso a la UNGE -->
-<section class="w3l-features-1">
+<section class="w3l-features-1" id="acceso">
   <!-- /features -->
   <div class="features py-4">
     <h3 class="head" style="text-align: center; padding:20px; font-weight: bold;">Acceso a la UNGE</h3>
@@ -208,7 +208,7 @@ require_once "./componentes/header.php";
               <li><span class="fa fa-check"></span>Dos Fotografías de tamaño carnet en color </li>
               <li><span class="fa fa-check"></span>Importe de la matricula </li>
             </ul>
-            <a href="#" class="btn btn-secondary btn-theme2 mt-md-5 mt-4">Solicita</a>
+            <a href="contact.php" class="btn btn-secondary btn-theme2 mt-md-5 mt-4">Solicita</a>
           </div>
 
         </div>
@@ -434,7 +434,8 @@ require_once "./componentes/header.php";
 
                     <div class="job-info">
 
-                      <h6 class="pricehead"><a href="blog.php"> <?php echo $noticias['Titulo']; ?></a></h6>
+                      <h6 class="pricehead"><a href="blog-single.php?id=<?= $noticias['Id']; ?>"> <?php echo $noticias['Titulo']; ?></a></h6>
+                      <P class=""><?=  substr($noticias['Descripcion'],0,100); ?></P>
                       <h5><?php echo $noticias['Dia']; ?> <?php echo $noticias['Mes']; ?>, <?php echo $noticias['Agno']; ?></h5>
 
                     </div>
