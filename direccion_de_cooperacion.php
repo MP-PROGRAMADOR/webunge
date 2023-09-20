@@ -68,13 +68,13 @@
                     <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="assets/images/1.jpg" class="d-block w-100 rounded" alt="...">
+                                <img src="assets/images/unge/1.2.jpg" class="d-block w-100 rounded" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/images/unge/1.1.jpg" class="d-block w-100 rounded" alt="...">
+                                <img src="assets/images/unge/semana.jpg" class="d-block w-100 rounded" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/images/2.jpg" class="d-block w-100 rounded" alt="...">
+                                <img src="assets/images/unge/embajador.jpeg" class="d-block w-100 rounded" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -349,52 +349,52 @@
             <h1 class="p-3 border-top border-3 pb-3">Universidades y Organismos con Convenios firmados con la UNGE</h1>
 
 
-            <div class="row">
+            <div class="row mt-5">
 
 
                 <div class="slider">
                     <div class="slide-track">
                         <div class="slide">
-                            <img src="assets/images/cuba.png" height="100" width="250" alt="" />
+                            <img src="assets/images/colombia.webp" height="100" width="200" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                            <img src="assets/images/eeuu.jpg" height="100" width="200" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                            <img src="assets/images/cameron.png" height="100" width="200" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                            <img src="assets/images/nigeria.png" height="100" width="200" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                            <img src="assets/images/espana.jpg" height="100" width="200" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                            <img src="assets/images/rusia.jpg" height="100" width="200" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                            <img src="assets/images/china.jpg" height="100" width="200" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                            <img src="assets/images/argentina.jpg" height="100" width="200" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                            <img src="assets/images/francia.jpg" height="100" width="200" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                            <img src="assets/images/centroafrica.jpg" height="100" width="200" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                            <img src="assets/images/canada.jpg" height="100" width="200" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                            <img src="assets/images/uruguay.jpg" height="100" width="200" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                            <img src="assets/images/portugal.jpg" height="100" width="200" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                            <img src="assets/images/espana.jpg" height="100" width="200" alt="" />
                         </div>
                     </div>
                 </div>

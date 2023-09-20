@@ -38,14 +38,11 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed shadow mb-1 text-warning" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseUno" aria-expanded="false"
-                                    aria-controls="flush-collapseUno">
+                                <button class="accordion-button collapsed shadow mb-1 text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseUno" aria-expanded="false" aria-controls="flush-collapseUno">
                                     Leer Mas
                                 </button>
                             </h2>
-                            <div id="flush-collapseUno" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingUno" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseUno" class="accordion-collapse collapse" aria-labelledby="flush-headingUno" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <p class="text-justify">
                                         En el actual contexto, la utilización eficiente de las nuevas tecnologías puede
@@ -78,9 +75,9 @@
 
                 <!-- aqui empieza el segundo div dentro de la primera columna -->
 
-                <div class="cwp4-image col-lg-6 pl-lg-6 mt-lg-0">
+                <div class="cwp4-image col-lg-6 pl-lg-6 mt-lg-0 pb-5">
                     <img src="assets/images/panades.png" class="img-fluid" alt="" />
-                    
+
                 </div>
                 <!-- aqui termina el segundo div dentro de la primera columna -->
 
@@ -89,26 +86,39 @@
 
 
 
-            <div class="cwp4-two row  animate__animated animate__backInLeft animate__slow 7s mt-5">
+        </div>
+    </div>
+</section>
 
 
-                <!-- aqui empieza el primer div dentro de la primera columna -->
+
+
+
+
+
+
+<section class="w3l-features-8 text-center">
+    <!-- /features -->
+    <div class="features py-5" id="services">
+        <div class="container py-md-3">
+
+            <h1 class="p-3 border-top border-3 pb-4">PLAN ESTRATEGICO</h1>
+
+            <!-- aqui empiezan los acordeones lista desplegable -->
+            <div class="fea-gd-vv text-center row ">
+
                 <div class="col-lg-6 pl-lg-6 mt-lg-0">
 
                     <img src="assets/images/unge/38.jpg" class="img-fluid" alt="" />
 
 
                 </div>
-                <!-- aqui termina el primer div dentro de la primera columna -->
 
 
-
-                <!-- aqui empieza el segundo div dentro de la primera columna -->
 
                 <div class="cwp4-image col-lg-6 pl-lg-6 mt-lg-0">
 
-                    <h3 class="text-center p-1">PLAN ESTRATEGICO</h3>
-
+                 
                     <p class="text-justify">Considerando que resulta esencial garantizar una adecuada planificación por
                         parte de la Universidad Nacional de Guinea Ecuatorial (UNGE),
                         un Plan Estratégico de la Dirección Universitaria de Tecnologías de la Información y
@@ -121,14 +131,11 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingDos">
-                                <button class="accordion-button collapsed shadow mb-1 text-warning" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseDos" aria-expanded="false"
-                                    aria-controls="flush-collapseDos">
+                                <button class="accordion-button collapsed shadow mb-1 text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDos" aria-expanded="false" aria-controls="flush-collapseDos">
                                     Leer Mas
                                 </button>
                             </h2>
-                            <div id="flush-collapseDos" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingDos" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseDos" class="accordion-collapse collapse" aria-labelledby="flush-headingDos" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <p class="text-justify">
                                         se tiene a bien expedir el presente Plan estratégico de la Dirección
@@ -150,19 +157,25 @@
                 </div>
                 <!-- aqui termina el segundo div dentro de la primera columna -->
 
+
             </div>
-            <!-- aqui termina toda la fila -->
-
-
         </div>
     </div>
+
 </section>
+
+
+
+
+
+
+
 
 
 
 <section class="w3l-features-8 text-center">
     <!-- /features -->
-    <div class="features py-5" id="services">
+    <div class=" py-5" id="services">
         <div class="container py-md-3">
 
             <h1 class="p-3 border-top border-3 pb-3">ESTRUCTURA</h1>
@@ -177,14 +190,11 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed mb-1 shadow" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOcho" aria-expanded="false"
-                                    aria-controls="flush-collapseOcho">
+                                <button class="accordion-button collapsed mb-1 shadow" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOcho" aria-expanded="false" aria-controls="flush-collapseOcho">
                                     Dirección
                                 </button>
                             </h2>
-                            <div id="flush-collapseOcho" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseOcho" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <p class="text-justify">
                                         Se encarga de velar por el cumplimiento de las funciones, los planes y objetivos
@@ -219,14 +229,11 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed mb-1 shadow" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                    aria-controls="flush-collapseFour">
+                                <button class="accordion-button collapsed mb-1 shadow" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                                     Subdirección
                                 </button>
                             </h2>
-                            <div id="flush-collapseFour" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <p class="text-justify">
                                         Bajo la supervisión de la Dirección, se encarga de velar por el cumplimiento de
@@ -260,14 +267,11 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed mb-1 shadow" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
-                                    aria-controls="flush-collapseFive">
+                                <button class="accordion-button collapsed mb-1 shadow" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                                     Departamento de los servicios informáticos
                                 </button>
                             </h2>
-                            <div id="flush-collapseFive" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <p class="text-justify">
                                         Es el responsable de velar por el mantenimiento de los servicios informáticos de
@@ -512,21 +516,18 @@
 <!-- //footer-28 block -->
 </section>
 <script>
-$(function() {
-    $('.navbar-toggler').click(function() {
-        $('body').toggleClass('noscroll');
-    })
-});
+    $(function() {
+        $('.navbar-toggler').click(function() {
+            $('body').toggleClass('noscroll');
+        })
+    });
 </script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 </script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
 </script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 </script>
 
 <!-- Template JavaScript -->
@@ -543,36 +544,36 @@ $(function() {
 
 <!-- script for -->
 <script>
-$(document).ready(function() {
-    $('.owl-one').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: true,
-        responsiveClass: true,
-        autoplay: false,
-        autoplayTimeout: 5000,
-        autoplaySpeed: 1000,
-        autoplayHoverPause: false,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            480: {
-                items: 1,
-                nav: false
-            },
-            667: {
-                items: 1,
-                nav: true
-            },
-            1000: {
-                items: 1,
-                nav: true
+    $(document).ready(function() {
+        $('.owl-one').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            responsiveClass: true,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                480: {
+                    items: 1,
+                    nav: false
+                },
+                667: {
+                    items: 1,
+                    nav: true
+                },
+                1000: {
+                    items: 1,
+                    nav: true
+                }
             }
-        }
+        })
     })
-})
 </script>
 <!-- //script -->
 

@@ -44,7 +44,7 @@
             </div>
 
             <!-- Slide 3 -->
-            <div class="carousel-item" style="background-image: url(assets/images/unge/3.JPG)">
+            <div class="carousel-item" style="background-image: url(assets/images/unge/principal.jpg)">
                 <div class="carousel-container">
                     <div class="container">
                         <h2 class="animate__animated animate__fadeInDown">Requisitos de las Matriculas</h2>
@@ -98,10 +98,10 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/cmalabo1.jpg" class="img-responsive h-50" alt=""></a>
+                                <a href="#"><img src="assets/images/unge/fmalabo.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p class="text-justify"> La Facultad de Ciencias de la Información y Filología Lingüística de la Universidad Nacional de Guinea
-                                         Ecuatorial se creó por acuerdo unánime en la Junta de Gobierno celebrada en la ciudad de Bata en el año 2016.<a href="filologia_hispanica.php" class="text-warning"> Leer Mas>></a> </p>
+                                        Ecuatorial se creó por acuerdo unánime en la Junta de Gobierno celebrada en la ciudad de Bata en el año 2016.<a href="filologia_hispanica.php" class="text-warning"> Leer Mas>></a> </p>
                                 </div>
                             </div>
                         </div>
@@ -120,7 +120,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/cmalabo1.jpg" class="img-responsive h-50" alt=""></a>
+                                <a href="#"><img src="assets/images/unge/fmalabo.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -143,7 +143,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/cmalabo1.jpg" class="img-responsive h-50" alt=""></a>
+                                <a href="#"><img src="assets/images/unge/fmalabo.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -175,7 +175,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/cmalabo1.jpg" class="img-responsive h-50" alt=""></a>
+                                <a href="#"><img src="assets/images/unge/fmalabo.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -197,12 +197,12 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/cmalabo1.jpg" class="img-responsive h-50" alt=""></a>
+                                <a href="#"><img src="assets/images/unge/fmalabo.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
-                                    <p  class="text-justify"> La Facultad de Ingenierías y Tecnologías, su origen se remonta desde 1988 fecha en que se crea la Escuela
-                                         Nacional de Agricultura (ENA) Obiang Nguema Mbasogo, con vocación Subregional y rango universitario que 
-                                         posteriormente con el decreto  Ley
-                                         Nº 12 de fecha 6 de enero /1995 que crea la Universidad Nacional de Guinea Ecuatorial en anagrama UNGE <a href="facultad_ingenieria.php" class="text-warning"> Leer Mas>></a> </p>
+                                    <p class="text-justify"> La Facultad de Ingenierías y Tecnologías, su origen se remonta desde 1988 fecha en que se crea la Escuela
+                                        Nacional de Agricultura (ENA) Obiang Nguema Mbasogo, con vocación Subregional y rango universitario que
+                                        posteriormente con el decreto Ley
+                                        Nº 12 de fecha 6 de enero /1995 que crea la Universidad Nacional de Guinea Ecuatorial en anagrama UNGE <a href="facultad_ingenieria.php" class="text-warning"> Leer Mas>></a> </p>
                                 </div>
                             </div>
                         </div>
@@ -222,7 +222,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/cmalabo1.jpg" class="img-responsive h-50" alt=""></a>
+                                <a href="#"><img src="assets/images/unge/fmalabo.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -253,7 +253,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/cmalabo1.jpg" class="img-responsive h-50" alt=""></a>
+                                <a href="#"><img src="assets/images/unge/fmalabo.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -281,19 +281,19 @@
 
 <!-- seccion de noticias -->
 
-<?php 
+<?php
 
 include 'admin/php/conexion.php';
 
 
 $sqlnoticias = "SELECT * FROM noticias ORDER BY Id DESC LIMIT 3";
 
-	$noticias = $conn->query($sqlnoticias);
-	$dir='./admin/php/fotos/';		
+$noticias = $conn->query($sqlnoticias);
+$dir = './admin/php/fotos/';
 
 ?>
 
-					
+
 
 
 <section class="w3l-features-8 text-center">
@@ -306,31 +306,31 @@ $sqlnoticias = "SELECT * FROM noticias ORDER BY Id DESC LIMIT 3";
             <!-- aqui empiezan los acordeones lista desplegable -->
             <div class="fea-gd-vv text-center row pt-3">
 
-            <?php
+                <?php
 
-				while ($row_noticias = $noticias->fetch_assoc()) {
+                while ($row_noticias = $noticias->fetch_assoc()) {
 
-			?>
+                ?>
 
-                <!-- carta 1-->
-                <div class="float-top col-sm-12 col-lg-4 col-md-6">
+                    <!-- carta 1-->
+                    <div class="float-top col-sm-12 col-lg-4 col-md-6">
 
-                    <div class="card shadow mb-1">
-                        <img src="<?= $dir . $row_noticias['Id'] . '.jpg'; ?>" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title"><?= $row_noticias['Titulo']; ?></h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary"><?= $row_noticias['Dia']; ?>/<?= $row_noticias['Mes']; ?>/<?= $row_noticias['Agno']; ?></h6>
-                            <p class="card-text text-justify"><?=  substr($row_noticias['Descripcion'],0,150); ?><a href="blog-single.php?id=<?= $row_noticias['Id']; ?>" class="text-warning"> Leer Mas>></a> </p>
+                        <div class="card shadow mb-1">
+                            <img src="<?= $dir . $row_noticias['Id'] . '.jpg'; ?>" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><?= $row_noticias['Titulo']; ?></h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary"><?= $row_noticias['Dia']; ?>/<?= $row_noticias['Mes']; ?>/<?= $row_noticias['Agno']; ?></h6>
+                                <p class="card-text text-justify"><?= substr($row_noticias['Descripcion'], 0, 150); ?><a href="blog-single.php?id=<?= $row_noticias['Id']; ?>" class="text-warning"> Leer Mas>></a> </p>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
-                <!-- fin de carta 1-->
+                    </div>
+                    <!-- fin de carta 1-->
 
                 <?php } ?>
-            
 
-                
+
+
 
 
             </div>
@@ -350,12 +350,13 @@ $sqlnoticias = "SELECT * FROM noticias ORDER BY Id DESC LIMIT 3";
     <div class=" py-5" id="services">
         <div class="container py-md-3">
 
-            <h1 class="p-3 border-top border-3 pb-3">EL RECTORADO</h1>
+            <h1 class="p-3 border-top border-3 pb-4">EL RECTORADO</h1>
 
             <!-- aqui empiezan los acordeones lista desplegable -->
             <div class="fea-gd-vv text-center row ">
 
-
+                <div class="cwp4-text col-lg-6">
+                    
                 <p class="text-justify p-3">
                     La Universidad Nacional de Guinea Ecuatorial, en anagrama UNGE, se creó a iniciativa de S.E.
                     OBIANG NGUEMA
@@ -367,28 +368,16 @@ $sqlnoticias = "SELECT * FROM noticias ORDER BY Id DESC LIMIT 3";
                     <a href="historia.php" class="text-warning"> Leer Mas>></a>
                 </p>
 
-
-
-                <!-- carta 1-->
-                <div class="float-top col-lg-4 col-md-6 mb-2">
-                    <img src="assets/images/unge/2.jpg" class="img-fluid" alt="" />
+                    <!-- <ul class="cont-4">
+        <li><span class="fa fa-check"></span>Materiality & Interpretation</li>
+        <li><span class="fa fa-check"></span>Design Management and Cultural Enterprise </li>
+        <li><span class="fa fa-check"></span>Experience Design (XD)</li>
+        <li><span class="fa fa-check"></span>Sound Design; Social Media and SEO </li>
+    </ul> -->
                 </div>
-                <!-- fin de carta 1-->
-
-
-                <!-- carta 2-->
-                <div class="float-top col-lg-4 col-md-6 mb-2">
-                    <img src="assets/images/unge/2.jpg" class="img-fluid" alt="" />
+                <div class="cwp4-image col-lg-6 pl-lg-5 mt-lg-0 mt-5">
+                    <img src="assets/images/unge/2.JPG" class="img-fluid" alt="" />
                 </div>
-                <!-- fin de carta 2-->
-
-                <!-- carta 2-->
-                <div class="float-top col-lg-4 col-md-6 ">
-                    <img src="assets/images/unge/2.jpg" class="img-fluid" alt="" />
-                </div>
-                <!-- fin de carta 2-->
-
-
 
 
             </div>
@@ -410,7 +399,7 @@ $sqlnoticias = "SELECT * FROM noticias ORDER BY Id DESC LIMIT 3";
 
 
             <!-- aqui empiezan los acordeones lista desplegable -->
-            <div class="fea-gd-vv text-center row pt-3">
+            <div class="fea-gd-vv text-center row">
 
                 <!-- acordeon 1 -->
                 <div class="float-top col-lg-4 col-md-6 text-center">
@@ -558,10 +547,10 @@ $sqlnoticias = "SELECT * FROM noticias ORDER BY Id DESC LIMIT 3";
                 <div class="cwp4-text col-lg-6">
                     <p><b class="p-3">Instituto Confucio de la UNGE</b>
                     <p class="text-justify">
-                    El <b>Instituto Confucio</b>  de la Universidad Nacional de Guinea Ecuatorial pretende convertirse en una plataforma de intercambio cultural
-                     y educativa importante, donde los profesores y estudiantes de la UNGE y los ciudadanos locales del pueblo ecuatoguineano aprendan 
-                     el idioma chino y la cultura de china con el fin de promover los intercambios en el área educativa, 
-                    cultural y social entre Guinea Ecuatorial y China, con el propósito de desarrollar la comprensión y la amistad entre los dos pueblos.
+                        El <b>Instituto Confucio</b> de la Universidad Nacional de Guinea Ecuatorial pretende convertirse en una plataforma de intercambio cultural
+                        y educativa importante, donde los profesores y estudiantes de la UNGE y los ciudadanos locales del pueblo ecuatoguineano aprendan
+                        el idioma chino y la cultura de china con el fin de promover los intercambios en el área educativa,
+                        cultural y social entre Guinea Ecuatorial y China, con el propósito de desarrollar la comprensión y la amistad entre los dos pueblos.
                     </p>
 
                     <!-- <ul class="cont-4">
@@ -572,7 +561,7 @@ $sqlnoticias = "SELECT * FROM noticias ORDER BY Id DESC LIMIT 3";
     </ul> -->
                 </div>
                 <div class="cwp4-image col-lg-6 pl-lg-5 mt-lg-0 mt-5">
-                    <img src="assets/images/unge/6.jpg" class="img-fluid" alt="" />
+                    <img src="assets/images/unge/chino.jpg" class="img-fluid" alt="" />
                 </div>
             </div>
 

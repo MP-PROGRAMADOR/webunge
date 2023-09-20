@@ -101,11 +101,9 @@
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
-                                        alt=""></a>
+                                <a href="#"><img src="assets/images/unge/fmalabo.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
-                                    <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
-                                        sit amet</p>
+                            <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet</p>
                                 </div>
                             </div>
                         </div>
@@ -127,8 +125,7 @@
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
-                                        alt=""></a>
+                                <a href="#"><img src="assets/images/unge/fmalabo.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -154,8 +151,7 @@
                             </h2>
                             <div id="flush-collapseThree" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
-                                        alt=""></a>
+                                <a href="#"><img src="assets/images/unge/fmalabo.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -190,8 +186,7 @@
                             </h2>
                             <div id="flush-collapseFour" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                                <a href="#"><img src="assets/images/unge/1.1.jpg" class="img-responsive h-50"
-                                        alt=""></a>
+                                <a href="#"><img src="assets/images/unge/fmalabo.jpg" class="img-responsive h-50" alt=""></a>
                                 <div class="accordion-body">
                                     <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor
                                         sit amet</p>
@@ -282,56 +277,48 @@ $sqlnoticias = "SELECT * FROM noticias ORDER BY Id DESC LIMIT 3";
 
 
 
+
 <section class="w3l-features-8 text-center">
     <!-- /features -->
     <div class=" py-5" id="services">
         <div class="container py-md-3">
 
-            <h1 class="p-3 border-top border-3 pb-3">EL RECTORADO</h1>
+            <h1 class="p-3 border-top border-3 pb-4">EL RECTORADO</h1>
 
             <!-- aqui empiezan los acordeones lista desplegable -->
             <div class="fea-gd-vv text-center row ">
 
-            
-                    <p class="text-justify p-3">
-                        La Universidad Nacional de Guinea Ecuatorial, en anagrama UNGE, se creó a iniciativa de S.E.
-                        OBIANG NGUEMA
-                        MBASOGO mediante Decreto Ley Nº 12, de fecha 6 de enero de 1.995, con el objetivo de formar
-                        cuadros nacionales
-                        en el suelo patrio, cuyas enseñanzas y carreras están siendo armonizadas con exigencias del
-                        desarrollo del país,
-                        sobre la base de los parámetros de pertinencia, excelencia, calidad y gestión de conocimientos.
-                    </p>
+                <div class="cwp4-text col-lg-6">
+                    
+                <p class="text-justify p-3">
+                    La Universidad Nacional de Guinea Ecuatorial, en anagrama UNGE, se creó a iniciativa de S.E.
+                    OBIANG NGUEMA
+                    MBASOGO mediante Decreto Ley Nº 12, de fecha 6 de enero de 1.995, con el objetivo de formar
+                    cuadros nacionales
+                    en el suelo patrio, cuyas enseñanzas y carreras están siendo armonizadas con exigencias del
+                    desarrollo del país,
+                    sobre la base de los parámetros de pertinencia, excelencia, calidad y gestión de conocimientos.
+                    <a href="historia.php" class="text-warning"> Leer Mas>></a>
+                </p>
 
-
-
-                <!-- carta 1-->
-                <div class="float-top col-lg-4 col-md-6 mb-2">
-                <img src="assets/images/unge/2.jpg" class="img-fluid" alt="" />
+                    <!-- <ul class="cont-4">
+        <li><span class="fa fa-check"></span>Materiality & Interpretation</li>
+        <li><span class="fa fa-check"></span>Design Management and Cultural Enterprise </li>
+        <li><span class="fa fa-check"></span>Experience Design (XD)</li>
+        <li><span class="fa fa-check"></span>Sound Design; Social Media and SEO </li>
+    </ul> -->
                 </div>
-                <!-- fin de carta 1-->
-
-
-                <!-- carta 2-->
-                <div class="float-top col-lg-4 col-md-6 mb-2">
-                <img src="assets/images/unge/2.jpg" class="img-fluid" alt="" />
+                <div class="cwp4-image col-lg-6 pl-lg-5 mt-lg-0 mt-5">
+                    <img src="assets/images/unge/2.JPG" class="img-fluid" alt="" />
                 </div>
-                <!-- fin de carta 2-->
 
-                <!-- carta 2-->
-                <div class="float-top col-lg-4 col-md-6 ">
-                <img src="assets/images/unge/2.jpg" class="img-fluid" alt="" />
-                </div>
-                <!-- fin de carta 2-->
-
-
-              
 
             </div>
         </div>
     </div>
 
 </section>
+
 
 
 
